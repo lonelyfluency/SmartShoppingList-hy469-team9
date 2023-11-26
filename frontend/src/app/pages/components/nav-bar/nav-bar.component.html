@@ -1,0 +1,29 @@
+<div id="nav-container">
+    <nav id="nav-bar">
+        <a routerLink="shop_main" routerLinkActive="active" [ngClass]="{'active': isActive('/shop_main')}">
+          <div>
+            <img src="../../../../assets/nav-bar/nutrition.png" alt="apple icon">
+            <p>Nutrition</p>
+          </div>
+        </a>
+        <a routerLink="shop_products" routerLinkActive="active" [ngClass]="{'active': isActive('/shop_products')}">
+          <div>
+            <img src="../../../../assets/nav-bar/activity.png" alt="human running icon">
+            <p>Activity</p>
+          </div>
+        </a>
+        <a routerLink="shop_cart" routerLinkActive="active" [ngClass]="{'active': isActive('/shop_cart')}">
+          <div>
+            <img src="../../../../assets/nav-bar/sleep.png" alt="moon icon">
+            <p>Sleep</p>
+          </div>
+        </a>
+        <a routerLink="shop_offer" routerLinkActive="active" [ngClass]="{'active': isActive('/shop_offer')}">
+          <div>
+            <img src="../../../../assets/nav-bar/weight.png" alt="scale icon">
+            <p>Weight</p>
+          </div>
+        </a>
+    </nav>
+</div>
+<router-outlet></router-outlet>

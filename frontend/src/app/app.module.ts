@@ -8,6 +8,14 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { environment } from 'src/environments/environment';
 import { ItemShopComponent } from './pages/item-shop/item-shop.component';
 import { ItemPreviewComponent } from './pages/item-shop/item-preview/item-preview.component';
+import { NavBarComponent } from './pages/components/nav-bar/nav-bar.component';
+import { TopBarComponent } from './pages/components/top-bar/top-bar.component';
+import { ShopMainComponent } from './pages/shop_main/shop_main.component';
+import { ShopProductsComponent } from './pages/shop_products/shop_products.component';
+import { ShopOfferComponent } from './pages/shop_offer/shop_offer.component';
+import { ShopCartComponent } from './pages/shop_cart/shop_cart.component';
+import { MobileComponent } from './pages/mobile/mobile.component';
+import { GraphComponent } from './pages/components/graph/graph.component';
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 @NgModule({
@@ -15,7 +23,15 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     AppComponent,
     TasksComponent,
     ItemShopComponent,
-    ItemPreviewComponent
+    ItemPreviewComponent,
+    NavBarComponent,
+    TopBarComponent,
+    ShopMainComponent,
+    ShopProductsComponent,
+    ShopOfferComponent,
+    ShopCartComponent,
+    MobileComponent,
+    GraphComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),
