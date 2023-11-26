@@ -16,6 +16,7 @@ import { ShopOfferComponent } from './pages/shop_offer/shop_offer.component';
 import { ShopCartComponent } from './pages/shop_cart/shop_cart.component';
 import { MobileComponent } from './pages/mobile/mobile.component';
 import { GraphComponent } from './pages/components/graph/graph.component';
+import {ShopLoginComponent} from './pages/shop_login/shop_login.component';
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 @NgModule({
@@ -31,7 +32,8 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     ShopOfferComponent,
     ShopCartComponent,
     MobileComponent,
-    GraphComponent
+    GraphComponent,
+    ShopLoginComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),
