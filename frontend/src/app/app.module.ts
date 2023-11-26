@@ -21,6 +21,10 @@ import { FridgeMainComponent } from './pages/fridge_main/fridge_main.component';
 import { FridgeCategoryComponent } from './pages/fridge_category/fridge_category.component';
 import { FridgeListComponent } from './pages/fridge_list/fridge_list.component';
 import { FridgeRecipeComponent } from './pages/fridge_recipe/fridge_recipe.component';
+import { DetailPopupComponent } from './pages/detail_popup/detail_popup.component';
+import { VoicePopupComponent } from './pages/voice_popup/voice_popup.component';
+import { HandPopupComponent } from './pages/hand_popup/hand_popup.component';
+import { VirtualTryonComponent } from './pages/virtual_tryon/virtual_tryon.component';
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 @NgModule({
@@ -41,7 +45,11 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     FridgeMainComponent,
     FridgeCategoryComponent,
     FridgeListComponent,
-    FridgeRecipeComponent
+    FridgeRecipeComponent,
+    DetailPopupComponent,
+    VoicePopupComponent,
+    HandPopupComponent,
+    VirtualTryonComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),

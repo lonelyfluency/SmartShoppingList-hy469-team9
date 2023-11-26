@@ -11,6 +11,10 @@ import { FridgeMainComponent } from './pages/fridge_main/fridge_main.component';
 import { FridgeCategoryComponent } from './pages/fridge_category/fridge_category.component';
 import { FridgeListComponent } from './pages/fridge_list/fridge_list.component';
 import { FridgeRecipeComponent } from './pages/fridge_recipe/fridge_recipe.component';
+import { DetailPopupComponent } from './pages/detail_popup/detail_popup.component';
+import { VoicePopupComponent } from './pages/voice_popup/voice_popup.component';
+import { HandPopupComponent } from './pages/hand_popup/hand_popup.component';
+import { VirtualTryonComponent } from './pages/virtual_tryon/virtual_tryon.component';
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -27,6 +31,10 @@ const routes: Routes = [
   { path: 'fridge_category' , component: FridgeCategoryComponent},
   { path: 'fridge_list' , component: FridgeListComponent},
   { path: 'fridge_recipe' , component: FridgeRecipeComponent},
+  { path: 'detail_popup' , component: DetailPopupComponent},
+  { path: 'voice_popup' , component: VoicePopupComponent},
+  { path: 'hand_popup' , component: HandPopupComponent},
+  { path: 'virtual_tryon' , component: VirtualTryonComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 
 ];
