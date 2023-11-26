@@ -16,7 +16,11 @@ import { ShopOfferComponent } from './pages/shop_offer/shop_offer.component';
 import { ShopCartComponent } from './pages/shop_cart/shop_cart.component';
 import { MobileComponent } from './pages/mobile/mobile.component';
 import { GraphComponent } from './pages/components/graph/graph.component';
-import {ShopLoginComponent} from './pages/shop_login/shop_login.component';
+import { ShopLoginComponent } from './pages/shop_login/shop_login.component';
+import { FridgeMainComponent } from './pages/fridge_main/fridge_main.component';
+import { FridgeCategoryComponent } from './pages/fridge_category/fridge_category.component';
+import { FridgeListComponent } from './pages/fridge_list/fridge_list.component';
+import { FridgeRecipeComponent } from './pages/fridge_recipe/fridge_recipe.component';
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 @NgModule({
@@ -33,7 +37,11 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     ShopCartComponent,
     MobileComponent,
     GraphComponent,
-    ShopLoginComponent
+    ShopLoginComponent,
+    FridgeMainComponent,
+    FridgeCategoryComponent,
+    FridgeListComponent,
+    FridgeRecipeComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),
