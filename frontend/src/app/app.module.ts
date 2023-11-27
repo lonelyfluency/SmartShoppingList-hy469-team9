@@ -36,6 +36,8 @@ import {PhoneCartComponent} from "./pages/phone_cart/phone_cart.component";
 import {PhoneShoppingListManageComponent} from "./pages/phone_shoppingListManage/phone_shoppingListManage.component";
 import {PhoneShoppingListDeleteComponent} from "./pages/phone_shoppingListDelete/phone_shoppingListDelete.component";
 import {Phone_shopLocationComponent} from "./pages/phone_shopLocation/phone_shopLocation.component";
+import {PhoneQrCodeComponent} from "./pages/phone_qrcode/phone_qrcode.component";
+import {PhoneShopHistoryComponent} from "./pages/phone_shopHistory/phone_shopHistory.component";
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 // @ts-ignore
@@ -69,6 +71,8 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     PhoneShoppingListManageComponent,
     PhoneShoppingListDeleteComponent,
     Phone_shopLocationComponent,
+    PhoneQrCodeComponent,
+    PhoneShopHistoryComponent,
     DetailPopupComponent,
     VoicePopupComponent,
     HandPopupComponent,

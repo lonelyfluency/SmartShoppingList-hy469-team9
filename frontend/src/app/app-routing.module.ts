@@ -26,6 +26,8 @@ import {PhoneEditProfileComponent} from "./pages/phone_editProfile/shop_login.co
 import {PhoneShoppingListManageComponent} from "./pages/phone_shoppingListManage/phone_shoppingListManage.component";
 import {PhoneShoppingListDeleteComponent} from "./pages/phone_shoppingListDelete/phone_shoppingListDelete.component";
 import {Phone_shopLocationComponent} from "./pages/phone_shopLocation/phone_shopLocation.component";
+import {PhoneQrCodeComponent} from "./pages/phone_qrcode/phone_qrcode.component";
+import {PhoneShopHistoryComponent} from "./pages/phone_shopHistory/phone_shopHistory.component";
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -52,6 +54,8 @@ const routes: Routes = [
   { path: 'phone_cart' , component: PhoneCartComponent},
   { path: 'phone_shoppingListManage', component: PhoneShoppingListManageComponent},
   { path: 'phone_shoppingListDelete', component: PhoneShoppingListDeleteComponent},
+  { path: 'phone_qrcode', component: PhoneQrCodeComponent},
+  { path: 'phone_shop_history', component: PhoneShopHistoryComponent},
   { path: 'phone_shopLocation', component: Phone_shopLocationComponent},
   { path: 'detail_popup' , component: DetailPopupComponent},
   { path: 'voice_popup' , component: VoicePopupComponent},
