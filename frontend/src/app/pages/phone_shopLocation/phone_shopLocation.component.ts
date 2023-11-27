@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './phone_shopLocation.component.html',
   styleUrls: ['./phone_shopLocation.component.scss']
 })
-export class Phone_shopLocationComponent {
+export class PhoneShopLocationComponent {
 
 }

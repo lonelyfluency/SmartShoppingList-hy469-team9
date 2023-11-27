@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './phone_login.component.html',
   styleUrls: ['./phone_login.component.scss']
 })
-export class Phone_loginComponent {
+export class PhoneLoginComponent {
 
 }

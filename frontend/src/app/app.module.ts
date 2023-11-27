@@ -25,19 +25,19 @@ import { DetailPopupComponent } from './pages/detail_popup/detail_popup.componen
 import { VoicePopupComponent } from './pages/voice_popup/voice_popup.component';
 import { HandPopupComponent } from './pages/hand_popup/hand_popup.component';
 import { VirtualTryonComponent } from './pages/virtual_tryon/virtual_tryon.component';
-import {PhoneSignComponent} from "./pages/phone_sign/phone_sign.component";
-import {Phone_loginComponent} from "./pages/phone_login/phone_login.component";
-import {PhonePersonalInfoComponent} from "./pages/phone_personalInfo/phone_personalInfo.component";
-import {PhoneInterestsComponent} from "./pages/phone_interests/shop_login.component";
-import {PhoneAccountComponent} from "./pages/phone_account/phone_account.component";
-import {PhonePaymentComponent} from "./pages/phone_payment/phone_payment.component";
-import {PhoneEditProfileComponent} from "./pages/phone_editProfile/shop_login.component";
-import {PhoneCartComponent} from "./pages/phone_cart/phone_cart.component";
-import {PhoneShoppingListManageComponent} from "./pages/phone_shoppingListManage/phone_shoppingListManage.component";
-import {PhoneShoppingListDeleteComponent} from "./pages/phone_shoppingListDelete/phone_shoppingListDelete.component";
-import {Phone_shopLocationComponent} from "./pages/phone_shopLocation/phone_shopLocation.component";
-import {PhoneQrCodeComponent} from "./pages/phone_qrcode/phone_qrcode.component";
-import {PhoneShopHistoryComponent} from "./pages/phone_shopHistory/phone_shopHistory.component";
+import { PhoneSignComponent } from "./pages/phone_sign/phone_sign.component";
+import { PhoneLoginComponent } from "./pages/phone_login/phone_login.component";
+import { PhonePersonalInfoComponent } from "./pages/phone_personalInfo/phone_personalInfo.component";
+import { PhoneInterestsComponent } from "./pages/phone_interests/shop_login.component";
+import { PhoneAccountComponent } from "./pages/phone_account/phone_account.component";
+import { PhonePaymentComponent } from "./pages/phone_payment/phone_payment.component";
+import { PhoneEditProfileComponent } from "./pages/phone_editProfile/shop_login.component";
+import { PhoneCartComponent } from "./pages/phone_cart/phone_cart.component";
+import { PhoneShoppingListManageComponent } from "./pages/phone_shoppingListManage/phone_shoppingListManage.component";
+import { PhoneShoppingListDeleteComponent } from "./pages/phone_shoppingListDelete/phone_shoppingListDelete.component";
+import { PhoneShopLocationComponent } from "./pages/phone_shopLocation/phone_shopLocation.component";
+import { PhoneQrCodeComponent } from "./pages/phone_qrcode/phone_qrcode.component";
+import { PhoneShopHistoryComponent } from "./pages/phone_shopHistory/phone_shopHistory.component";
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 // @ts-ignore
@@ -61,7 +61,7 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     FridgeListComponent,
     FridgeRecipeComponent,
     PhoneSignComponent,
-    Phone_loginComponent,
+    PhoneLoginComponent,
     PhonePersonalInfoComponent,
     PhoneInterestsComponent,
     PhoneAccountComponent,
@@ -70,7 +70,7 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     PhoneCartComponent,
     PhoneShoppingListManageComponent,
     PhoneShoppingListDeleteComponent,
-    Phone_shopLocationComponent,
+    PhoneShopLocationComponent,
     PhoneQrCodeComponent,
     PhoneShopHistoryComponent,
     DetailPopupComponent,

@@ -17,17 +17,17 @@ import { DetailPopupComponent } from './pages/detail_popup/detail_popup.componen
 import { VoicePopupComponent } from './pages/voice_popup/voice_popup.component';
 import { HandPopupComponent } from './pages/hand_popup/hand_popup.component';
 import { VirtualTryonComponent } from './pages/virtual_tryon/virtual_tryon.component';
-import {Phone_loginComponent} from "./pages/phone_login/phone_login.component";
-import {PhonePersonalInfoComponent} from "./pages/phone_personalInfo/phone_personalInfo.component";
-import {PhoneInterestsComponent} from "./pages/phone_interests/shop_login.component";
-import {PhoneAccountComponent} from "./pages/phone_account/phone_account.component";
-import {PhonePaymentComponent} from "./pages/phone_payment/phone_payment.component";
-import {PhoneEditProfileComponent} from "./pages/phone_editProfile/shop_login.component";
-import {PhoneShoppingListManageComponent} from "./pages/phone_shoppingListManage/phone_shoppingListManage.component";
-import {PhoneShoppingListDeleteComponent} from "./pages/phone_shoppingListDelete/phone_shoppingListDelete.component";
-import {Phone_shopLocationComponent} from "./pages/phone_shopLocation/phone_shopLocation.component";
-import {PhoneQrCodeComponent} from "./pages/phone_qrcode/phone_qrcode.component";
-import {PhoneShopHistoryComponent} from "./pages/phone_shopHistory/phone_shopHistory.component";
+import { PhoneLoginComponent } from "./pages/phone_login/phone_login.component";
+import { PhonePersonalInfoComponent } from "./pages/phone_personalInfo/phone_personalInfo.component";
+import { PhoneInterestsComponent } from "./pages/phone_interests/shop_login.component";
+import { PhoneAccountComponent } from "./pages/phone_account/phone_account.component";
+import { PhonePaymentComponent } from "./pages/phone_payment/phone_payment.component";
+import { PhoneEditProfileComponent } from "./pages/phone_editProfile/shop_login.component";
+import { PhoneShoppingListManageComponent } from "./pages/phone_shoppingListManage/phone_shoppingListManage.component";
+import { PhoneShoppingListDeleteComponent } from "./pages/phone_shoppingListDelete/phone_shoppingListDelete.component";
+import { PhoneShopLocationComponent } from "./pages/phone_shopLocation/phone_shopLocation.component";
+import { PhoneQrCodeComponent } from "./pages/phone_qrcode/phone_qrcode.component";
+import { PhoneShopHistoryComponent } from "./pages/phone_shopHistory/phone_shopHistory.component";
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -45,7 +45,7 @@ const routes: Routes = [
   { path: 'fridge_list' , component: FridgeListComponent},
   { path: 'fridge_recipe' , component: FridgeRecipeComponent},
   { path: 'phone_sign' , component: PhoneSignComponent},
-  { path: 'phone_login' , component: Phone_loginComponent},
+  { path: 'phone_login' , component: PhoneLoginComponent},
   { path: 'phone_personalInfo' , component: PhonePersonalInfoComponent},
   { path: 'phone_interests' , component: PhoneInterestsComponent},
   { path: 'phone_account' , component: PhoneAccountComponent},
@@ -55,8 +55,8 @@ const routes: Routes = [
   { path: 'phone_shoppingListManage', component: PhoneShoppingListManageComponent},
   { path: 'phone_shoppingListDelete', component: PhoneShoppingListDeleteComponent},
   { path: 'phone_qrcode', component: PhoneQrCodeComponent},
-  { path: 'phone_shop_history', component: PhoneShopHistoryComponent},
-  { path: 'phone_shopLocation', component: Phone_shopLocationComponent},
+  { path: 'phone_shopHistory', component: PhoneShopHistoryComponent},
+  { path: 'phone_shopLocation', component: PhoneShopLocationComponent},
   { path: 'detail_popup' , component: DetailPopupComponent},
   { path: 'voice_popup' , component: VoicePopupComponent},
   { path: 'hand_popup' , component: HandPopupComponent},
