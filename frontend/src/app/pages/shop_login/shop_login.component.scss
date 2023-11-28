@@ -1,0 +1,77 @@
+.mobile-body {
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    background: #92C848;
+  }
+  
+  .mobile-body > div,
+  .mobile-body img {
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .left-panel,
+  .right-panel {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  
+  .left-panel {
+    width: 41.5%; /* roughly 798px / 1920px */
+    background: #D9D9D9;
+  }
+  
+  .right-panel {
+    width: 40.5%; /* roughly 778px / 1920px */
+    background: white;
+  }
+  
+  .text-camera,
+  .text-login-qr,
+  .text-scan-app {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    word-wrap: break-word;
+  }
+  
+  .text-camera {
+    font-size: 0.94vw; /* roughly 18px / 1920px */
+    color: black;
+  }
+  
+  .text-login-qr,
+  .text-scan-app {
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+  }
+  
+  .text-login-qr {
+    font-size: 1.66vw; /* roughly 32px / 1920px */
+  }
+  
+  .text-scan-app {
+    font-size: 1.66vw;
+  }
+  
+  .qr-image {
+    width: 15.6vw; /* roughly 300px / 1920px */
+    height: auto; /* maintain aspect ratio */
+  }
+  
+  .logo-image {
+    width: 34.1vw; /* roughly 655px / 1920px */
+    height: auto; /* maintain aspect ratio */
+  }
+  
+  @media screen and (max-width: 1920px) {
+    .text-camera,
+    .text-login-qr,
+    .text-scan-app {
+      font-size: calc(10px + 0.5vw); /* Adjust font size based on the width */
+    }
+  }
+  
+  
+  /* Additional media queries for different breakpoints (e.g., tablets, mobile phones) can be added to further refine the responsive behavior. */
+  
