@@ -1,1 +1,7 @@
-<p>graph works!</p>
+<div class="graph-container">
+    <div *ngFor="let i of info;let k = index;" class="graph-element" (click)="onClick(element, k)" #element>
+        <div class="bar" [ngStyle]="{ 'background-color': color, 'height': i.height + '%' }"></div>
+        <p>{{ i.date }}</p>
+    </div>
+    <div #lastElement style="visibility: hidden;"></div>
+</div>

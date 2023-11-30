@@ -12,7 +12,7 @@ import { FridgeMainComponent } from './pages/fridge_main/fridge_main.component';
 import { FridgeCategoryComponent } from './pages/fridge_category/fridge_category.component';
 import { FridgeListComponent } from './pages/fridge_list/fridge_list.component';
 import { FridgeRecipeComponent } from './pages/fridge_recipe/fridge_recipe.component';
-import {PhoneSignComponent} from "./pages/phone_sign/phone_sign.component";
+import { PhoneSignComponent } from "./pages/phone_sign/phone_sign.component";
 import { DetailPopupComponent } from './pages/detail_popup/detail_popup.component';
 import { VoicePopupComponent } from './pages/voice_popup/voice_popup.component';
 import { HandPopupComponent } from './pages/hand_popup/hand_popup.component';
@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'tasks', loadChildren: () => import('./pages/tasks/tasks.module').then(m => m.TasksModule) },
   { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
   { path: 'item-shop', component: ItemShopComponent},
-  { path: 'mobile', loadChildren:()=> import('./pages/components/nav-bar/nav-bar-routing.module').then(m => m.NavBarRoutingModule)},
+  { path: 'shop', loadChildren:()=> import('./pages/components/nav-bar/nav-bar-routing.module').then(m => m.NavBarRoutingModule)},
   { path: 'shop_main' , component: ShopMainComponent},
   { path: 'shop_products' , component: ShopProductsComponent},
   { path: 'shop_cart' , component: ShopCartComponent},

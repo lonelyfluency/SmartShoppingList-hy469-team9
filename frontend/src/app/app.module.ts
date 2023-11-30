@@ -14,7 +14,7 @@ import { ShopMainComponent } from './pages/shop_main/shop_main.component';
 import { ShopProductsComponent } from './pages/shop_products/shop_products.component';
 import { ShopOfferComponent } from './pages/shop_offer/shop_offer.component';
 import { ShopCartComponent } from './pages/shop_cart/shop_cart.component';
-import { MobileComponent } from './pages/mobile/mobile.component';
+import { ShopComponent } from './pages/shop/shop.component';
 import { GraphComponent } from './pages/components/graph/graph.component';
 import { ShopLoginComponent} from './pages/shop_login/shop_login.component';
 import { FridgeMainComponent } from './pages/fridge_main/fridge_main.component';
@@ -53,7 +53,7 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     ShopProductsComponent,
     ShopOfferComponent,
     ShopCartComponent,
-    MobileComponent,
+    ShopComponent,
     GraphComponent,
     ShopLoginComponent,
     FridgeMainComponent,

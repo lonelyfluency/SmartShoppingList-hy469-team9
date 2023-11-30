@@ -4,20 +4,20 @@ import { ShopMainComponent } from '../../shop_main/shop_main.component';
 import { ShopProductsComponent } from '../../shop_products/shop_products.component';
 import { ShopCartComponent } from '../../shop_cart/shop_cart.component';
 import { ShopOfferComponent } from '../../shop_offer/shop_offer.component';
-import { MobileComponent } from '../../mobile/mobile.component';
+import { ShopComponent } from '../../shop/shop.component';
 
 
 
 const routes: Routes = [
     {
       path: '',
-      component: MobileComponent,
+      component: ShopComponent,
       children: [
         { path: 'shop_main', component: ShopMainComponent },
         { path: 'shop_products', component: ShopProductsComponent},
         { path: 'shop_cart', component: ShopCartComponent},
         { path: 'shop_offer', component: ShopOfferComponent},
-        { path: '**', redirectTo: 'nutrition', pathMatch: 'full' },]
+        { path: '**', redirectTo: 'shop_main', pathMatch: 'full' },]
     },
   
   
