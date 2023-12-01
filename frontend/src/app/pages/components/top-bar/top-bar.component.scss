@@ -1,33 +1,79 @@
-.top-bar {
-    width: 100%;
-    position: fixed; // Fixed position to the bottom of the page
-    bottom: 0;
-    left: 0;
-    background-color: #92C848; // Match the color from your mockup
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); // Optional: adds a slight shadow for depth
-    z-index: 100; // Ensure it's above other elements
-  
-    nav {
-      display: flex;
-      justify-content: space-between; // Space out the logo and any navigation items
-      align-items: center; // Center items vertically
-      padding: 0 10%; // Give some space on the sides
-  
-      h1 {
-        color: white; // Or any color that matches your design
-        font-size: 1.5rem; // Adjust the size as needed
-      }
-  
-      img {
-        height: 50px; // Adjust as per your design
-      }
-    }
+div {
+  * {
+    margin: 0;
+    padding: 0;
   }
-  
-  // Add any media queries for responsive adjustments
-  @media (max-width: 768px) {
-    .top-bar nav h1 {
-      font-size: 1rem; // Smaller font size for mobile
-    }
-  }
-  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 8%;
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  background-color: #92C848;
+  border-radius: 10px 10px 0px 0px;
+  filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 100;
+}
+
+.interaction-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  padding: 10px; /* Adjust padding to match the desired size */
+  margin-right: 10px; /* Spacing between buttons */
+  cursor: pointer;
+  line-height: 0; /* Removes extra line-height space from the button */
+}
+
+.icon-button img {
+  display: block; /* Removes extra space under the image */
+  width: 30px; /* Fixed width for the icons */
+  height: 30px; /* Fixed height for the icons */
+}
+
+.logo {
+  width: auto;
+  height: 70%; /* Adjust the height to fit within the navbar */
+  order: 1; /* Ensures the logo is in the middle */
+  flex-grow: 0; /* Prevents the logo from growing */
+  padding: 0 20px; /* Adds some horizontal space around the logo */
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  border-radius: 22px;
+  overflow: hidden;
+  flex-grow: 2; /* Allows the search container to grow */
+  max-width: 300px; /* Maximum width of the search bar */
+}
+
+.search-container input[type="text"] {
+  border: none;
+  padding: 10px 15px;
+  width: 100%; /* Ensures the input uses all available space */
+}
+
+.search-container .search-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-container .search-button img {
+  width: 20px; /* Fixed width for the search icon */
+  height: 20px; /* Fixed height for the search icon */
+}
