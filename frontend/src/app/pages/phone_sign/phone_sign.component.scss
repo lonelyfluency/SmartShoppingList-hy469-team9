@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.username-input {
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.username {
+  color: grey;
+  font-size: x-large;
+}
+
+.heading {
+  margin-left: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.sign-text {
+  margin-left: 5px;
+  font-size: small;
+  color: grey;
+  padding: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
