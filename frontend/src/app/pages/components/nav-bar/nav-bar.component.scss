@@ -1,38 +1,55 @@
 #nav-container {
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  background-color: #d9d9d9; /* Dark grey background */
+  border-radius: 10px; /* Rounded corners */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Shadow for depth */
   width: 10vw; /* 10% of the viewport width */
-  background-color: #d9d9d9;
-  height: 100vh; /* 100% of the viewport height */
+  height: 100vh; /* Full height of the viewport */
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-}
+  z-index: 100;
+  
+  #nav-bar {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      height: 100%; /* Full height */
+      justify-content: space-between;
+  
+      a {
+          text-decoration: none;
+          width: auto; /* Auto width, since we're now dealing with height */
+          height: 20%; /* Each item takes roughly 20% of the vertical space */
+          border-radius: 10px; /* Rounded corners for each item */
+          margin: 1% 2%; /* Adjusted margin for aesthetics */
+          padding: 2% 0; /* Padding adjusted for vertical layout */
 
-#nav-bar a {
-  flex: 1; /* This will distribute the space evenly among the anchor tags */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center the content vertically */
-  align-items: center; /* Center the content horizontally */
-  text-align: center;
-  padding: 5px;
-}
+          div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center; /* Center content vertically and horizontally */
+              
+              img {
+                  width: 50%; /* Adjusted width for icons */
+                  height: auto; /* Maintain aspect ratio */
+              }
 
-#nav-bar a div {
-  width: 100%; /* Use the full width of the parent */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#nav-bar a img {
-  width: auto; /* Maintain the aspect ratio of the image */
-  max-height: 100%; /* Use up to 100% of the parent's height if necessary */
-}
-
-#nav-bar a p {
-  font-size: 1em; /* Use an appropriate font size that scales with the zoom */
+              p {
+                  color: #090909; /* Off-white color for text */
+                  padding: 2%;
+                  font-weight: 500;
+                  font-size: 1em; /* Adjust font size as needed */
+              }
+          }
+      }
+  
+      a.active {
+          background-color: #d9d9d9; /* Lighter grey for active state */
+      }
+  }
 }
