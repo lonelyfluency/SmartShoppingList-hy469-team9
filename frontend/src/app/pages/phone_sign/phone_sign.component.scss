@@ -2,14 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* or any color you prefer */
+  background-color: #fff;
 }
 
 .mobile-body {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  text-align: center; /* Center everything for a mobile view */
+  text-align: center;
 }
 
 .logo-container {
@@ -17,12 +17,12 @@ body {
 }
 
 .logo-container img {
-  width: 50%; /* Adjust according to your image size */
+  width: 50%;
   height: auto;
 }
 
 .heading {
-  font-size: 2em; /* Increased font size for the heading */
+  font-size: 2em;
   margin-bottom: 0.5em;
 }
 
@@ -62,15 +62,15 @@ body {
 }
 
 button {
-  background-color: #4CAF50; /* Color for the button */
+  background-color: #4CAF50;
   color: white;
   padding: 15px;
   border: none;
-  border-radius: 20px; /* Rounded corners for the button */
-  width: 100%; /* Full width button */
+  border-radius: 20px;
+  width: 100%;
   font-size: 1.2em;
   cursor: pointer;
-  margin-bottom: 2em; /* Space before the login link */
+  margin-bottom: 2em;
 }
 
 button:hover {
