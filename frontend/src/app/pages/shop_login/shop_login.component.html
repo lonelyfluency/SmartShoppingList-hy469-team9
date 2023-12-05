@@ -6,49 +6,11 @@
       <!-- <div style="width: 798px; height: 829px; left: 104px; top: 108px; position: absolute; background: #D9D9D9"></div> -->
       <!-- <div style="left: 408px; top: 535px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">Camera Realtime</div> -->
       <div style="width: 798px; height: 829px; left: 104px; top: 108px; position: absolute; background: #D9D9D9">
-        <video id="video" width="798px" height="829px" autoplay="autoplay"></video>
-        <input type="button" title="HTML5camera" value="Open Camera" onclick="getMedia()" />
-        <input type="button" title="CloseCamera" value="Close Camera" onclick="stopMedia(video)" />
-        <button id="snap" onclick="takePhoto()">Shot</button>
-        <br> 
-        <canvas id="canvas" width="500px" height="500px"></canvas>
-        <script>
-            function getMedia() {
-                let constraints = {
-                    //参数
-                    video: {width: 500, height: 500},
-                    audio: true
-                };
-                //获得video摄像头区域
-                let video = document.getElementById("video");
-                //返回的Promise对象
-                let promise = navigator.mediaDevices.getUserMedia(constraints);
-                //then()异步，调用MediaStream对象作为参数
-                promise.then(function (MediaStream) {
-                    video.srcObject = MediaStream;
-                    video.play();
-                });
-            }
-      
-            function takePhoto() {
-                //获得Canvas对象
-                //let video = document.getElementById("video");
-                let canvas = document.getElementById("canvas");
-                let ctx = canvas.getContext('2d');
-                //绘图
-                ctx.drawImage(video, 0, 0, 300, 300);
-            }
-      
-            function stopMedia(videoElem) {
-                const stream = videoElem.srcObject;
-          const tracks = stream.getTracks();
-                tracks.forEach(function(track) {
-            track.stop();  //停止视频流
-        });
-      
-          videoElem.srcObject = null;  
-            } 
-        </script>
+        <video #video width="798px" height="829px" autoplay></video>
+        <button (click)="getMedia()">Open Camera</button>
+        <button (click)="stopMedia()">Close Camera</button>
+        <button (click)="takePhoto()">Shot</button>
+        <canvas #canvas width="300px" height="300px"></canvas>
       </div>
       <div style="width: 778px; height: 829px; left: 1033px; top: 108px; position: absolute; background: white">
         <div style="left: 229px; top: 661px; position: absolute; color: #333333; font-size: 32px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Log in with QR Code</div>
@@ -60,20 +22,3 @@
   </div>
 </html>
   
-
-
-
-<!-- <div>
-  <webcam [height]="400"
-          [width]="600"
-          [trigger]="triggerObservable"
-          (imageCapture)="handleImage($event)">
-   </webcam>
-   
-  <button class="actionBtn" (click)="triggerSnapshot();">
-      Click Here and take the Shot</button>
-    
-  <div class="snapshot" *ngIf="webcamImage">
-    <h2>Here is your image!</h2>
-    <img [src]="webcamImage.imageAsDataUrl"/>
-  </div> -->
