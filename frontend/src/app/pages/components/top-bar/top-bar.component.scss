@@ -1,69 +1,60 @@
-div {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
+.bottom-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 90%; /* Adjust width to account for 10vw offset */
   height: 8%;
   position: fixed;
   bottom: 0;
-  left: 10%;
+  left: 10vw; /* Start 10vw from the left to avoid overlapping the left navigation bar */
   background-color: #92C848;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
   z-index: 100;
+  padding: 0 1vw; /* Add some padding on the sides if needed */
 }
 
-.interaction-icons {
+.left-section {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  flex-grow: 1;
+}
+
+.interaction-text {
+  margin-right: 10px; /* Space after the text */
+  color: #FFF; /* Assuming white text color */
 }
 
 .icon-button {
   background: none;
   border: none;
-  border-radius: 50%; /* Makes the button circular */
-  padding: 10px; /* Adjust padding to match the desired size */
   margin-right: 10px; /* Spacing between buttons */
   cursor: pointer;
-  line-height: 0; /* Removes extra line-height space from the button */
 }
 
 .icon-button img {
-  display: block; /* Removes extra space under the image */
   width: 30px; /* Fixed width for the icons */
   height: 30px; /* Fixed height for the icons */
 }
 
 .logo {
-  width: auto;
-  height: 70%; /* Adjust the height to fit within the navbar */
-  order: 1; /* Ensures the logo is in the middle */
-  flex-grow: 0; /* Prevents the logo from growing */
-  padding: 0 20px; /* Adds some horizontal space around the logo */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80%; /* Adjust the height to fit within the navbar */
 }
 
 .search-container {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   background-color: white;
   border-radius: 22px;
   overflow: hidden;
-  flex-grow: 2; /* Allows the search container to grow */
-  max-width: 300px; /* Maximum width of the search bar */
+  margin-left: auto; /* Pushes the search container to the right */
 }
 
 .search-container input[type="text"] {
   border: none;
   padding: 10px 15px;
-  width: 100%; /* Ensures the input uses all available space */
 }
 
 .search-container .search-button {
