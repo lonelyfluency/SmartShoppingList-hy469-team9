@@ -1,0 +1,18 @@
+.shop-main-container {
+    position: relative;
+    background: white;
+    margin-left: 10vw; /* Left space for the navigation bar */
+    margin-bottom: 8vh; /* Bottom space for the bottom bar */
+    height: calc(92vh - 8vh); /* 92% of the viewport height minus the height of the bottom bar */
+    width: 90vw; /* Remaining width */
+  }
+  
+  app-date-time {
+    position: absolute;
+    top: 0; /* Align to the top of the remaining space */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset by half the width of the date-time component to truly center it */
+    width: auto; /* Let the component decide its width */
+    margin-top: 1vh; /* Optional: gives some space from the top */
+  }
+  
