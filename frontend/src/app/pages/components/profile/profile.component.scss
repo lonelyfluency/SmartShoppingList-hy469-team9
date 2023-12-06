@@ -1,0 +1,49 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9; /* Match the grey background of date-time-container */
+  border-radius: 5px; /* Match the border radius */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 500px; /* Make the profile component wider as requested */
+  height: 150px;
+
+  .profile-picture {
+    width: 80px; /* Slightly larger size for the picture */
+    height: 80px;
+    border-radius: 50%; /* Circular image */
+    margin-right: 15px; /* Increase spacing to accommodate wider layout */
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+  }
+
+  .profile-name {
+    margin: 0;
+    font-size: 2rem; /* Match the font size of date */
+    font-weight: bold;
+  }
+
+  .profile-greeting {
+    margin: 0;
+    font-size: 1.5rem; /* Slightly smaller than the name for hierarchy */
+    color: #666; /* Grey text for the greeting */
+  }
+
+  .menu-icon {
+    margin-left: auto; /* Pushes the menu to the end of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Even spacing between the lines */
+    
+    span {
+      display: block;
+      height: 3px; /* Height of the menu lines */
+      width: 100%;
+      background: #666; /* Color of the menu lines */
+    }
+  }
+}

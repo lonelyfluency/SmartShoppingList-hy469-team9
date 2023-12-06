@@ -1,11 +1,16 @@
 .shop-main-container {
-    position: relative;
-    background: white;
-    margin-left: 10vw; /* Left space for the navigation bar */
-    margin-bottom: 8vh; /* Bottom space for the bottom bar */
-    height: calc(92vh - 8vh); /* 92% of the viewport height minus the height of the bottom bar */
-    width: 90vw; /* Remaining width */
-  }
+  position: relative;
+  background: white;
+  margin-left: 10vw; /* Left space for the navigation bar */
+  margin-bottom: 8vh; /* Bottom space for the bottom bar */
+  height: calc(92vh - 8vh); /* 92% of the viewport height minus the height of the bottom bar */
+  width: 90vw; /* Remaining width */
+  padding-top: 2vh; /* Added padding to give space to the top elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center the children horizontally */
+  justify-content: start; // Aligns children to the top of the container
+}
   
   app-date-time {
     position: absolute;
@@ -16,3 +21,9 @@
     margin-top: 1vh; /* Optional: gives some space from the top */
   }
   
+  app-profile {
+    margin-top: 1vh; /* Adds space on top */
+    align-self: flex-start; /* Aligns the profile component to the start of the flex container */
+    margin-left: 5vw; /* Adds some space from the left */
+    width: auto; /* Adjust width as needed */
+  }

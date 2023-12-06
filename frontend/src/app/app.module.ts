@@ -11,6 +11,7 @@ import { ItemPreviewComponent } from './pages/item-shop/item-preview/item-previe
 import { NavBarComponent } from './pages/components/nav-bar/nav-bar.component';
 import { TopBarComponent } from './pages/components/top-bar/top-bar.component';
 import { DateTimeComponent } from './pages/components/date-time/date-time.component';
+import { ProfileComponent } from './pages/components/profile/profile.component';
 import { ShopMainComponent } from './pages/shop_main/shop_main.component';
 import { ShopProductsComponent } from './pages/shop_products/shop_products.component';
 import { ShopOfferComponent } from './pages/shop_offer/shop_offer.component';
@@ -51,6 +52,7 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     NavBarComponent,
     TopBarComponent,
     DateTimeComponent,
+    ProfileComponent,
     ShopMainComponent,
     ShopProductsComponent,
     ShopOfferComponent,
