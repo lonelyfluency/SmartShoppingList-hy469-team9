@@ -7,17 +7,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 2rem; // Adjust font size as needed
-  width: 300px; // Adjust width as needed
-  height: 150px;
+  font-size: 1.1vw; // Adjust font size as needed
+  width: 25vw; // Adjust width as needed
+  height: 12vh;
+  max-width: 350px; /* Maximum width to maintain design integrity */
+  max-height: 120px; /* Maximum height to maintain design integrity */
+  
   margin: auto; // Center the container if it's the only element
 }
 
 .date {
   font-weight: bold; // Make the date bold
-  margin-bottom: 5px; // Space between date and time
+  margin-bottom: 0.3em; // Space between date and time
 }
 
 .time {
-  font-size: 2.4rem; // Slightly larger font size for time
+  font-size: 1.5vw; // Slightly larger font size for time
 }

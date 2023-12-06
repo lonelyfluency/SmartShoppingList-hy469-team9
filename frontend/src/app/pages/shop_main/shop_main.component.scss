@@ -3,27 +3,34 @@
   background: white;
   margin-left: 10vw; /* Left space for the navigation bar */
   margin-bottom: 8vh; /* Bottom space for the bottom bar */
-  height: calc(92vh - 8vh); /* 92% of the viewport height minus the height of the bottom bar */
-  width: 90vw; /* Remaining width */
-  padding-top: 2vh; /* Added padding to give space to the top elements */
+  height: calc(92vh - 8vh); /* Relative to the viewport height */
+  width: 90vw; /* Relative to the viewport width */
   display: flex;
   flex-direction: column;
-  align-items: center; /* This will center the children horizontally */
-  justify-content: start; // Aligns children to the top of the container
+  align-items: flex-start; /* Align children to the start of the container */
+  padding-top: 1vh;
 }
-  
-  app-date-time {
-    position: absolute;
-    top: 0; /* Align to the top of the remaining space */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Offset by half the width of the date-time component to truly center it */
-    width: auto; /* Let the component decide its width */
-    margin-top: 1vh; /* Optional: gives some space from the top */
-  }
-  
-  app-profile {
-    margin-top: 1vh; /* Adds space on top */
-    align-self: flex-start; /* Aligns the profile component to the start of the flex container */
-    margin-left: 5vw; /* Adds some space from the left */
-    width: auto; /* Adjust width as needed */
-  }
+
+.top-section {
+  display: flex;
+  width: 100%; /* Take full width of the container */
+  justify-content: space-between; /* Distribute children on both ends */
+  align-items: center;
+  padding: 1vh 0; /* Padding top and bottom relative to viewport height */
+}
+
+app-profile {
+  /* Align the profile to the left within the top-section */
+  align-self: flex-start;
+  margin-left: 2vw; /* Margin left relative to viewport width */
+  min-height: 10vh; /* Minimum height relative to viewport height */
+  width: auto; /* Let the component decide its width */
+}
+
+app-date-time {
+  /* Center the date-time within the top-section */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 10vh; /* Minimum height relative to viewport height */
+}
