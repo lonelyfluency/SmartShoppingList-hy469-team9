@@ -16,7 +16,7 @@
   width: 100%; /* Take full width of the container */
   justify-content: space-between; /* Distribute children on both ends */
   align-items: center;
-  padding: 1vh 0; /* Padding top and bottom relative to viewport height */
+  padding: 1vh 2vw; /* Padding top and bottom relative to viewport height */
 }
 
 app-profile {
@@ -33,4 +33,21 @@ app-date-time {
   left: 50%;
   transform: translateX(-50%);
   min-height: 10vh; /* Minimum height relative to viewport height */
+}
+
+.add-to-cart-button {
+  background-color: #92C848; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  border-radius: 5px; /* Rounded corners to match design */
+  font-size: 2vw; /* Font size */
+  margin-right: 2vw;
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  align-self: center; /* Ensure the button is centered to the parent's cross axis */
+}
+
+.add-to-cart-button:hover {
+  background-color: #7aa836; /* Slightly darker green on hover for visual feedback */
 }
