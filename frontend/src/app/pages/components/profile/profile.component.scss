@@ -1,18 +1,22 @@
 .profile-container {
   display: flex;
   align-items: center;
-  background-color: #d9d9d9; /* Match the grey background of date-time-container */
-  border-radius: 5px; /* Match the border radius */
-  padding: 10px;
+  background-color: #d9d9d9; /* Grey background */
+  border-radius: 5px; /* Rounded corners */
+  padding: 1vw; /* Padding relative to viewport width */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  width: 500px; /* Make the profile component wider as requested */
-  height: 150px;
+  width: 25vw; /* Width relative to viewport width */
+  height: 12vh; /* Height relative to viewport height */
+  max-width: 500px; /* Maximum width to maintain design integrity */
+  max-height: 120px; /* Maximum height to maintain design integrity */
 
   .profile-picture {
-    width: 80px; /* Slightly larger size for the picture */
-    height: 80px;
+    width: 5vw; /* Width relative to viewport width */
+    height: 5vw; /* Height relative to viewport width to maintain aspect ratio */
     border-radius: 50%; /* Circular image */
-    margin-right: 15px; /* Increase spacing to accommodate wider layout */
+    margin-right: 1vw; /* Right margin relative to viewport width */
+    max-width: 90px; /* Maximum width to maintain design integrity */
+    max-height: 90px; /* Maximum height to maintain design integrity */
   }
 
   .profile-info {
@@ -23,14 +27,16 @@
 
   .profile-name {
     margin: 0;
-    font-size: 2rem; /* Match the font size of date */
+    font-size: 1.5vw; /* Font size relative to viewport width */
     font-weight: bold;
+    max-font-size: 2rem; /* Maximum font size to maintain design integrity */
   }
 
   .profile-greeting {
     margin: 0;
-    font-size: 1.5rem; /* Slightly smaller than the name for hierarchy */
-    color: #666; /* Grey text for the greeting */
+    font-size: 1.2vw; /* Font size relative to viewport width */
+    color: #000000; /* Black text for the greeting */
+    max-font-size: 1.7rem; /* Maximum font size to maintain design integrity */
   }
 
   .menu-icon {
@@ -38,12 +44,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around; /* Even spacing between the lines */
+    height: 3vh; /* Height relative to viewport height */
+    max-height: 30px; /* Maximum height to maintain design integrity */
     
     span {
       display: block;
-      height: 3px; /* Height of the menu lines */
+      height: 0.75vh; /* Height relative to viewport height */
       width: 100%;
-      background: #666; /* Color of the menu lines */
+      background: #ffffff; /* White color for the menu lines */
+      max-height: 3px; /* Maximum height to maintain design integrity */
     }
   }
 }
