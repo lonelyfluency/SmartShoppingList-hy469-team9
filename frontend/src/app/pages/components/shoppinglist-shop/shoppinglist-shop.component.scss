@@ -1,0 +1,111 @@
+.shopping-list-wrapper {
+  background-color: #d9d9d9; /* Grey background */
+  padding: 10px; /* Padding inside the container */
+  border-radius: 5px; /* Rounded corners */
+  position: relative; /* Needed for absolute positioning of the title */
+  display: flex;
+  width: 100%;
+}
+
+.shopping-list-title {
+  position: absolute; /* Absolute positioning */
+  top: 10px; /* Position at the top of the container */
+  left: 10px; /* Position from the left of the container */
+  margin: 0; /* Remove default margins */
+  color: #333; /* Title text color */
+  font-size: 1.5vw; /* Title font size */
+}
+
+
+.shopping-list-container {
+  width: 75%; /* 75% of the wrapper's width */
+  white-space: nowrap; /* Prevents wrapping of inline elements like item boxes */
+  background-color: #d9d9d9; /* Grey background for the container */
+  padding: 1vw 0; /* Padding relative to the width of the viewport */
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  align-items: center;
+  gap: 1vw; /* Space between items relative to the width of the viewport */
+  border-radius: 5px; /* Rounded corners for the container */
+  margin: 1vh 0; /* Vertical margin relative to the height of the viewport */
+  margin-top: 2vh; /* Make space for the title */
+}
+
+.item-box {
+  display: inline-block; /* Aligns items in a row and allows horizontal scrolling */
+  // width: auto; /* Automatic width based on content */
+  margin-right: 10px; /* Space between items */
+  flex: 0 0 auto; /* Do not grow or shrink, but be automatically sized */
+  width: 9vw; /* Width relative to the width of the viewport */
+  height: 12vh; /* Height relative to the height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* White background for each item */
+  border: 1px solid #ccc; /* Border for each item */
+  border-radius: 5px; /* Rounded corners for each item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for each item */
+
+  cursor: pointer;
+
+  &.selected {
+    border-color: yellow;
+  }
+
+  .item-image {
+    height: 5vh;
+    width: 5vw;
+    margin-bottom: 5px;
+  }
+
+  .item-info {
+    text-align: center;
+  }
+
+  .item-name {
+    font-weight: bold;
+  }
+
+  .item-quantity {
+    background-color: #92C848;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+}
+
+.button-container {
+  width: 25%; /* 25% of the wrapper's width */
+  display: flex;
+  align-items: center; /* Center the button vertically */
+  justify-content: center; /* Center the button horizontally */
+  padding: 10px; /* Padding inside the container */
+  justify-content: space-around;
+}
+
+.select-all-button,
+.select-reverse-button {
+  background-color: #92C848; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 1rem; /* Font size for the text inside the button */
+  cursor: pointer; /* Cursor to indicate it's a button */
+  margin: 10px 0; /* Margin above and below the button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for aesthetic */
+  align-self: center; /* Center the button if the container uses flex */
+  flex-basis: 48%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1%; /* This will add space between the buttons */
+}
+
+/* Add responsive breakpoints if necessary */
+@media (max-width: 768px) {
+  .item-box {
+    width: 30vw; /* Increase width for smaller viewports */
+    height: 25vh; /* Increase height for smaller viewports */
+  }
+}

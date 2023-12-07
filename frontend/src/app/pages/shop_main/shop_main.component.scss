@@ -19,6 +19,14 @@
   padding: 1vh 2vw; /* Padding top and bottom relative to viewport height */
 }
 
+.second-section {
+  display: flex;
+  width: 100%; /* Take full width of the container */
+  justify-content: space-between; /* Distribute children on both ends */
+  align-items: center;
+  padding: 2vh 2vw; /* Padding top and bottom relative to viewport height */
+}
+
 app-profile {
   /* Align the profile to the left within the top-section */
   align-self: flex-start;
@@ -50,4 +58,10 @@ app-date-time {
 
 .add-to-cart-button:hover {
   background-color: #7aa836; /* Slightly darker green on hover for visual feedback */
+}
+
+app-shoppinglist-shop {
+  display: flex;
+  width: 100%; /* Full width to allow internal flexing of items */
+  padding: 0 2vw; /* Left and right padding to align with profile and button */
 }
