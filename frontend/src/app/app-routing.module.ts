@@ -19,7 +19,7 @@ import { HandPopupComponent } from './pages/hand_popup/hand_popup.component';
 import { VirtualTryonComponent } from './pages/virtual_tryon/virtual_tryon.component';
 import { PhoneLoginComponent } from "./pages/phone_login/phone_login.component";
 import { PhonePersonalInfoComponent } from "./pages/phone_personalInfo/phone_personalInfo.component";
-import { PhoneInterestsComponent } from "./pages/phone_interests/shop_login.component";
+import { PhoneInterestsComponent } from "./pages/phone_interests/phone_interests.component";
 import { PhoneAccountComponent } from "./pages/phone_account/phone_account.component";
 import { PhonePaymentComponent } from "./pages/phone_payment/phone_payment.component";
 import { PhoneEditProfileComponent } from "./pages/phone_editProfile/shop_login.component";

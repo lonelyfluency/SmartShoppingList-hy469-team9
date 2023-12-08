@@ -1,0 +1,289 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.mobile-body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 50%;
+  height: auto;
+}
+
+.heading {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.login-text {
+  font-size: 1em;
+  color: grey;
+  margin-bottom: 2em;
+}
+
+.input-container {
+  margin-bottom: 1em;
+}
+
+.input-container label {
+  display: block;
+  text-align: left;
+  color: grey;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 1em;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #989595;
+  color: white;
+  padding: 15px;
+  border-style: solid;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+button:hover {
+}
+
+.login-link p {
+  color: grey;
+}
+
+.login-link a {
+  color: #007BFF;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.icon-interesting-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: lightblue;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-interesting-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-electronics-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #FF6262;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-electronics-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-groceries-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #FFB038;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-groceries-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-kids-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #DDFC20;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-kids-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-sports-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #92C848;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-sports-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-health-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #FD2121;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-health-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+.icon-pet-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #FF0CBB;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-pet-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-mens-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: brown;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+.icon-mens-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-womens-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #05FF00;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-womens-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.icon-students-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #001AFF;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: x-small;
+  color: #090909;
+}
+
+.icon-students-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.tiny-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+.tiny-button.white {
+  background-color: #fff;
+}
+
+.tiny-button.black {
+  background-color: #000;
+}
+
+
+
