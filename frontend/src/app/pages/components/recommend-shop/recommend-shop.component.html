@@ -1,0 +1,16 @@
+<div class="recommend-container">
+  <h2 class="recommend-title">Recommended for You (Interests and history)</h2>
+  <div class="items-container">
+    <!-- Loop through recommended items here -->
+    <div class="item-box" *ngFor="let item of recommendedItems" (click)="selectItem(item)" [class.selected]="item.selected">
+      <div class="top-level">
+        <img [src]="item.imageUrl" [alt]="item.name" class="item-image">
+        <div class="item-price">{{ item.price }}</div>
+      </div>
+      <div class="second-level">
+        <div class="item-name">{{ item.name }}</div>
+      </div>
+    </div>
+    
+  </div>
+</div>

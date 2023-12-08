@@ -1,0 +1,71 @@
+.bestseller-container {
+  background-color: #d9d9d9; /* Grey background */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding inside the container */
+  margin-top: 20px; /* Space from the previous component */
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.bestseller-title {
+  font-size: 1.5vw; /* Relative font size */
+  color: #333; /* Text color */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.items-container {
+  display: flex;
+  gap: 10px; /* Space between items */
+}
+
+.item-box {
+  flex: 0 0 auto; /* Do not grow or shrink */
+  width: 20vw; /* Relative width to the viewport */
+  padding: 10px; /* Padding inside each item */
+  background-color: white; /* Background for each item */
+  text-align: center; /* Center text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border: 1px solid #ccc; /* Border for each item */
+  border-radius: 5px; /* Rounded corners for each item */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  &.selected {
+    border-color: yellow;
+  }
+}
+
+.top-level {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-level {
+  width: 100%;
+  text-align: center;
+}
+
+.item-image {
+  width: 50%; /* Maintain aspect ratio */
+  height: 10vh; /* Relative height to the viewport */
+  margin-bottom: 5px; /* Space below the image */
+}
+
+.item-price {
+  color: #92C848; /* Price color */
+  font-weight: bold; /* Bold font weight */
+  margin-bottom: 5px; /* Space below the price */
+  margin-right: 10px;
+  font-size: 1vw;
+}
+
+.item-name {
+  font-size: 1vw; /* Font size for the name */
+}
+
