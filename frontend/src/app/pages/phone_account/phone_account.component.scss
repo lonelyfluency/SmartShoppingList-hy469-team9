@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.mobile-body {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 50%;
+  height: auto;
+}
+
+
+.heading {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.login-text {
+  font-size: 1em;
+  color: grey;
+  margin-bottom: 2em;
+}
+
+.input-container {
+  margin-bottom: 1em;
+}
+
+.input-container label {
+  display: block;
+  text-align: left;
+  color: grey;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 1em;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+
+.login-link p {
+  color: grey;
+}
+
+.login-link a {
+  color: #007BFF;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #73AD21;
+}
+
+.profile-image {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: x-small;
+  border: none;
+}
+
+.icon-button img {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.green-box {
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.green-box img{
+  width: 70%;
+
+}
