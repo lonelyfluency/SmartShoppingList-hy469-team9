@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.mobile-body {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 50%;
+  height: auto;
+}
+.heading {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.card-details h3{
+
+}
+
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
