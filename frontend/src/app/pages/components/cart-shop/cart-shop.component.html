@@ -1,0 +1,30 @@
+<div class="main-container">
+  <div class="cart-container">
+    <div class="item-box" *ngFor="let item of cartItems" [class.selected]="item.selected" (click)="toggleSelection(item)">
+      <img [src]="item.imageUrl" [alt]="item.name" class="item-image">
+      <div class="item-details">
+        <div class="item-name">{{ item.name }}</div>
+        <div class="amount-selector">
+          <button (click)="decrement(item)">-</button>
+          <span>{{ item.amount }}</span>
+          <button (click)="increment(item)">+</button>
+        </div>
+        <div class="item-price">{{ item.price | currency:'EUR' }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout-container">
+    <button (click)="deleteSelectedItems()">Delete Selected Items</button>
+    <div class="payment-methods">
+      <div *ngFor="let method of paymentMethods" (click)="selectPaymentMethod(method)" [class.selected]="method.selected">
+        {{ method.name }}
+      </div>
+    </div>
+    <div class="total-price">
+      Total price: €{{ getTotalPrice() }}
+    </div>
+    <button (click)="proceedToCheckout()">Proceed to checkout</button>
+  </div>
+</div>
+
+

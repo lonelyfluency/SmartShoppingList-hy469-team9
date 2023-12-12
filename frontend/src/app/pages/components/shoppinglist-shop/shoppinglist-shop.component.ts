@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 interface ShoppingItem {
   name: string;
   quantity: number;
+  price: string;
   imageUrl: string;
   selected: boolean;
 }

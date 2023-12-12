@@ -1,0 +1,136 @@
+.main-container {
+  display: flex;
+  height: 86vh; // Set the main container to full viewport height
+  width: 100%; // Set the main container to full width of the viewport
+  margin: 0; // Reset any default margin
+
+  .cart-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: auto; // Enable scrolling if content overflows
+
+    .item-box {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: white;
+      border-radius: 5px;
+      height: 10vh; // Use min-height for flexible box height
+    
+      &.selected {
+        border: 2px solid yellow;
+      }
+    
+      .item-image {
+        width: 15%;
+        height: 85%; // Keep the height relative to the item box
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+    
+      .item-details {
+        display: flex;
+        align-items: center;
+        width: 98%;
+    
+        .item-name {
+          flex-grow: 0;
+          flex-basis: 40%; // Item name takes up 40% of the item-details width
+          margin-right: auto; // This will push the following elements to their position
+          overflow: hidden; // Ensures text doesn't overflow its container
+          white-space: nowrap;
+          text-overflow: ellipsis; // Add ellipsis if text overflows
+          font-size: 1vw;
+          align-items: center;
+        }
+    
+        .amount-selector {
+          flex-grow: 0;
+          flex-basis: 25%; // Amount selector takes up 25% of the item-details width
+          display: flex;
+          align-items: center;
+          justify-content: center; // Center the buttons and amount within the selector
+    
+          button {
+            border: none;
+            background-color: #92C848;
+            color: white;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1vw; // Ensure the font size is responsive
+            width: 2vw;
+          }
+    
+          span {
+            min-width: 4vw;
+            text-align: center;
+          }
+        }
+    
+        .item-price {
+          flex-grow: 0;
+          flex-basis: 15%; // Item price takes up 15% of the item-details width
+          font-weight: bold;
+          text-align: center; // Align the text to the right
+        }
+      }
+    }
+    
+  }
+
+  .checkout-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f2f2f2; // Different background color for contrast
+    border-radius: 5px;
+    overflow-y: auto; // Enable scrolling if content overflows
+
+    button {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #92C848;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1vw; // Ensure the font size is responsive
+    }
+
+    .payment-methods {
+      div {
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #d9d9d9;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: #b0b0b0; // Optional hover effect
+        }
+      }
+
+      .selected {
+        background-color: #92C848;
+      }
+    }
+
+    .total-price {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #e9e9e9; // Slightly different shade for emphasis
+      border-radius: 5px;
+      font-size: 1.2vw; // Slightly larger font for the total price
+      font-weight: bold; // Make total price bold
+    }
+  }
+}
