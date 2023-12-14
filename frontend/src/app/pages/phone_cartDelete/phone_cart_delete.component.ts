@@ -43,7 +43,7 @@ export class PhoneMyCartDeleteComponent {
   }
 
   navigateToPhoneCart() {
-    alert("mphka");
+    window.location.href = 'http://localhost:4200/phone_cart';
   }
 
 }
