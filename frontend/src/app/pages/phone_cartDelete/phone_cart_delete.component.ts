@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 interface CartItem {
   imageUrl: string;
   name: string;
@@ -8,13 +7,12 @@ interface CartItem {
   price: number;
   selected: boolean;
 }
-
 @Component({
-  selector: 'app-phone_cart',
-  templateUrl: './phone_cart.component.html',
-  styleUrls: ['./phone_cart.component.scss']
+  selector: 'app-phone_cart_delete',
+  templateUrl: './phone_cart_delete.html',
+  styleUrls: ['./phone_cart_delete.scss']
 })
-export class PhoneCartComponent {
+export class PhoneMyCartDeleteComponent {
 
   cartItems: CartItem[] = [
     { name: 'Wireless Rechargable Keyboard', amount: 2, imageUrl: '../../../../assets/shop_cart/keyboard.png', price: 40, selected: false },
@@ -37,12 +35,15 @@ export class PhoneCartComponent {
   }
 
   toggleSelection(item: CartItem): void {
-    alert("111");
     item.selected = !item.selected;
   }
 
   deleteSelectedItems(): void {
     this.cartItems = this.cartItems.filter(item => !item.selected);
+  }
+
+  navigateToPhoneCart() {
+    alert("mphka");
   }
 
 }

@@ -28,6 +28,7 @@ import { PhoneShoppingListDeleteComponent } from "./pages/phone_shoppingListDele
 import { PhoneShopLocationComponent } from "./pages/phone_shopLocation/phone_shopLocation.component";
 import { PhoneQrCodeComponent } from "./pages/phone_qrcode/phone_qrcode.component";
 import { PhoneShopHistoryComponent } from "./pages/phone_shopHistory/phone_shopHistory.component";
+import {PhoneMyCartDeleteComponent} from "./pages/phone_cartDelete/phone_cart_delete.component";
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -52,6 +53,7 @@ const routes: Routes = [
   { path: 'phone_payment' , component: PhonePaymentComponent},
   { path: 'phone_editProfile' , component: PhoneEditProfileComponent},
   { path: 'phone_cart' , component: PhoneCartComponent},
+  { path:  'phone_cart_delete',component: PhoneMyCartDeleteComponent},
   { path: 'phone_shoppingListManage', component: PhoneShoppingListManageComponent},
   { path: 'phone_shoppingListDelete', component: PhoneShoppingListDeleteComponent},
   { path: 'phone_qrcode', component: PhoneQrCodeComponent},

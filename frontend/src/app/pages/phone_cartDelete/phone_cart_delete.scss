@@ -1,11 +1,11 @@
 .main-container {
   display: flex;
-  height: 86vh; // Set the main container to full viewport height
+  height: 46vh; // Set the main container to full viewport height
   width: 100%; // Set the main container to full width of the viewport
   margin: 0; // Reset any default margin
 
   .cart-container {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #d9d9d9;
@@ -20,7 +20,7 @@
       margin-bottom: 10px;
       background-color: white;
       border-radius: 5px;
-      height: 10vh; // Use min-height for flexible box height
+      height: 5vh; // Use min-height for flexible box height
 
       &.selected {
         border: 2px solid yellow;
@@ -45,7 +45,7 @@
           overflow: hidden; // Ensures text doesn't overflow its container
           white-space: nowrap;
           text-overflow: ellipsis; // Add ellipsis if text overflows
-          font-size: 1vw;
+          font-size: 3.2vw;
           align-items: center;
         }
 
@@ -64,16 +64,14 @@
             margin: 0 5px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1vw; // Ensure the font size is responsive
+            font-size: 3vw; // Ensure the font size is responsive
             width: 2vw;
           }
-
           span {
             min-width: 4vw;
             text-align: center;
           }
         }
-
         .item-price {
           flex-grow: 0;
           flex-basis: 15%; // Item price takes up 15% of the item-details width
@@ -82,55 +80,30 @@
         }
       }
     }
-
   }
 
-  .checkout-container {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f2f2f2; // Different background color for contrast
-    border-radius: 5px;
-    overflow-y: auto; // Enable scrolling if content overflows
-
-    button {
-      margin: 10px 0;
-      padding: 10px;
-      background-color: #92C848;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1vw; // Ensure the font size is responsive
-    }
-
-    .payment-methods {
-      div {
-        padding: 10px;
-        margin: 5px 0;
-        background-color: #d9d9d9;
-        text-align: center;
-        border-radius: 5px;
-        cursor: pointer;
-        &:hover {
-          background-color: #b0b0b0; // Optional hover effect
-        }
-      }
-
-      .selected {
-        background-color: #92C848;
-      }
-    }
-
-    .total-price {
-      margin: 10px 0;
-      padding: 10px;
-      background-color: #e9e9e9; // Slightly different shade for emphasis
-      border-radius: 5px;
-      font-size: 1.2vw; // Slightly larger font for the total price
-      font-weight: bold; // Make total price bold
-    }
-  }
 }
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 50%;
+  height: auto;
+}
+
+button {
+  background-color: #92C848;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 20px;
+}
+
+
+
