@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class PhoneInterestsComponent {
 
+  goToPersonalInfoPage(){
+    window.location.href = 'http://localhost:4200/phone_personalInfo';
+  }
+
+
 }

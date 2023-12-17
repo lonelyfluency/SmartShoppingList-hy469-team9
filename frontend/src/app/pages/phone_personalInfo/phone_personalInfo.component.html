@@ -13,7 +13,7 @@
   </div>
 
   <div class="userPicture-container">
-    <img src="assets/phone-images/UserProfilePicture.png" alt="UserProfile Logo">
+    <img src="assets/phone-images/PersonalPhoto.png" alt="UserProfile Logo">
   </div>
 
   <h5> Hello (Username) </h5>
@@ -26,7 +26,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="address">Address</label>
-        <input type="text" class="form-control" id="address" >
+        <input type="text" class="form-control" id="address" placeholder="Agiou kwnstantinou 45" >
       </div>
       <div class="form-group col-md-6" >
         <label for="gender">Gender</label>
@@ -39,6 +39,9 @@
     </div>
   </form>
   <button type="submit">Next</button>
+  <div class="tiny-button black"></div>
+  <div (click)="goToPhoneInterests()" class="tiny-button white"></div>
+
 
 </div>
 </body>

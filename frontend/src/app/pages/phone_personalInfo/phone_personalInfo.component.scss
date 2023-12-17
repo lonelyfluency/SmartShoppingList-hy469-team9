@@ -63,3 +63,21 @@ form {
   max-width: 300px;
   margin: 0 auto;
 }
+
+.tiny-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+.tiny-button.white {
+  background-color: #fff;
+}
+
+.tiny-button.black {
+  background-color: #000;
+}
