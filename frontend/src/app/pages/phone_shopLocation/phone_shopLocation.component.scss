@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.mobile-body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 50%;
+  height: auto;
+}
+
+.heading {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.sign-text {
+  font-size: 1em;
+  color: grey;
+  margin-bottom: 2em;
+}
+
+.input-container {
+  margin-bottom: 1em;
+}
+
+.input-container label {
+  display: block;
+  text-align: left;
+  color: grey;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 1em;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 1em;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.login-link p {
+  color: grey;
+}
+
+.login-link a {
+  color: #007BFF;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
