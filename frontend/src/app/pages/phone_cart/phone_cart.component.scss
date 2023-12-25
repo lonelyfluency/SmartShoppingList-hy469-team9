@@ -36,22 +36,21 @@
       .item-details {
         display: flex;
         align-items: center;
-        width: 98%;
+        width: 100%;
 
         .item-name {
           flex-grow: 0;
-          flex-basis: 40%; // Item name takes up 40% of the item-details width
-          margin-right: auto; // This will push the following elements to their position
+          flex-basis: 50%; // Item name takes up 40% of the item-details width
           overflow: hidden; // Ensures text doesn't overflow its container
           white-space: nowrap;
           text-overflow: ellipsis; // Add ellipsis if text overflows
-          font-size: 3.2vw;
+          font-size: 3vw;
           align-items: center;
         }
 
         .amount-selector {
           flex-grow: 0;
-          flex-basis: 25%; // Amount selector takes up 25% of the item-details width
+          flex-basis: 30%; // Amount selector takes up 25% of the item-details width
           display: flex;
           align-items: center;
           justify-content: center; // Center the buttons and amount within the selector
@@ -60,12 +59,12 @@
             border: none;
             background-color: #92C848;
             color: white;
-            padding: 5px 10px;
-            margin: 0 5px;
+            padding: 5px ;
+            margin: 0;
             border-radius: 5px;
             cursor: pointer;
             font-size: 3vw; // Ensure the font size is responsive
-            width: 2vw;
+            width: 3em;
           }
           span {
             min-width: 4vw;
@@ -74,7 +73,7 @@
         }
         .item-price {
           flex-grow: 0;
-          flex-basis: 15%; // Item price takes up 15% of the item-details width
+          flex-basis: 20%; // Item price takes up 15% of the item-details width
           font-weight: bold;
           text-align: center; // Align the text to the right
         }
@@ -96,10 +95,10 @@
 button {
   background-color: #92C848;
   color: white;
-  padding: 15px;
+  padding: 3px;
   border: none;
   border-radius: 20px;
-  width: 40%;
+  width: 35%;
   font-size: 1.2em;
   cursor: pointer;
   margin: 20px;

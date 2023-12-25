@@ -43,7 +43,6 @@ export class PhoneShoppingListManageComponent {
   }
 
   callManageDeleteComponent(): void {
-    alert("1");
     window.location.href = 'http://localhost:4200/phone_shoppingListDelete';
   }
 }
