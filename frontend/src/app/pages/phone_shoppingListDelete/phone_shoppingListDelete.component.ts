@@ -43,6 +43,10 @@ export class PhoneShoppingListDeleteComponent {
     this.cartItems = this.cartItems.filter(item => !item.selected);
   }
 
+  goToPhoneCart(): void {
+    window.location.href = 'http://localhost:4200/phone_cart';
+  }
+
 }
 
 

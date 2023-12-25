@@ -46,4 +46,8 @@ export class PhoneMyCartDeleteComponent {
     window.location.href = 'http://localhost:4200/phone_cart';
   }
 
+  goToPhoneCart(): void {
+    window.location.href = 'http://localhost:4200/phone_cart';
+  }
+
 }

@@ -44,4 +44,12 @@ export class PhoneCartComponent {
     this.cartItems = this.cartItems.filter(item => !item.selected);
   }
 
+  goToAccountPage(): void {
+    window.location.href = 'http://localhost:4200/phone_account';
+  }
+
+  goToPhoneDeleteCart(): void {
+    window.location.href = 'http://localhost:4200/phone_cart_delete';
+  }
+
 }

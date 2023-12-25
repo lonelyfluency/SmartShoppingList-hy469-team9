@@ -1,3 +1,7 @@
+
+<button class="button2" (click)="goToAccountPage()">
+  <img style="margin-top: 30px;margin-left: 30px" src="assets/phone-images/arrow-left.svg" alt="Pencil square">
+</button>
 <div class="logo-container" style="text-align: center">
     <img src="assets/phone-images/ShopWise.png" alt="ShopWise Logo">
 </div>
@@ -24,7 +28,7 @@
     </div>
 </div>
 
-<button type="submit">manage Items</button>
+<button (click)="goToPhoneDeleteCart()" type="submit">manage Items</button>
 <button type="submit">checkout</button>
 
 
