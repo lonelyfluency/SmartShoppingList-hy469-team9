@@ -26,6 +26,28 @@ body {
 .card-details h3{
 
 }
+button{
+  border: 0;
+  padding: 0;
+  margin: 30px;
+  background-color: white;
+}
+
+.button2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.button2:hover {
+  background-color: #45a049;
+}
 
 
 .content {
