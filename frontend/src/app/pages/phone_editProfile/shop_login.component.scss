@@ -15,7 +15,12 @@ body {
 .logo-container {
   margin-bottom: 20px;
 }
-
+button{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
 .logo-container img {
   width: 50%;
   height: auto;
@@ -31,13 +36,12 @@ userPicture-container {
   margin-bottom: 20px;
 }
 
-
 .heading {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
 
-button {
+.button2 {
   background-color: #4CAF50;
   color: white;
   padding: 15px;
@@ -49,8 +53,7 @@ button {
   margin-bottom: 2em;
 }
 
-
-button:hover {
+.button2:hover {
   background-color: #45a049;
 }
 form {

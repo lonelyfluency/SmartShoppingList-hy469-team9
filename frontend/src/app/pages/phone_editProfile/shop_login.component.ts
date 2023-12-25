@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PhoneEditProfileComponent {
 
+  goToAccountPage(): void {
+    window.location.href = 'http://localhost:4200/phone_account';
+  }
 }
