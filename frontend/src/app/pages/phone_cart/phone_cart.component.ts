@@ -37,7 +37,6 @@ export class PhoneCartComponent {
   }
 
   toggleSelection(item: CartItem): void {
-    alert("111");
     item.selected = !item.selected;
   }
 

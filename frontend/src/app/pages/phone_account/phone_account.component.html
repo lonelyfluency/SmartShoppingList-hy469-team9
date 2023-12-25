@@ -22,21 +22,21 @@
       </div>
 
       <div class="col-4">
-        <button class="icon-button" >
+        <button class="icon-button" (click)="goToListPage()" >
           <img src="../../../assets/phone-images/List.png" alt="List.png">
         </button>
         <p>My List</p>
       </div>
 
       <div class="col-4">
-        <button class="icon-button" >
+        <button class="icon-button"  (click)="goQrCodeScanPage()">
           <img src="../../../assets/phone-images/Scan.png" alt="Scan.png" >
         </button>
         <p>Scan</p>
       </div>
 
       <div class="col-4">
-        <button class="icon-button" >
+        <button class="icon-button" (click)="goCartPage()">
           <img src="../../../assets/phone-images/Shop.png" alt="Shop.png">
         </button>
         <p>My Cart</p>
@@ -49,11 +49,13 @@
           <div class="col-3 text-left" >
             <img src="assets/phone-images/person.svg" alt="Person" >
           </div>
-          <div class="col-6 text-right">
+          <div class="col-6 text-center">
             <p>Edit Profile</p>
           </div>
           <div class="col-3 text-right">
-            <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            <button (click)="goToEditProfilePage()">
+              <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            </button>
           </div>
         </div>
       </div>
@@ -69,13 +71,13 @@
             <p>Shop History</p>
           </div>
           <div class="col-3 text-right">
-            <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            <button (click)="goToShopHistoryPage()">
+              <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-
 
     <div class="green-box">
       <div class="container">
@@ -87,13 +89,13 @@
             <p>Card payment</p>
           </div>
           <div class="col-3 text-right">
-            <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            <button (click)="goToCardPaymentPage()">
+              <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-
 
     <div class="green-box">
       <div class="container">
@@ -105,7 +107,9 @@
             <p>Shop in maps</p>
           </div>
           <div class="col-3 text-right">
-            <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            <button (click)="goToShopLocationPage()">
+              <img src="assets/phone-images/arrow-right.svg" alt="arrow">
+            </button>
           </div>
         </div>
       </div>
@@ -119,7 +123,7 @@
           <div class="col-3 text-left" >
             <img src="assets/phone-images/incognito.svg" alt="Icognito" >
           </div>
-          <div class="col-6 text-right">
+          <div class="col-6 text-center">
             <p>Help Center</p>
           </div>
           <div class="col-3 text-right">
@@ -137,7 +141,7 @@
           <div class="col-3 text-left" >
             <img src="assets/phone-images/exclamation-lg.svg" alt="Exclamation" >
           </div>
-          <div class="col-6 text-right">
+          <div class="col-6 text-center">
             <p>Feedback</p>
           </div>
           <div class="col-3 text-right" >

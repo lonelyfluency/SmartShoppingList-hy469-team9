@@ -9,7 +9,6 @@ export class PhonePersonalInfoComponent {
 
   goToPhoneInterests(){
     window.location.href = 'http://localhost:4200/phone_interests';
-
   }
 
 }
