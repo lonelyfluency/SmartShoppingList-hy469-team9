@@ -45,5 +45,10 @@ export class PhoneShoppingListManageComponent {
   callManageDeleteComponent(): void {
     window.location.href = 'http://localhost:4200/phone_shoppingListDelete';
   }
+
+  goToAccountPage(): void {
+    window.location.href = 'http://localhost:4200/phone_account';
+  }
+
 }
 
