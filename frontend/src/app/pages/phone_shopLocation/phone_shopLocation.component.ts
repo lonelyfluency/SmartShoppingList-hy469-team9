@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./phone_shopLocation.component.scss']
 })
 export class PhoneShopLocationComponent {
-
-
-
-
+  goToAccountPage(): void {
+    window.location.href = 'http://localhost:4200/phone_account';
+  }
 }

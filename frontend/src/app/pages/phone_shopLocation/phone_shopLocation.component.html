@@ -7,29 +7,20 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
-<div class="mobile-body">
+<button style="margin-left: 40px" class="button2" (click)="goToAccountPage()">
+  <img style="margin-top: 30px;margin-left: 30px" src="assets/phone-images/arrow-left.svg" alt="Pencil square">
+</button>
+<div style="margin-left: 120px" class="mobile-body">
   <div class="logo-container">
     <img src="assets/phone-images/ShopWise.png" alt="ShopWise Logo">
   </div>
   <div class="logo-container">
     <img src="assets/phone-images/pngimg.com%20-%20qr_code_PNG33.png" alt="Qr code">
   </div>
-
-
-
-
-
-
   <h3>My Google Maps Demo</h3>
-  <!--The div element for the map -->
-  <div id="map"></div>
-
-  <!-- prettier-ignore -->
-  <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-  ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
-
-
-
+  <div class="logo-container">
+    <img src="assets/phone-images/maps.png" alt="Maps Logo">
+  </div>
 </div>
 </body>
 </html>
