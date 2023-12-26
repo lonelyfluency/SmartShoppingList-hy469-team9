@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-
-
 interface CartItem {
   imageUrl: string;
   name: string;
@@ -9,7 +7,6 @@ interface CartItem {
   price: number;
   selected: boolean;
 }
-
 
 @Component({
   selector: 'app-shoppingListManage',
