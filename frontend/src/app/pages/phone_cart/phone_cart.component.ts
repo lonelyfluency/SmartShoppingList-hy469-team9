@@ -22,6 +22,13 @@ export class PhoneCartComponent {
     { name: 'Leather Wallet', amount: 1, imageUrl: '../../../../assets/shop_cart/wallet.png', price: 30, selected: false },
     { name: 'Hibiscus Mushrooms', amount: 2, imageUrl: '../../../../assets/shop_cart/mushroom.png', price: 4, selected: false },
     { name: 'COSRX Ultra Moisturizing', amount: 1, imageUrl: '../../../../assets/shop_cart/moisture.png', price: 28, selected: false },
+    { name: 'Mini Outdoor Wireless Speaker', amount: 1, imageUrl: '../../../../assets/shop_cart/minispeaker.png', price: 39, selected: false },
+    { name: 'Wireless Rechargable Keyboard', amount: 2, imageUrl: '../../../../assets/shop_cart/keyboard.png', price: 40, selected: false },
+    { name: 'Hudabeauty Bullet Lipstick', amount: 2, imageUrl: '../../../../assets/shop_cart/lipstick.png', price: 15, selected: false },
+    { name: 'Vtamin C Cream', amount: 1, imageUrl: '../../../../assets/shop_cart/cream.png', price: 17, selected: false },
+    { name: 'Leather Wallet', amount: 1, imageUrl: '../../../../assets/shop_cart/wallet.png', price: 30, selected: false },
+    { name: 'Hibiscus Mushrooms', amount: 2, imageUrl: '../../../../assets/shop_cart/mushroom.png', price: 4, selected: false },
+    { name: 'COSRX Ultra Moisturizing', amount: 1, imageUrl: '../../../../assets/shop_cart/moisture.png', price: 28, selected: false },
     { name: 'Mini Outdoor Wireless Speaker', amount: 1, imageUrl: '../../../../assets/shop_cart/minispeaker.png', price: 39, selected: false }
   ];
 

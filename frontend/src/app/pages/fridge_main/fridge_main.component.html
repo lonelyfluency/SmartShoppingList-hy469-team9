@@ -1,3 +1,29 @@
-<div class="mobile-body">
-    <h1>Fridge_Main</h1>
+<div class="logo-container" >
+  <img (click)="goToFridgeMain()" src="assets/phone-images/ShopWise.png" alt="ShopWise Logo" style="width:65%; cursor: pointer">
+  <h1 style="width: 35%; text-align: center">For Fridge</h1>
 </div>
+
+<div class="logo-container" >
+  <div class="grey-box">
+    <p>Status of fridge : opened  temperature : 3°C</p>
+  </div>
+  <div style="width: 60%"></div>
+  <button (click)="goToFridgeShoppingList()" style="width: 15%; margin-right: 25px">Shopping List</button>
+</div>
+<h1>Currently in storage</h1>
+
+  <div class="shopping-list-wrapper">
+    <div class="shopping-list-container">
+      <div class="item-box" *ngFor="let item of items" (click)="selectItem(item)" [class.selected]="item.selected">
+        <img [src]="item.imageUrl" [alt]="item.name" class="item-image">
+        <div class="item-info">
+          <div class="item-name">{{ item.name }}</div>
+          <div class="item-quantity">{{ item.quantity }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+

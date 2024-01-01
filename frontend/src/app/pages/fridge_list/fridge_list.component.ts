@@ -54,4 +54,8 @@ export class FridgeListComponent {
     window.location.href = 'http://localhost:4200/phone_account';
   }
 
+  goToFridgeMain(): void {
+    window.location.href = 'http://localhost:4200/fridge_main';
+  }
+
 }
