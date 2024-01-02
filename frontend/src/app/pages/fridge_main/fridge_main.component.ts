@@ -5,6 +5,7 @@ interface ShoppingItem {
   quantity: number;
   imageUrl: string;
   selected: boolean;
+  expiration : number;
 }
 
 @Component({
@@ -15,17 +16,18 @@ interface ShoppingItem {
 export class FridgeMainComponent {
 
   items: ShoppingItem[] = [
-    { name: 'Tomato', quantity: 2, imageUrl: '../../../../assets/items/tomato.png', selected: false },
-    { name: 'Orange', quantity: 2, imageUrl: '../../../../assets/items/orange.png', selected: false },
-    { name: 'Milk', quantity: 1, imageUrl: '../../../../assets/items/milk.png', selected: false },
-    { name: 'Egg', quantity: 6, imageUrl: '../../../../assets/items/egg.png', selected: false },
-    { name: 'Broccoli', quantity: 2, imageUrl: '../../../../assets/items/broccoli.png', selected: false },
-    { name: 'Ketchup', quantity: 1, imageUrl: '../../../../assets/items/ketchup.png', selected: false },
-    { name: 'Bread', quantity: 1, imageUrl: '../../../../assets/items/bread.png', selected: false }
+    { name: 'Orange', quantity: 5, expiration: 3, imageUrl: '../../../../assets/items/orange.jpg', selected: false },
+    { name: 'Egg', quantity: 3, expiration: 1, imageUrl: '../../../../assets/items/egg.png', selected: false },
+    { name: 'Broccoli', quantity: 1, expiration: 5, imageUrl: '../../../../assets/items/broccoli.png', selected: false },
+    { name: 'Tomato', quantity: 3, expiration: 7, imageUrl: '../../../../assets/items/tomato.png', selected: false },
+    { name: 'ketchup', quantity: 3,expiration: 10, imageUrl: '../../../../assets/items/ketchup.png', selected: false },
+    { name: 'milk', quantity: 5,expiration: 13, imageUrl: '../../../../assets/items/milk.png', selected: false },
+    { name: 'onion', quantity: 5,expiration: 23, imageUrl: '../../../../assets/items/onion.png', selected: false },
+    { name: 'butter', quantity: 5,expiration: 13, imageUrl: '../../../../assets/items/butter.png', selected: false }
 
   ];
 
-  selectItem(item: any): void {
+  selectItem(item: ShoppingItem): void {
     item.selected = !item.selected;
   }
 
@@ -40,12 +42,16 @@ export class FridgeMainComponent {
       item.selected = !item.selected;
     });
   }
+
   goToFridgeMain(): void {
     window.location.href = 'http://localhost:4200/fridge_main';
   }
+
+  goToRecipePage(): void {
+    window.location.href = 'http://localhost:4200/fridge_recipe';
+  }
+
   goToFridgeShoppingList(): void {
     window.location.href = 'http://localhost:4200/fridge_list';
   }
-
-
 }
