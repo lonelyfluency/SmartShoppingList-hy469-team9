@@ -58,12 +58,12 @@
             border: none;
             background-color: #92C848;
             color: white;
-            padding: 5px ;
+            padding: 0 ;
             margin: 0;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 3vw; // Ensure the font size is responsive
-            width: 3em;
+            font-size: 2vw; // Ensure the font size is responsive
+            width: 1.3em;
           }
           span {
             min-width: 4vw;
@@ -99,7 +99,7 @@ button {
   border: none;
   border-radius: 20px;
   width: 35%;
-  font-size: 1.2em;
+  font-size: 2em;
   cursor: pointer;
   margin: 20px;
 }

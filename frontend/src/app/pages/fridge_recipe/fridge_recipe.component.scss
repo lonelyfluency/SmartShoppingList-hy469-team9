@@ -24,7 +24,6 @@
       &.selected {
         border: 2px solid yellow;
       }
-
       .item-image {
         width: 50%;
         height: 100%; // Keep the height relative to the item box
@@ -76,8 +75,8 @@
       }
     }
   }
-
 }
+
 
 .logo-container {
   display: flex;

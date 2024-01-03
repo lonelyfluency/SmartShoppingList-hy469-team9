@@ -20,8 +20,25 @@ export class FridgeRecipeComponent {
     { name: 'IceCream', imageUrl: '../../../../assets/items/ice_Cream.jpg',  selected: false }
   ];
 
+  selectedItems: CartItem[] = [];
+
   toggleSelection(item: CartItem): void {
     item.selected = !item.selected;
+
+    if (item.selected) {
+      this.selectedItems.push(item);
+    } else {
+      this.selectedItems = this.selectedItems.filter(selectedItem => selectedItem !== item);
+    }
+  }
+
+  sendMessageToUser(): void {
+    if (this.selectedItems.length > 0) {
+      const selectedItemsNames = this.selectedItems.map(selectedItem => selectedItem.name).join(', ');
+      alert(`Ingredients of ${selectedItemsNames} have been added to the list`);
+    } else {
+      alert('No recipe selected. Please select items first.');
+    }
   }
 
   callManageDeleteComponent(): void {
