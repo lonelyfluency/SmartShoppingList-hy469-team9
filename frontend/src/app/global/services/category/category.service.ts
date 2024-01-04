@@ -1,37 +1,61 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { TaskModel } from '../../models/category/category.model';
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
-import * as _ from 'lodash';
 
-export interface Category {
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+export interface Product {
+  className: string;
+  classId: number;
+  coarseClassName: string;
+  price: number;
+  coarseClassId: number;
+  iconicImagePath: string;
+  productDescriptionPath: string;
+}
+
+export interface SubCategory {
     name: string;
-    subcategories?: Category[];
-    items?: Item[];
+    products: Product[];
   }
   
-  export interface Item {
+  export interface MainCategory {
     name: string;
-    price: number;
-    imageUrl: string;
+    subcategories: SubCategory[];
   }
   
   @Injectable({
     providedIn: 'root'
   })
-  
   export class CategoryService {
-    private categories: Category[] = []; // This will hold your category data
-    
+    private dataUrl = 'assets/products.json'; // Path to your JSON file
+  
     constructor(private http: HttpClient) {}
   
-    // Function to load categories from the CSV file
-    loadCategoriesFromCSV(): Observable<Category[]> {
-      // Use HttpClient to load the CSV file and convert it to Category[]
-      // For now, we'll simulate it with an empty observable
-      return of(this.categories);
+    getCategories(): Observable<MainCategory[]> {
+      return this.http.get<Product[]>(this.dataUrl).pipe(
+        map((products) => {
+          // Creating a hierarchical structure from the flat product data
+          const foodCategory: MainCategory = {
+            name: 'Food',
+            subcategories: []
+          };
+  
+          const subcategoryMap = new Map<string, SubCategory>();
+  
+          products.forEach(product => {
+            let subcategory = subcategoryMap.get(product['coarseClassName']);
+            if (!subcategory) {
+              subcategory = { name: product['coarseClassName'], products: [] };
+              subcategoryMap.set(product['coarseClassName'], subcategory);
+              foodCategory.subcategories.push(subcategory);
+            }
+            subcategory.products.push(product);
+          });
+  
+          // Return an array of main categories, you can add more main categories as needed
+          return [foodCategory];
+        })
+      );
     }
   }
-  

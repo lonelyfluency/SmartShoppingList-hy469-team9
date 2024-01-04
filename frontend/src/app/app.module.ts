@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoryService } from './global/services/category/category.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TasksComponent } from './pages/tasks/tasks.component';
@@ -98,7 +99,7 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

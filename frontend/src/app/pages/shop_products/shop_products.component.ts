@@ -1,5 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
-import { Category, CategoryService } from './category.service';
+import { CategoryService, SubCategory, MainCategory, Product } from 'src/app/global/services/category/category.service';
 
 @Component({
   selector: 'app-shop_products',
@@ -7,20 +8,29 @@ import { Category, CategoryService } from './category.service';
   styleUrls: ['./shop_products.component.scss']
 })
 export class ShopProductsComponent implements OnInit {
-  mainCategories: Category[];
-  subCategories: Category[];
-  subSubCategories: Category[];
-  items: Item[];
+  mainCategories!: MainCategory[];
+  selectedMainCategory?: MainCategory;
+  selectedSubCategory?: SubCategory;
+  selectedProducts?: Product[];
 
   constructor(private categoryService: CategoryService) {}
 
   ngOnInit(): void {
-    this.categoryService.loadCategoriesFromCSV().subscribe(categories => {
+    this.categoryService.getCategories().subscribe(categories => {
       this.mainCategories = categories;
-      // You should also initialize subCategories, subSubCategories, and items 
-      // based on your logic and CSV data structure
+      // Initialize the selected categories if necessary
     });
   }
 
-  // Add methods to handle category selection and populate the subcategories and items
+  selectMainCategory(mainCategory: MainCategory): void {
+    this.selectedMainCategory = mainCategory;
+    // Optionally, initialize the subcategory when a main category is selected
+    this.selectedSubCategory = mainCategory.subcategories[0];
+    this.selectedProducts = this.selectedSubCategory.products;
+  }
+
+  selectSubCategory(subCategory: SubCategory): void {
+    this.selectedSubCategory = subCategory;
+    this.selectedProducts = subCategory.products;
+  }
 }
