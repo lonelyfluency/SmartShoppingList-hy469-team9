@@ -1,0 +1,22 @@
+<div class="products-shop-container">
+    <div class="main-category-container">
+      <div *ngFor="let mainCat of mainCategories" (click)="onMainCategorySelected(mainCat)">
+        {{ mainCat.name }}
+      </div>
+    </div>
+    
+    <div *ngIf="selectedMainCategory" class="subcategory-container">
+      <div *ngFor="let subCat of selectedMainCategory.subcategories" (click)="onSubCategorySelected(subCat)">
+        {{ subCat.name }}
+      </div>
+    </div>
+    
+    <div *ngIf="selectedSubCategory" class="products-container">
+      <div *ngFor="let product of selectedSubCategory.products">
+        <img [src]="product.ImagePath" alt="{{ product.Name }}">
+        <div>{{ product.Name }}</div>
+        <div>{{ product.Price | currency:'EUR' }}</div>
+      </div>
+    </div>
+  </div>
+  

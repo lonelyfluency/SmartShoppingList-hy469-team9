@@ -1,38 +1,19 @@
-.shop-container {
-    display: flex;
-  
-    .main-category-container, .subcategory-container {
-      flex: 1;
-      padding: 10px;
-      border-right: 1px solid #ccc;
-  
-      div {
-        cursor: pointer;
-        padding: 5px;
-        margin: 2px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        &:hover {
-          background-color: #f0f0f0;
-        }
-      }
-    }
-  
-    .product-container {
-      flex: 3;
-      padding: 10px;
-  
-      .product-card {
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        margin: 10px;
-        padding: 10px;
-        text-align: center;
-  
-        .product-info {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
-  
+.shop-products-container {
+  position: relative;
+  background: white;
+  margin-left: 10vw; /* Left space for the navigation bar */
+  margin-bottom: 8vh; /* Bottom space for the bottom bar */
+  height: calc(92vh - 8vh); /* Relative to the viewport height */
+  width: 90vw; /* Relative to the viewport width */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align children to the start of the container */
+  padding-top: 1vh;
+}
+
+
+app-products-shop {
+  display: flex;
+  width: 100%; /* Full width to allow internal flexing of items */
+  padding: 1vw 1vw; /* Left and right padding to align with profile and button */
+}

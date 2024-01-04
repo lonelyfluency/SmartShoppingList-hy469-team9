@@ -17,6 +17,7 @@ import { ShoppinglistShopComponent } from './pages/components/shoppinglist-shop/
 import { RecommendShopComponent } from './pages/components/recommend-shop/recommend-shop.component';
 import { BestsellerShopComponent } from './pages/components/bestseller-shop/bestseller-shop.component';
 import { CartShopComponent } from './pages/components/cart-shop/cart-shop.component';
+import { ProductsShopComponent } from './pages/components/products-shop/products-shop.component';
 import { ShopMainComponent } from './pages/shop_main/shop_main.component';
 import { ShopProductsComponent } from './pages/shop_products/shop_products.component';
 import { ShopOfferComponent } from './pages/shop_offer/shop_offer.component';
@@ -63,6 +64,7 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     RecommendShopComponent,
     BestsellerShopComponent,
     CartShopComponent,
+    ProductsShopComponent,
     ShopMainComponent,
     ShopProductsComponent,
     ShopOfferComponent,

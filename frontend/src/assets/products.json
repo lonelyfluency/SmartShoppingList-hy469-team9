@@ -5,8 +5,8 @@
 	  "ClassName": "Apple",
 	  "Price": 8.6,
 	  "ClassID": 0,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Apple/Golden-Delicious/Golden-Delicious_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Apple/Golden-Delicious/Golden-Delicious_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Golden-Delicious/Golden-Delicious_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Golden-Delicious/Golden-Delicious_Description.txt"
 	},
 	{
 	  "Name": "Granny-Smith",
@@ -14,8 +14,8 @@
 	  "ClassName": "Apple",
 	  "Price": 8.25,
 	  "ClassID": 0,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Apple/Granny-Smith/Granny-Smith_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Apple/Granny-Smith/Granny-Smith_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Granny-Smith/Granny-Smith_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Granny-Smith/Granny-Smith_Description.txt"
 	},
 	{
 	  "Name": "Pink-Lady",
@@ -23,8 +23,8 @@
 	  "ClassName": "Apple",
 	  "Price": 3.99,
 	  "ClassID": 0,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Apple/Pink-Lady/Pink-Lady_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Apple/Pink-Lady/Pink-Lady_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Pink-Lady/Pink-Lady_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Pink-Lady/Pink-Lady_Description.txt"
 	},
 	{
 	  "Name": "Red-Delicious",
@@ -32,8 +32,8 @@
 	  "ClassName": "Apple",
 	  "Price": 0.46,
 	  "ClassID": 0,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Apple/Red-Delicious/Red-Delicious_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Apple/Red-Delicious/Red-Delicious_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Red-Delicious/Red-Delicious_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Red-Delicious/Red-Delicious_Description.txt"
 	},
 	{
 	  "Name": "Royal-Gala",
@@ -41,8 +41,8 @@
 	  "ClassName": "Apple",
 	  "Price": 6.29,
 	  "ClassID": 0,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Apple/Royal-Gala/Royal-Gala_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Apple/Royal-Gala/Royal-Gala_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Royal-Gala/Royal-Gala_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Royal-Gala/Royal-Gala_Description.txt"
 	},
 	{
 	  "Name": "Avocado",
@@ -50,8 +50,8 @@
 	  "ClassName": "Avocado",
 	  "Price": 0.36,
 	  "ClassID": 1,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Avocado/Avocado_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Avocado/Avocado_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Avocado/Avocado_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Avocado/Avocado_Description.txt"
 	},
 	{
 	  "Name": "Banana",
@@ -59,8 +59,8 @@
 	  "ClassName": "Banana",
 	  "Price": 8.66,
 	  "ClassID": 2,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Banana/Banana_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Banana/Banana_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Banana/Banana_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Banana/Banana_Description.txt"
 	},
 	{
 	  "Name": "Kiwi",
@@ -68,8 +68,8 @@
 	  "ClassName": "Kiwi",
 	  "Price": 7.07,
 	  "ClassID": 3,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Kiwi/Kiwi_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Kiwi/Kiwi_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Kiwi/Kiwi_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Kiwi/Kiwi_Description.txt"
 	},
 	{
 	  "Name": "Lemon",
@@ -77,8 +77,8 @@
 	  "ClassName": "Lemon",
 	  "Price": 8.34,
 	  "ClassID": 4,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Lemon/Lemon_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Lemon/Lemon_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lemon/Lemon_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lemon/Lemon_Description.txt"
 	},
 	{
 	  "Name": "Lime",
@@ -86,8 +86,8 @@
 	  "ClassName": "Lime",
 	  "Price": 5.46,
 	  "ClassID": 5,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Lime/Lime_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Lime/Lime_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lime/Lime_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lime/Lime_Description.txt"
 	},
 	{
 	  "Name": "Mango",
@@ -95,8 +95,8 @@
 	  "ClassName": "Mango",
 	  "Price": 3.49,
 	  "ClassID": 6,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Mango/Mango_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Mango/Mango_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Mango/Mango_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Mango/Mango_Description.txt"
 	},
 	{
 	  "Name": "Cantaloupe",
@@ -104,8 +104,8 @@
 	  "ClassName": "Melon",
 	  "Price": 0.28,
 	  "ClassID": 7,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Melon/Cantaloupe/Cantaloupe_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Melon/Cantaloupe/Cantaloupe_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Cantaloupe/Cantaloupe_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Cantaloupe/Cantaloupe_Description.txt"
 	},
 	{
 	  "Name": "Galia-Melon",
@@ -113,8 +113,8 @@
 	  "ClassName": "Melon",
 	  "Price": 4.9,
 	  "ClassID": 7,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Melon/Galia-Melon/Galia-Melon_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Melon/Galia-Melon/Galia-Melon_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Galia-Melon/Galia-Melon_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Galia-Melon/Galia-Melon_Description.txt"
 	},
 	{
 	  "Name": "Honeydew-Melon",
@@ -122,8 +122,8 @@
 	  "ClassName": "Melon",
 	  "Price": 9.5,
 	  "ClassID": 7,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Description.txt"
 	},
 	{
 	  "Name": "Watermelon",
@@ -131,8 +131,8 @@
 	  "ClassName": "Melon",
 	  "Price": 5.09,
 	  "ClassID": 7,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Melon/Watermelon/Watermelon_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Melon/Watermelon/Watermelon_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Watermelon/Watermelon_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Melon/Watermelon/Watermelon_Description.txt"
 	},
 	{
 	  "Name": "Nectarine",
@@ -140,8 +140,8 @@
 	  "ClassName": "Nectarine",
 	  "Price": 4.09,
 	  "ClassID": 8,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Nectarine/Nectarine_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Nectarine/Nectarine_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Nectarine/Nectarine_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Nectarine/Nectarine_Description.txt"
 	},
 	{
 	  "Name": "Orange",
@@ -149,8 +149,8 @@
 	  "ClassName": "Orange",
 	  "Price": 3.07,
 	  "ClassID": 9,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Orange/Orange_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Orange/Orange_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Orange/Orange_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Orange/Orange_Description.txt"
 	},
 	{
 	  "Name": "Papaya",
@@ -158,8 +158,8 @@
 	  "ClassName": "Papaya",
 	  "Price": 7.97,
 	  "ClassID": 10,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Papaya/Papaya_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Papaya/Papaya_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Papaya/Papaya_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Papaya/Papaya_Description.txt"
 	},
 	{
 	  "Name": "Passion-Fruit",
@@ -167,8 +167,8 @@
 	  "ClassName": "Passion-Fruit",
 	  "Price": 7.87,
 	  "ClassID": 11,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Passion-Fruit/Passion-Fruit_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Passion-Fruit/Passion-Fruit_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Passion-Fruit/Passion-Fruit_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Passion-Fruit/Passion-Fruit_Description.txt"
 	},
 	{
 	  "Name": "Peach",
@@ -176,8 +176,8 @@
 	  "ClassName": "Peach",
 	  "Price": 0.93,
 	  "ClassID": 12,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Peach/Peach_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Peach/Peach_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Peach/Peach_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Peach/Peach_Description.txt"
 	},
 	{
 	  "Name": "Anjou",
@@ -185,8 +185,8 @@
 	  "ClassName": "Pear",
 	  "Price": 8.53,
 	  "ClassID": 13,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Pear/Anjou/Anjou_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Pear/Anjou/Anjou_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pear/Anjou/Anjou_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pear/Anjou/Anjou_Description.txt"
 	},
 	{
 	  "Name": "Conference",
@@ -194,8 +194,8 @@
 	  "ClassName": "Pear",
 	  "Price": 0.4,
 	  "ClassID": 13,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Pear/Conference/Conference_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Pear/Conference/Conference_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pear/Conference/Conference_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pear/Conference/Conference_Description.txt"
 	},
 	{
 	  "Name": "Kaiser",
@@ -203,8 +203,8 @@
 	  "ClassName": "Pear",
 	  "Price": 1.69,
 	  "ClassID": 13,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Pear/Kaiser/Kaiser_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Pear/Kaiser/Kaiser_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pear/Kaiser/Kaiser_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pear/Kaiser/Kaiser_Description.txt"
 	},
 	{
 	  "Name": "Pineapple",
@@ -212,8 +212,8 @@
 	  "ClassName": "Pineapple",
 	  "Price": 3.76,
 	  "ClassID": 14,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Pineapple/Pineapple_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Pineapple/Pineapple_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pineapple/Pineapple_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pineapple/Pineapple_Description.txt"
 	},
 	{
 	  "Name": "Plum",
@@ -221,8 +221,8 @@
 	  "ClassName": "Plum",
 	  "Price": 10.84,
 	  "ClassID": 15,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Plum/Plum_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Plum/Plum_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Plum/Plum_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Plum/Plum_Description.txt"
 	},
 	{
 	  "Name": "Pomegranate",
@@ -230,8 +230,8 @@
 	  "ClassName": "Pomegranate",
 	  "Price": 6.94,
 	  "ClassID": 16,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Pomegranate/Pomegranate_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Pomegranate/Pomegranate_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pomegranate/Pomegranate_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Pomegranate/Pomegranate_Description.txt"
 	},
 	{
 	  "Name": "Red-Grapefruit",
@@ -239,8 +239,8 @@
 	  "ClassName": "Red-Grapefruit",
 	  "Price": 6.64,
 	  "ClassID": 17,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Description.txt"
 	},
 	{
 	  "Name": "Satsumas",
@@ -248,8 +248,8 @@
 	  "ClassName": "Satsumas",
 	  "Price": 4.86,
 	  "ClassID": 18,
-	  "ImagePath": "/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Description.txt"
 	},
 	{
 	  "Name": "Bravo-Apple-Juice",
@@ -257,8 +257,8 @@
 	  "ClassName": "Juice",
 	  "Price": 7.3,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Description.txt"
 	},
 	{
 	  "Name": "Bravo-Orange-Juice",
@@ -266,8 +266,8 @@
 	  "ClassName": "Juice",
 	  "Price": 4.3,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Description.txt"
 	},
 	{
 	  "Name": "God-Morgon-Apple-Juice",
@@ -275,8 +275,8 @@
 	  "ClassName": "Juice",
 	  "Price": 1.93,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Description.txt"
 	},
 	{
 	  "Name": "God-Morgon-Orange-Juice",
@@ -284,8 +284,8 @@
 	  "ClassName": "Juice",
 	  "Price": 5.28,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Description.txt"
 	},
 	{
 	  "Name": "God-Morgon-Orange-Red-Grapefruit-Juice",
@@ -293,8 +293,8 @@
 	  "ClassName": "Juice",
 	  "Price": 1.37,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Description.txt"
 	},
 	{
 	  "Name": "God-Morgon-Red-Grapefruit-Juice",
@@ -302,8 +302,8 @@
 	  "ClassName": "Juice",
 	  "Price": 1.33,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Description.txt"
 	},
 	{
 	  "Name": "Tropicana-Apple-Juice",
@@ -311,8 +311,8 @@
 	  "ClassName": "Juice",
 	  "Price": 6.06,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Description.txt"
 	},
 	{
 	  "Name": "Tropicana-Golden-Grapefruit",
@@ -320,8 +320,8 @@
 	  "ClassName": "Juice",
 	  "Price": 1.13,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Description.txt"
 	},
 	{
 	  "Name": "Tropicana-Juice-Smooth",
@@ -329,8 +329,8 @@
 	  "ClassName": "Juice",
 	  "Price": 9.97,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Description.txt"
 	},
 	{
 	  "Name": "Tropicana-Mandarin-Morning",
@@ -338,8 +338,8 @@
 	  "ClassName": "Juice",
 	  "Price": 10.68,
 	  "ClassID": 19,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Description.txt"
 	},
 	{
 	  "Name": "Arla-Ecological-Medium-Fat-Milk",
@@ -347,8 +347,8 @@
 	  "ClassName": "Milk",
 	  "Price": 1.11,
 	  "ClassID": 20,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Description.txt"
 	},
 	{
 	  "Name": "Arla-Lactose-Medium-Fat-Milk",
@@ -356,8 +356,8 @@
 	  "ClassName": "Milk",
 	  "Price": 1.98,
 	  "ClassID": 20,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Description.txt"
 	},
 	{
 	  "Name": "Arla-Medium-Fat-Milk",
@@ -365,8 +365,8 @@
 	  "ClassName": "Milk",
 	  "Price": 4.35,
 	  "ClassID": 20,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Description.txt"
 	},
 	{
 	  "Name": "Arla-Standard-Milk",
@@ -374,8 +374,8 @@
 	  "ClassName": "Milk",
 	  "Price": 3.72,
 	  "ClassID": 20,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Description.txt"
 	},
 	{
 	  "Name": "Garant-Ecological-Medium-Fat-Milk",
@@ -383,8 +383,8 @@
 	  "ClassName": "Milk",
 	  "Price": 6.48,
 	  "ClassID": 20,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Description.txt"
 	},
 	{
 	  "Name": "Garant-Ecological-Standard-Milk",
@@ -392,8 +392,8 @@
 	  "ClassName": "Milk",
 	  "Price": 2.45,
 	  "ClassID": 20,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Description.txt"
 	},
 	{
 	  "Name": "Oatly-Natural-Oatghurt",
@@ -401,8 +401,8 @@
 	  "ClassName": "Oatghurt",
 	  "Price": 3.77,
 	  "ClassID": 21,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Description.txt"
 	},
 	{
 	  "Name": "Oatly-Oat-Milk",
@@ -410,8 +410,8 @@
 	  "ClassName": "Oat-Milk",
 	  "Price": 9.87,
 	  "ClassID": 22,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Description.txt"
 	},
 	{
 	  "Name": "Arla-Ecological-Sour-Cream",
@@ -419,8 +419,8 @@
 	  "ClassName": "Sour-Cream",
 	  "Price": 0.06,
 	  "ClassID": 23,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Description.txt"
 	},
 	{
 	  "Name": "Arla-Sour-Cream",
@@ -428,8 +428,8 @@
 	  "ClassName": "Sour-Cream",
 	  "Price": 5.81,
 	  "ClassID": 23,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Description.txt"
 	},
 	{
 	  "Name": "Arla-Sour-Milk",
@@ -437,8 +437,8 @@
 	  "ClassName": "Sour-Milk",
 	  "Price": 4.61,
 	  "ClassID": 24,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Description.txt"
 	},
 	{
 	  "Name": "Alpro-Blueberry-Soyghurt",
@@ -446,8 +446,8 @@
 	  "ClassName": "Soyghurt",
 	  "Price": 5.44,
 	  "ClassID": 25,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Description.txt"
 	},
 	{
 	  "Name": "Alpro-Vanilla-Soyghurt",
@@ -455,8 +455,8 @@
 	  "ClassName": "Soyghurt",
 	  "Price": 5.44,
 	  "ClassID": 25,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Description.txt"
 	},
 	{
 	  "Name": "Alpro-Fresh-Soy-Milk",
@@ -464,8 +464,8 @@
 	  "ClassName": "Soy-Milk",
 	  "Price": 10.82,
 	  "ClassID": 26,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Description.txt"
 	},
 	{
 	  "Name": "Alpro-Shelf-Soy-Milk",
@@ -473,8 +473,8 @@
 	  "ClassName": "Soy-Milk",
 	  "Price": 0.37,
 	  "ClassID": 26,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Description.txt"
 	},
 	{
 	  "Name": "Arla-Mild-Vanilla-Yoghurt",
@@ -482,8 +482,8 @@
 	  "ClassName": "Yoghurt",
 	  "Price": 8.03,
 	  "ClassID": 27,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Description.txt"
 	},
 	{
 	  "Name": "Arla-Natural-Mild-Low-Fat-Yoghurt",
@@ -491,8 +491,8 @@
 	  "ClassName": "Yoghurt",
 	  "Price": 7.82,
 	  "ClassID": 27,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Description.txt"
 	},
 	{
 	  "Name": "Arla-Natural-Yoghurt",
@@ -500,8 +500,8 @@
 	  "ClassName": "Yoghurt",
 	  "Price": 2.85,
 	  "ClassID": 27,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Description.txt"
 	},
 	{
 	  "Name": "Valio-Vanilla-Yoghurt",
@@ -509,8 +509,8 @@
 	  "ClassName": "Yoghurt",
 	  "Price": 4.4,
 	  "ClassID": 27,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Description.txt"
 	},
 	{
 	  "Name": "Yoggi-Strawberry-Yoghurt",
@@ -518,8 +518,8 @@
 	  "ClassName": "Yoghurt",
 	  "Price": 3.75,
 	  "ClassID": 27,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Description.txt"
 	},
 	{
 	  "Name": "Yoggi-Vanilla-Yoghurt",
@@ -527,8 +527,8 @@
 	  "ClassName": "Yoghurt",
 	  "Price": 0.06,
 	  "ClassID": 27,
-	  "ImagePath": "/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Description.txt"
 	},
 	{
 	  "Name": "Asparagus",
@@ -536,8 +536,8 @@
 	  "ClassName": "Asparagus",
 	  "Price": 0.66,
 	  "ClassID": 28,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Asparagus/Asparagus_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Asparagus/Asparagus_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Asparagus/Asparagus_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Asparagus/Asparagus_Description.txt"
 	},
 	{
 	  "Name": "Aubergine",
@@ -545,8 +545,8 @@
 	  "ClassName": "Aubergine",
 	  "Price": 6.31,
 	  "ClassID": 29,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Aubergine/Aubergine_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Aubergine/Aubergine_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Aubergine/Aubergine_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Aubergine/Aubergine_Description.txt"
 	},
 	{
 	  "Name": "Cabbage",
@@ -554,8 +554,8 @@
 	  "ClassName": "Cabbage",
 	  "Price": 9.93,
 	  "ClassID": 30,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Description.txt"
 	},
 	{
 	  "Name": "Carrots",
@@ -563,8 +563,8 @@
 	  "ClassName": "Carrots",
 	  "Price": 0.07,
 	  "ClassID": 31,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Description.txt"
 	},
 	{
 	  "Name": "Cucumber",
@@ -572,8 +572,8 @@
 	  "ClassName": "Cucumber",
 	  "Price": 0.61,
 	  "ClassID": 32,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Description.txt"
 	},
 	{
 	  "Name": "Garlic",
@@ -581,8 +581,8 @@
 	  "ClassName": "Garlic",
 	  "Price": 8.16,
 	  "ClassID": 33,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Description.txt"
 	},
 	{
 	  "Name": "Ginger",
@@ -590,8 +590,8 @@
 	  "ClassName": "Ginger",
 	  "Price": 1.43,
 	  "ClassID": 34,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Description.txt"
 	},
 	{
 	  "Name": "Leek",
@@ -599,8 +599,8 @@
 	  "ClassName": "Leek",
 	  "Price": 8.82,
 	  "ClassID": 35,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Leek/Leek_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Leek/Leek_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Leek/Leek_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Leek/Leek_Description.txt"
 	},
 	{
 	  "Name": "Brown-Cap-Mushroom",
@@ -608,8 +608,8 @@
 	  "ClassName": "Mushroom",
 	  "Price": 5.49,
 	  "ClassID": 36,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Description.txt"
 	},
 	{
 	  "Name": "Yellow-Onion",
@@ -617,8 +617,8 @@
 	  "ClassName": "Onion",
 	  "Price": 7.96,
 	  "ClassID": 37,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Description.txt"
 	},
 	{
 	  "Name": "Green-Bell-Pepper",
@@ -626,8 +626,8 @@
 	  "ClassName": "Pepper",
 	  "Price": 2.07,
 	  "ClassID": 38,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Description.txt"
 	},
 	{
 	  "Name": "Orange-Bell-Pepper",
@@ -635,8 +635,8 @@
 	  "ClassName": "Pepper",
 	  "Price": 3.64,
 	  "ClassID": 38,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Description.txt"
 	},
 	{
 	  "Name": "Red-Bell-Pepper",
@@ -644,8 +644,8 @@
 	  "ClassName": "Pepper",
 	  "Price": 1.29,
 	  "ClassID": 38,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Description.txt"
 	},
 	{
 	  "Name": "Yellow-Bell-Pepper",
@@ -653,8 +653,8 @@
 	  "ClassName": "Pepper",
 	  "Price": 5.97,
 	  "ClassID": 38,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Description.txt"
 	},
 	{
 	  "Name": "Floury-Potato",
@@ -662,8 +662,8 @@
 	  "ClassName": "Potato",
 	  "Price": 8.3,
 	  "ClassID": 39,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Potato/Floury-Potato/Floury-Potato_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Potato/Floury-Potato/Floury-Potato_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Potato/Floury-Potato/Floury-Potato_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Potato/Floury-Potato/Floury-Potato_Description.txt"
 	},
 	{
 	  "Name": "Solid-Potato",
@@ -671,8 +671,8 @@
 	  "ClassName": "Potato",
 	  "Price": 9.89,
 	  "ClassID": 39,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Potato/Solid-Potato/Solid-Potato_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Potato/Solid-Potato/Solid-Potato_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Potato/Solid-Potato/Solid-Potato_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Potato/Solid-Potato/Solid-Potato_Description.txt"
 	},
 	{
 	  "Name": "Sweet-Potato",
@@ -680,8 +680,8 @@
 	  "ClassName": "Potato",
 	  "Price": 7.37,
 	  "ClassID": 39,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Description.txt"
 	},
 	{
 	  "Name": "Red-Beet",
@@ -689,8 +689,8 @@
 	  "ClassName": "Red-Beet",
 	  "Price": 1.02,
 	  "ClassID": 40,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Red-Beet/Red-Beet_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Red-Beet/Red-Beet_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Red-Beet/Red-Beet_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Red-Beet/Red-Beet_Description.txt"
 	},
 	{
 	  "Name": "Beef-Tomato",
@@ -698,8 +698,8 @@
 	  "ClassName": "Tomato",
 	  "Price": 2.13,
 	  "ClassID": 41,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Description.txt"
 	},
 	{
 	  "Name": "Regular-Tomato",
@@ -707,8 +707,8 @@
 	  "ClassName": "Tomato",
 	  "Price": 5.84,
 	  "ClassID": 41,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Description.txt"
 	},
 	{
 	  "Name": "Vine-Tomato",
@@ -716,8 +716,8 @@
 	  "ClassName": "Tomato",
 	  "Price": 2.25,
 	  "ClassID": 41,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Description.txt"
 	},
 	{
 	  "Name": "Zucchini",
@@ -725,7 +725,7 @@
 	  "ClassName": "Zucchini",
 	  "Price": 5.18,
 	  "ClassID": 42,
-	  "ImagePath": "/iconic-images-and-descriptions/Vegetables/Zucchini/Zucchini_Iconic.jpg",
-	  "ProductDescriptionPath": "/iconic-images-and-descriptions/Vegetables/Zucchini/Zucchini_Description.txt"
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Zucchini/Zucchini_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Vegetables/Zucchini/Zucchini_Description.txt"
 	}
   ]
