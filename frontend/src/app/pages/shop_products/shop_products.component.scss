@@ -1,0 +1,35 @@
+.category-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    gap: 10px;
+    
+    .category-container, .subcategory-container, .subsubcategory-container, .item-container {
+      // Common styles for containers
+      border: 1px solid #ccc;
+      overflow-y: auto;
+    }
+    
+    .item {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      
+      .item-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        
+        .item-name {
+          font-weight: bold;
+        }
+        
+        .item-price {
+          color: #888;
+        }
+      }
+    }
+    
+    // Add more styles as needed to match the provided layout
+  }
+  
