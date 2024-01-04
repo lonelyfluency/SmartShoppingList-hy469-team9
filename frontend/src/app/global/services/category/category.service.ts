@@ -5,24 +5,56 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 export interface Product {
-  className: string;
-  classId: number;
-  coarseClassName: string;
-  price: number;
-  coarseClassId: number;
-  iconicImagePath: string;
-  productDescriptionPath: string;
+  Name: string;
+  NameId: number;
+  ClassName: string;
+  Price: number;
+  ClassId: number;
+  ImagePath: string;
+  ProductDescriptionPath: string;
 }
 
-export interface SubCategory {
+interface MainCategory {
+    name: string;
+    subcategories: SubCategory[];
+  }
+  
+  interface SubCategory {
+    name: string;
+    subsubcategories?: SubSubCategory[];
+    products?: Product[];
+  }
+  
+  interface SubSubCategory {
     name: string;
     products: Product[];
   }
   
-  export interface MainCategory {
-    name: string;
-    subcategories: SubCategory[];
+  interface Product {
+    className: string;
+    price: number;
+    iconicImagePath: string;
+    productDescriptionPath: string;
   }
+  
+  // Hardcoded main categories
+  const MAIN_CATEGORIES: MainCategory[] = [
+    {
+      name: 'Foods',
+      subcategories: [
+        { name: 'Meat', products: [] },
+        { name: 'Vegetables', products: [] },
+        { name: 'Fruits', products: [] },
+        { name: 'Dairy', products: [] }
+      ]
+    },
+    { name: 'Men Clothes', subcategories: [] },
+    { name: 'Women Clothes', subcategories: [] },
+    { name: 'Mobile & Devices', subcategories: [] },
+    { name: 'Sports', subcategories: [] },
+    { name: 'Students', subcategories: [] },
+    { name: 'Health & Beauty', subcategories: [] }
+  ];
   
   @Injectable({
     providedIn: 'root'

@@ -1,16 +1,16 @@
 export interface Product {
-    "Class Name (str)": string;
-    "Class ID (int)": number;
-    "Coarse Class Name (str)": string;
-    "Price": number;
-    "Coarse Class ID (int)": number;
-    "Iconic Image Path (str)": string;
-    "Product Description Path (str)": string;
+    Name: string;
+    NameId: number;
+    ClassName: string;
+    Price: number;
+    ClassId: number;
+    ImagePath: string;
+    ProductDescriptionPath: string;
   }
   
   export interface Category {
-    coarseClassName: string;
-    coarseClassId: number;
+    Name: string;
+    Id: number;
     products: Product[];
   }
   
