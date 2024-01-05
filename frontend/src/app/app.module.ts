@@ -29,6 +29,7 @@ import { FridgeMainComponent } from './pages/fridge_main/fridge_main.component';
 import { FridgeCategoryComponent } from './pages/fridge_category/fridge_category.component';
 import { FridgeListComponent } from './pages/fridge_list/fridge_list.component';
 import { FridgeRecipeComponent } from './pages/fridge_recipe/fridge_recipe.component';
+import {FridgeShoppingListDeleteComponent} from "./pages/fridge_shoppingListDelete/fridge_shoppingListDelete.component";
 import { DetailPopupComponent } from './pages/detail_popup/detail_popup.component';
 import { VoicePopupComponent } from './pages/voice_popup/voice_popup.component';
 import { HandPopupComponent } from './pages/hand_popup/hand_popup.component';

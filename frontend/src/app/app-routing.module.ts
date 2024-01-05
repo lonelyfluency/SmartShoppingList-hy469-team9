@@ -29,6 +29,7 @@ import { PhoneShopLocationComponent } from "./pages/phone_shopLocation/phone_sho
 import { PhoneQrCodeComponent } from "./pages/phone_qrcode/phone_qrcode.component";
 import { PhoneShopHistoryComponent } from "./pages/phone_shopHistory/phone_shopHistory.component";
 import {PhoneMyCartDeleteComponent} from "./pages/phone_cartDelete/phone_cart_delete.component";
+import {FridgeShoppingListDeleteComponent} from "./pages/fridge_shoppingListDelete/fridge_shoppingListDelete.component";
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -45,6 +46,7 @@ const routes: Routes = [
   { path: 'fridge_category' , component: FridgeCategoryComponent},
   { path: 'fridge_list' , component: FridgeListComponent},
   { path: 'fridge_recipe' , component: FridgeRecipeComponent},
+  { path: 'fridge_shoppingListDelete' , component: FridgeShoppingListDeleteComponent},
   { path: 'phone_sign' , component: PhoneSignComponent},
   { path: 'phone_login' , component: PhoneLoginComponent},
   { path: 'phone_personalInfo' , component: PhonePersonalInfoComponent},
