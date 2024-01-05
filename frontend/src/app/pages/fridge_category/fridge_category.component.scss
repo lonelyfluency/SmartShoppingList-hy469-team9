@@ -1,0 +1,30 @@
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 50%;
+  height: auto;
+}
+
+button {
+  background-color: #92C848;
+  color: white;
+  padding: 3px;
+  border: none;
+  border-radius: 20px;
+  width: 35%;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 20px;
+}
+
+p {
+  font-size: 2em;
+}
+
+
+
+

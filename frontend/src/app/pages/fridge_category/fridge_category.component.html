@@ -1,3 +1,59 @@
-<div class="mobile-body">
-    <h1>Fridge_category</h1>
+<div class="logo-container">
+  <img (click)="goToFridgeMain()" src="assets/phone-images/ShopWise.png" alt="ShopWise Logo" style="max-width: 40%; height: auto; cursor: pointer">
+  <h1 style="width: 35%; text-align: center">For Fridge</h1>
+</div>
+
+<!-- Search bar with search icon and microphone icon -->
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f0f0f0;">
+  <!-- Search bar with search icon -->
+  <div style="flex-grow: 1; display: flex; align-items: center;">
+    <input type="text" placeholder="Search..." style="flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+    <i class="fa fa-search" style="margin-left: 5px; cursor: pointer;"></i>
+  </div>
+
+  <!-- Microphone icon -->
+  <i class="fa fa-microphone" style="margin-left: 10px; cursor: pointer;"></i>
+</div>
+<h1> Category List</h1>
+
+<!-- Container for categories with horizontal scrolling -->
+<div style="background-color: #f0f0f0; padding: 10px; overflow-x: auto; white-space: nowrap; display: flex; gap: 10px;">
+
+  <div *ngFor="let category of categories"
+       (click)="selectCategory(category)" [style.background-color]="selectedCategory === category ? 'orange' : 'white'"
+       style="min-width: 200px; /* Adjust the width based on your needs */
+              padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+    <h3>{{ category.name | titlecase }}</h3>
+  </div>
+</div>
+<h1> Specified List</h1>
+
+<!-- Container for subcategories with horizontal scrolling -->
+<div *ngIf="selectedCategory" style="background-color: #f0f0f0; padding: 10px; overflow-x: auto; white-space: nowrap; display: flex; gap: 10px; flex-wrap: wrap;">
+
+  <div *ngFor="let subcategory of selectedCategory.subcategories"
+       (click)="selectSubcategory(subcategory)"
+       [style.background-color]="selectedSubcategory === subcategory ? 'orange' : 'white'"
+       style="min-width: 200px; /* Adjust the width based on your needs */
+              padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+    <h3>{{ subcategory.name | titlecase }}</h3>
+  </div>
+</div>
+<h1> Items List </h1>
+<!-- Container for items with vertical scrolling -->
+<div *ngIf="selectedSubcategory" style="background-color: #f0f0f0; padding: 10px; max-height: 300px; overflow-y: auto;">
+
+  <div *ngFor="let item of selectedSubcategory.items"
+       style="min-width: 200px; /* Adjust the width based on your needs */
+              padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+    <!-- Image on the left -->
+    <img src="{{ item.image }}" alt="{{ item.name }}" style="max-width: 50px; max-height: 50px; margin-right: 10px;">
+    <!-- Description in the center -->
+    <div style="flex-grow: 1; margin-left: 250px">
+      <h3>{{ item.name | titlecase }}</h3>
+    </div>
+    <!-- Add to List button on the right -->
+    <button style="background-color: green; color: white; padding: 8px; border: none; border-radius: 4px;">Add to List</button>
+  </div>
+
 </div>
