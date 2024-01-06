@@ -21,7 +21,6 @@
       background-color: white;
       border-radius: 5px;
       height: 5vh; // Use min-height for flexible box height
-
       &.selected {
         border: 2px solid yellow;
       }
@@ -59,12 +58,12 @@
             border: none;
             background-color: #92C848;
             color: white;
-            padding: 5px ;
+            padding: 0 ;
             margin: 0;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 3vw; // Ensure the font size is responsive
-            width: 3em;
+            font-size: 2vw; // Ensure the font size is responsive
+            width: 1.3em;
           }
           span {
             min-width: 4vw;
@@ -84,7 +83,8 @@
 }
 
 .logo-container {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-container img {
@@ -98,12 +98,11 @@ button {
   padding: 3px;
   border: none;
   border-radius: 20px;
-  width: 30%;
-  font-size: 1.2em;
+  width: 35%;
+  font-size: 2em;
   cursor: pointer;
   margin: 20px;
 }
-
 
 .button2 {
   background-color: white;
@@ -117,7 +116,6 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-
 
 
 

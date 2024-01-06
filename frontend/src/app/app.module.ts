@@ -77,6 +77,7 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     FridgeCategoryComponent,
     FridgeListComponent,
     FridgeRecipeComponent,
+    FridgeShoppingListDeleteComponent,
     PhoneSignComponent,
     PhoneLoginComponent,
     PhonePersonalInfoComponent,
