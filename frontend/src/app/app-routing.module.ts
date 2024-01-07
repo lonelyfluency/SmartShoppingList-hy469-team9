@@ -30,6 +30,7 @@ import { PhoneQrCodeComponent } from "./pages/phone_qrcode/phone_qrcode.componen
 import { PhoneShopHistoryComponent } from "./pages/phone_shopHistory/phone_shopHistory.component";
 import {PhoneMyCartDeleteComponent} from "./pages/phone_cartDelete/phone_cart_delete.component";
 import {FridgeShoppingListDeleteComponent} from "./pages/fridge_shoppingListDelete/fridge_shoppingListDelete.component";
+import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -65,6 +66,7 @@ const routes: Routes = [
   { path: 'voice_popup' , component: VoicePopupComponent},
   { path: 'hand_popup' , component: HandPopupComponent},
   { path: 'virtual_tryon' , component: VirtualTryonComponent},
+  { path: 'cart' , component: CartComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 
 ];

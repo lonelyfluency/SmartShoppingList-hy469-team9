@@ -1,0 +1,17 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      // Add more styles as needed
+  
+      .item-details {
+        margin-left: 15px;
+        // Add more styles as needed
+      }
+    }
+  }
+  
