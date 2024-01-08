@@ -1,22 +1,26 @@
 <div class="products-shop-container">
-    <div class="main-category-container">
-      <div *ngFor="let mainCat of mainCategories" (click)="onMainCategorySelected(mainCat)">
-        {{ mainCat.name }}
+  <!-- Main Category Container -->
+  <div class="main-category-container">
+      <div *ngFor="let mainCat of mainCategories" class="main-category" (click)="onMainCategorySelected(mainCat)">
+          <img [src]="mainCat.imagePath" [alt]="mainCat.name" class="category-image">
+          <span>{{ mainCat.name }}</span>
       </div>
-    </div>
-    
-    <div *ngIf="selectedMainCategory" class="subcategory-container">
-      <div *ngFor="let subCat of selectedMainCategory.subcategories" (click)="onSubCategorySelected(subCat)">
-        {{ subCat.name }}
-      </div>
-    </div>
-    
-    <div *ngIf="selectedSubCategory" class="products-container">
-      <div *ngFor="let product of selectedSubCategory.products">
-        <img [src]="product.ImagePath" alt="{{ product.Name }}">
-        <div>{{ product.Name }}</div>
-        <div>{{ product.Price | currency:'EUR' }}</div>
-      </div>
-    </div>
   </div>
   
+  <!-- Subcategory Container -->
+  <div *ngIf="selectedMainCategory" class="subcategory-container">
+      <div *ngFor="let subCat of selectedMainCategory.subcategories" class="subcategory" (click)="onSubCategorySelected(subCat)">
+          <img *ngIf="subCat.products[0]" [src]="subCat.products[0].ImagePath" [alt]="subCat.name" class="subcategory-image">
+          <span>{{ subCat.name }}</span>
+      </div>
+  </div>
+  
+  <!-- Products Container -->
+  <div *ngIf="selectedSubCategory" class="products-container">
+      <div *ngFor="let product of selectedSubCategory.products" class="product-card">
+          <img [src]="product.ImagePath" [alt]="product.Name" class="product-image">
+          <div class="product-info">{{ product.Name }}</div>
+          <div class="product-price">{{ product.Price | currency:'EUR' }}</div>
+      </div>
+  </div>
+</div>

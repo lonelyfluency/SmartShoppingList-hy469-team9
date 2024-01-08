@@ -16,4 +16,5 @@ export interface SubCategory {
 export interface MainCategory {
   name: string;
   subcategories: SubCategory[];
+  imagePath: string;
 }

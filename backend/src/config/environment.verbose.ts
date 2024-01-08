@@ -7,6 +7,7 @@ export const config = {
   // host domain options
   protocol: 'http',
   host: 'localhost',
+  // host: '192.168.137.1',
   exposedPort: 8080,
   port: 8080,
 

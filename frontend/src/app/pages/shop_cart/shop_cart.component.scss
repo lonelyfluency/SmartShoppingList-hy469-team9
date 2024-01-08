@@ -12,8 +12,14 @@
   }
   
 
-app-cart-shop {
-    display: flex;
-    width: 100%; /* Full width to allow internal flexing of items */
-    padding: 1vw 1vw; /* Left and right padding to align with profile and button */
+// app-cart-shop {
+//     display: flex;
+//     width: 100%; /* Full width to allow internal flexing of items */
+//     padding: 1vw 1vw; /* Left and right padding to align with profile and button */
+// }
+
+app-cart {
+  display: flex;
+  width: 100%; /* Full width to allow internal flexing of items */
+  padding: 1vw 1vw; /* Left and right padding to align with profile and button */
 }
