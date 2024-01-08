@@ -23,16 +23,23 @@ export class CartComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.loadCartItems();
+    // this.loadCartItems();
     this.subscribeToCartUpdates();
-  }
-
-  private loadCartItems(): void {
-    this.cartService.getAll().subscribe(
+    // Subscribe to the BehaviorSubject to get real-time updates
+    this.cartService.cartItems$.subscribe(
       items => this.cartItems = items,
       error => console.error('Error fetching cart items', error)
     );
+    // Initialize the cart
+    this.cartService.initializeCart();
   }
+
+  // private loadCartItems(): void {
+  //   this.cartService.getAll().subscribe(
+  //     items => this.cartItems = items,
+  //     error => console.error('Error fetching cart items', error)
+  //   );
+  // }
 
   private subscribeToCartUpdates(): void {
     this.SocketService.getCartUpdates((updatedCart: CartItemModel[]) => {

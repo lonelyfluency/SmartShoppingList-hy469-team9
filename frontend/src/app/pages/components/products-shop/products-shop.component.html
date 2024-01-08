@@ -17,10 +17,12 @@
   
   <!-- Products Container -->
   <div *ngIf="selectedSubCategory" class="products-container">
-      <div *ngFor="let product of selectedSubCategory.products" class="product-card">
-          <img [src]="product.ImagePath" [alt]="product.Name" class="product-image">
-          <div class="product-info">{{ product.Name }}</div>
-          <div class="product-price">{{ product.Price | currency:'EUR' }}</div>
+    <div *ngFor="let product of selectedSubCategory.products" class="product-box" (click)="onProductSelected(product)">
+      <img [src]="product.ImagePath" alt="{{ product.Name }}">
+      <div class="product-info">
+        <div class="product-name">{{ product.Name }}</div>
+        <div class="product-price">{{ product.Price | currency:'EUR' }}</div>
       </div>
+    </div>
   </div>
 </div>

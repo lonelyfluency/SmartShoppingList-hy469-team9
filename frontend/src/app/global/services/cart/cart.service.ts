@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { CartItemModel } from '../../models/cart/cart.model';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import * as _ from 'lodash';
 
@@ -11,37 +11,54 @@ import * as _ from 'lodash';
 })
 export class CartService {
   private hostUrl: string = environment.host;
+  private cartItemsSubject = new BehaviorSubject<CartItemModel[]>([]);
+
+  public cartItems$ = this.cartItemsSubject.asObservable();
 
   constructor(private http: HttpClient) {}
 
-  public getInitialCartItems(): Observable<CartItemModel[]> {
-    return this.http.get<any[]>('assets/cart.json')
-      .pipe(map(items => items.map(item => new CartItemModel({
-        productId: item.NameID.toString(),
-        productName: item.Name,
-        productPrice: item.Price,
-        quantity: item.Amount,
-        productImgUrl: item.ImagePath,
-        selected: false
-      }))));
-  }
-
   public getAll(): Observable<CartItemModel[]> {
     return this.http.get<CartItemModel[]>(`${this.hostUrl}/api/cart`)
-      .pipe(map(result => _.map(result, (item) => new CartItemModel(item))));
+      .pipe(
+        map(result => result.map(item => new CartItemModel(item))),
+        tap(items => this.cartItemsSubject.next(items)) // Update the BehaviorSubject
+      );
   }
 
   public add(item: CartItemModel): Observable<CartItemModel> {
     return this.http.post<CartItemModel>(`${this.hostUrl}/api/cart`, item)
-      .pipe(map(result => new CartItemModel(result)));
+      .pipe(
+        tap(() => {
+          // Fetch updated cart items after adding
+          this.getAll().subscribe();
+        })
+      );
   }
 
+  // Update method
   public update(id: string, item: CartItemModel): Observable<CartItemModel> {
     return this.http.put<CartItemModel>(`${this.hostUrl}/api/cart/${id}`, item)
-      .pipe(map(result => new CartItemModel(result)));
+      .pipe(
+        tap(() => {
+          // Fetch updated cart items after updating
+          this.getAll().subscribe();
+        })
+      );
   }
 
+  // Delete method
   public delete(id: string): Observable<void> {
-    return this.http.delete<void>(`${this.hostUrl}/api/cart/${id}`);
+    return this.http.delete<void>(`${this.hostUrl}/api/cart/${id}`)
+      .pipe(
+        tap(() => {
+          // Fetch updated cart items after deleting
+          this.getAll().subscribe();
+        })
+      );
+  }
+
+  // Initialize cart with items
+  public initializeCart(): void {
+    this.getAll().subscribe();
   }
 }
