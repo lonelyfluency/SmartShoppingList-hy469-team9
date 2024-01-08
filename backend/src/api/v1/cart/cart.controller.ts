@@ -51,6 +51,7 @@ export class CartController extends ResourceController<ICartItem> {
 
   addCartItem = async (req: Request, res: Response) => {
     this.logger.debug('Adding new cart item');
+    console.log('Received data:', req.body);
     try {
       const newCartItem = new CartModel(req.body);
       const savedCartItem = await newCartItem.save();

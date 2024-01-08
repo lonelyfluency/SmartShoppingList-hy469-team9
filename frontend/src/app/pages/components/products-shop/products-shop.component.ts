@@ -47,11 +47,11 @@ export class ProductsShopComponent implements OnInit {
 
   onProductSelected(product: Product): void {
     const cartItem = new CartItemModel({
-      productId: product.NameId, // Assuming product has an id
-      productName: product.Name,
-      productPrice: product.Price,
-      quantity: 1, // Default quantity to add
-      productImgUrl: product.ImagePath,
+      NameID: product.NameID,
+      Name: product.Name,
+      Price: product.Price,
+      Amount: 1, // Default quantity to add
+      ImagePath: product.ImagePath,
       selected: false
     });
 
