@@ -43,12 +43,14 @@ export class CartComponent implements OnInit {
   increment(item: CartItemModel): void {
     item.Amount++;
     this.cartService.update(item._id, item).subscribe();
+    item.selected = !item.selected;
   }
 
   decrement(item: CartItemModel): void {
     if (item.Amount > 1) {
       item.Amount--;
       this.cartService.update(item._id, item).subscribe();
+      item.selected = !item.selected;
     }
   }
 
