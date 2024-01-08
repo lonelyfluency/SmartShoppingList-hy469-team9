@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { CategoryService } from './global/services/category/category.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -103,7 +104,8 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     SocketIoModule.forRoot(socketIoConfig),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [CategoryService],
   bootstrap: [AppComponent]

@@ -2,21 +2,21 @@ import { Document, Schema, Model, model } from 'mongoose';
 import { DefaultSchemaOptions } from '../../../models/shared';
 
 export interface ICartItem extends Document {
-  productId: string;
-  productName: string;
-  productPrice: number;
-  quantity: number;
-  productImgUrl: string;
+  NameID: number;
+  Name: string;
+  Price: number;
+  Amount: number;
+  ImagePath: string;
   selected: boolean;
 }
 
 const cartItemSchema = new Schema(
   {
-    productId: { type: String, required: true },
-    productName: { type: Number, required: true },
-    productPrice: { type: String, required: true },
-    quantity: { type: Number, required: true },
-    productImgUrl: { type: String, required: true },
+    NameID: { type: Number, required: true },
+    Name: { type: String, required: true },
+    Price: { type: String, required: true },
+    Amount: { type: Number, required: true },
+    ImagePath: { type: String, required: true },
     selected: {type: Boolean, required: true}
   },
   { ...DefaultSchemaOptions }

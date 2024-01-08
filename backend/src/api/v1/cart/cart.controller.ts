@@ -23,6 +23,7 @@ export class CartController extends ResourceController<ICartItem> {
     return router;
   }
 
+
   getCartItems = async (req: Request, res: Response) => {
     this.logger.debug('Fetching cart items');
     try {

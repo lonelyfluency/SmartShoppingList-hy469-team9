@@ -3,6 +3,8 @@ import cors from 'cors';
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
+import * as fs from 'fs';
+import * as path from 'path';
 import { MethodNotAllowed } from 'http-errors';
 import { StatusCodes } from 'http-status-codes';
 import { Api } from './api';
@@ -44,6 +46,26 @@ export class App {
     }
 
     // #region Private methods
+
+    private loadCartData(): any[] {
+        // const filePath = path.join(__dirname, '../../frontend/src/assets/cart.json'); // Update the path
+        // const filePath = "./database/cart.json";
+        const filePath = path.join(__dirname, 'database/cart.json');
+        const jsonData = fs.readFileSync(filePath, 'utf8');
+        return JSON.parse(jsonData);
+    }
+
+    private async initializeCartData() {
+        const CartModel = require('./api/v1/cart/cart.model').CartModel; 
+        const count = await CartModel.countDocuments();
+    
+        if (count === 0) {
+            const cartItems = this.loadCartData();
+            await CartModel.insertMany(cartItems);
+            this.logger.success('Cart initialized with default data');
+        }
+    }    
+      
 
     /**
      * Setup express application
@@ -88,6 +110,9 @@ export class App {
             this.logger.success(`MongoDB is connected on ${config.mongo.uri}`);
             const Str = mongoose.Schema.Types.String as any;
             Str.checkRequired((v: string) => v != null);
+
+            // Initialize cart Data
+            await this.initializeCartData();
 
         } catch (e) {
             this.logger.error(`MongoDB connection error: `, e);

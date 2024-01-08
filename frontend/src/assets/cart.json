@@ -1,0 +1,82 @@
+[
+	{
+	  "Name": "Golden-Delicious",
+	  "NameID": 0,
+	  "ClassName": "Apple",
+	  "Price": 8.6,
+	  "ClassID": 0,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Golden-Delicious/Golden-Delicious_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Golden-Delicious/Golden-Delicious_Description.txt",
+	  "Amount": 1
+	},
+	{
+	  "Name": "Granny-Smith",
+	  "NameID": 1,
+	  "ClassName": "Apple",
+	  "Price": 8.25,
+	  "ClassID": 0,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Granny-Smith/Granny-Smith_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Apple/Granny-Smith/Granny-Smith_Description.txt",
+	  "Amount": 1
+	},
+	{
+	  "Name": "Avocado",
+	  "NameID": 5,
+	  "ClassName": "Avocado",
+	  "Price": 0.36,
+	  "ClassID": 1,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Avocado/Avocado_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Avocado/Avocado_Description.txt",
+	  "Amount": 1
+	},
+	{
+	  "Name": "Banana",
+	  "NameID": 6,
+	  "ClassName": "Banana",
+	  "Price": 8.66,
+	  "ClassID": 2,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Banana/Banana_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Banana/Banana_Description.txt",
+	  "Amount": 1
+	},
+	{
+	  "Name": "Kiwi",
+	  "NameID": 7,
+	  "ClassName": "Kiwi",
+	  "Price": 7.07,
+	  "ClassID": 3,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Kiwi/Kiwi_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Kiwi/Kiwi_Description.txt",
+	  "Amount": 1
+	},
+	{
+	  "Name": "Lemon",
+	  "NameID": 8,
+	  "ClassName": "Lemon",
+	  "Price": 8.34,
+	  "ClassID": 4,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lemon/Lemon_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lemon/Lemon_Description.txt",
+	  "Amount": 1
+	},
+	{
+	  "Name": "Lime",
+	  "NameID": 9,
+	  "ClassName": "Lime",
+	  "Price": 5.46,
+	  "ClassID": 5,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lime/Lime_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Lime/Lime_Description.txt",
+	  "Amount": 1
+	},
+	{
+	  "Name": "Mango",
+	  "NameID": 10,
+	  "ClassName": "Mango",
+	  "Price": 3.49,
+	  "ClassID": 6,
+	  "ImagePath": "../../../../assets/iconic-images-and-descriptions/Fruit/Mango/Mango_Iconic.jpg",
+	  "ProductDescriptionPath": "../../../../assets/iconic-images-and-descriptions/Fruit/Mango/Mango_Description.txt",
+	  "Amount": 1
+	}
+  ]

@@ -59,8 +59,10 @@ export class CartShopComponent {
   }
 
   getTotalPrice(): number {
-    return this.cartItems.reduce((acc, item) => acc + (item.amount * item.price), 0);
+    const total = this.cartItems.reduce((acc, item) => acc + (item.amount * item.price), 0);
+    return parseFloat(total.toFixed(2));
   }
+  
 
   proceedToCheckout(): void {
     // Implement checkout logic

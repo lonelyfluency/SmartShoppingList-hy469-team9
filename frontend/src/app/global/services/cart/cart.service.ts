@@ -14,6 +14,18 @@ export class CartService {
 
   constructor(private http: HttpClient) {}
 
+  public getInitialCartItems(): Observable<CartItemModel[]> {
+    return this.http.get<any[]>('assets/cart.json')
+      .pipe(map(items => items.map(item => new CartItemModel({
+        productId: item.NameID.toString(),
+        productName: item.Name,
+        productPrice: item.Price,
+        quantity: item.Amount,
+        productImgUrl: item.ImagePath,
+        selected: false
+      }))));
+  }
+
   public getAll(): Observable<CartItemModel[]> {
     return this.http.get<CartItemModel[]>(`${this.hostUrl}/api/cart`)
       .pipe(map(result => _.map(result, (item) => new CartItemModel(item))));

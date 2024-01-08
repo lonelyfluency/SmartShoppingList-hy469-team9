@@ -8,6 +8,12 @@ export class SocketsService {
   constructor(private socket: Socket) {
   }
 
+  getCartUpdates(callback: Function) {
+    this.socket.on('cartUpdated', (cart: any) => {
+      callback(cart);
+    });
+  }
+
   // Pub/Sub functions supported with sockets.
   public publish(event: string, data: any) {
     // Inform backend to broadcast socket event
