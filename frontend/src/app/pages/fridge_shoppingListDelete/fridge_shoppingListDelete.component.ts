@@ -46,8 +46,8 @@ export class FridgeShoppingListDeleteComponent {
     item.selected = !item.selected;
   }
 
-  callManageDeleteComponent(): void {
-    window.location.href = 'http://localhost:4200/phone_shoppingListDelete';
+  deleteSelectedItems(): void {
+    this.cartItems = this.cartItems.filter(item => !item.selected);
   }
 
   goToAccountPage(): void {
