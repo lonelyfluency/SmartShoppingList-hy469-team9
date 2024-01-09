@@ -64,6 +64,40 @@ export class App {
             await CartModel.insertMany(cartItems);
             this.logger.success('Cart initialized with default data');
         }
+    }
+
+    private loadShoppinglistData(): any[] {
+        const filePath = path.join(__dirname, 'database/shoppinglist.json');
+        const jsonData = fs.readFileSync(filePath, 'utf8');
+        return JSON.parse(jsonData);
+    }
+
+    private async initializeShoppinglistData() {
+        const ShoppinglistModel = require('./api/v1/shoppinglist/shoppinglist.model').ShoppinglistModel; 
+        const count = await ShoppinglistModel.countDocuments();
+    
+        if (count === 0) {
+            const shoppinglistItems = this.loadShoppinglistData();
+            await ShoppinglistModel.insertMany(shoppinglistItems);
+            this.logger.success('Shoppinglist initialized with default data');
+        }
+    }    
+
+    private loadInventoryData(): any[] {
+        const filePath = path.join(__dirname, 'database/inventory.json');
+        const jsonData = fs.readFileSync(filePath, 'utf8');
+        return JSON.parse(jsonData);
+    }
+
+    private async initializeInventoryData() {
+        const InventoryModel = require('./api/v1/inventory/inventory.model').InventoryModel; 
+        const count = await InventoryModel.countDocuments();
+    
+        if (count === 0) {
+            const inventoryItems = this.loadInventoryData();
+            await InventoryModel.insertMany(inventoryItems);
+            this.logger.success('Inventory initialized with default data');
+        }
     }    
       
 
@@ -111,8 +145,10 @@ export class App {
             const Str = mongoose.Schema.Types.String as any;
             Str.checkRequired((v: string) => v != null);
 
-            // Initialize cart Data
+            // Initialize cart, shoppinglist, inventory Data
             await this.initializeCartData();
+            await this.initializeShoppinglistData();
+            await this.initializeInventoryData();
 
         } catch (e) {
             this.logger.error(`MongoDB connection error: `, e);

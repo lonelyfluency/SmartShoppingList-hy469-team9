@@ -33,6 +33,8 @@ import {PhoneMyCartDeleteComponent} from "./pages/phone_cartDelete/phone_cart_de
 import {FridgeShoppingListDeleteComponent} from "./pages/fridge_shoppingListDelete/fridge_shoppingListDelete.component";
 import { CartComponent } from './pages/cart/cart.component';
 import { SearchResultComponent } from './pages/components/search-result/search-result.component';
+import { ShoppinglistComponent } from './pages/shoppinglist/shoppinglist.component';
+import { InventoryComponent } from './pages/inventory/inventory.component';
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -71,6 +73,8 @@ const routes: Routes = [
   { path: 'virtual_tryon' , component: VirtualTryonComponent},
   { path: 'cart' , component: CartComponent},
   { path: 'search_result', component: SearchResultComponent},
+  { path: 'shoppinglist', component: ShoppinglistComponent},
+  { path: 'inventory', component: InventoryComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 
 ];

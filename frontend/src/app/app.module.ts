@@ -52,6 +52,8 @@ import {PhoneMyCartDeleteComponent} from "./pages/phone_cartDelete/phone_cart_de
 import { CartComponent } from './pages/cart/cart.component';
 import { SearchResultComponent } from './pages/components/search-result/search-result.component';
 import { ShopSearchComponent } from './pages/shop_search/shop_search.component';
+import { ShoppinglistComponent } from './pages/shoppinglist/shoppinglist.component';
+import { InventoryComponent } from './pages/inventory/inventory.component';
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 // @ts-ignore
@@ -102,7 +104,9 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     VirtualTryonComponent,
     CartComponent,
     SearchResultComponent,
-    ShopSearchComponent
+    ShopSearchComponent,
+    ShoppinglistComponent,
+    InventoryComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),

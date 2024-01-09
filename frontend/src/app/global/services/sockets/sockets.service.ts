@@ -14,6 +14,18 @@ export class SocketsService {
     });
   }
 
+  getShoppinglistUpdates(callback: Function) {
+    this.socket.on('shoppinglistUpdated', (shoppinglist: any) => {
+      callback(shoppinglist);
+    });
+  }
+
+  getInventoryUpdates(callback: Function) {
+    this.socket.on('inventoryUpdated', (inventory: any) => {
+      callback(inventory);
+    });
+  }
+
   // Pub/Sub functions supported with sockets.
   public publish(event: string, data: any) {
     // Inform backend to broadcast socket event

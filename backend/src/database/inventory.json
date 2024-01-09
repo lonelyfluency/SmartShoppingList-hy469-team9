@@ -1,0 +1,123 @@
+[
+    {
+        "Name": "Red-Grapefruit",
+        "NameID": 26,
+        "ClassName": "Red-Grapefruit",
+        "Price": 6.64,
+        "ClassID": 17,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Description.txt",
+        "Amount": 2,
+        "selected": false
+      },
+      {
+        "Name": "Satsumas",
+        "NameID": 27,
+        "ClassName": "Satsumas",
+        "Price": 4.86,
+        "ClassID": 18,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Bravo-Apple-Juice",
+        "NameID": 28,
+        "ClassName": "Juice",
+        "Price": 7.3,
+        "ClassID": 19,
+        "ImagePath": "assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Arla-Lactose-Medium-Fat-Milk",
+        "NameID": 39,
+        "ClassName": "Milk",
+        "Price": 1.98,
+        "ClassID": 20,
+        "ImagePath": "assets/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Arla-Ecological-Sour-Cream",
+        "NameID": 46,
+        "ClassName": "Sour-Cream",
+        "Price": 0.06,
+        "ClassID": 23,
+        "ImagePath": "assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Arla-Natural-Yoghurt",
+        "NameID": 55,
+        "ClassName": "Yoghurt",
+        "Price": 2.85,
+        "ClassID": 27,
+        "ImagePath": "assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Cabbage",
+        "NameID": 61,
+        "ClassName": "Cabbage",
+        "Price": 9.93,
+        "ClassID": 30,
+        "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Carrots",
+        "NameID": 62,
+        "ClassName": "Carrots",
+        "Price": 0.07,
+        "ClassID": 31,
+        "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Description.txt",
+        "Amount": 2,
+        "selected": false
+      },
+      {
+        "Name": "Cucumber",
+        "NameID": 63,
+        "ClassName": "Cucumber",
+        "Price": 0.61,
+        "ClassID": 32,
+        "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Description.txt",
+        "Amount": 2,
+        "selected": false
+      },
+      {
+        "Name": "Garlic",
+        "NameID": 64,
+        "ClassName": "Garlic",
+        "Price": 8.16,
+        "ClassID": 33,
+        "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Description.txt",
+        "Amount": 2,
+        "selected": false
+      },
+      {
+        "Name": "Ginger",
+        "NameID": 65,
+        "ClassName": "Ginger",
+        "Price": 1.43,
+        "ClassID": 34,
+        "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Description.txt",
+        "Amount": 2,
+        "selected": false
+      }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "Name": "Watermelon",
+        "NameID": 14,
+        "ClassName": "Melon",
+        "Price": 5.09,
+        "ClassID": 7,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Melon/Watermelon/Watermelon_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Melon/Watermelon/Watermelon_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Nectarine",
+        "NameID": 15,
+        "ClassName": "Nectarine",
+        "Price": 4.09,
+        "ClassID": 8,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Nectarine/Nectarine_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Nectarine/Nectarine_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Orange",
+        "NameID": 16,
+        "ClassName": "Orange",
+        "Price": 3.07,
+        "ClassID": 9,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Orange/Orange_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Orange/Orange_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Papaya",
+        "NameID": 17,
+        "ClassName": "Papaya",
+        "Price": 7.97,
+        "ClassID": 10,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Papaya/Papaya_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Papaya/Papaya_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Passion-Fruit",
+        "NameID": 18,
+        "ClassName": "Passion-Fruit",
+        "Price": 7.87,
+        "ClassID": 11,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Passion-Fruit/Passion-Fruit_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Passion-Fruit/Passion-Fruit_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Peach",
+        "NameID": 19,
+        "ClassName": "Peach",
+        "Price": 0.93,
+        "ClassID": 12,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Peach/Peach_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Peach/Peach_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Anjou",
+        "NameID": 20,
+        "ClassName": "Pear",
+        "Price": 8.53,
+        "ClassID": 13,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Pear/Anjou/Anjou_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Pear/Anjou/Anjou_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Conference",
+        "NameID": 21,
+        "ClassName": "Pear",
+        "Price": 0.4,
+        "ClassID": 13,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Pear/Conference/Conference_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Pear/Conference/Conference_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Kaiser",
+        "NameID": 22,
+        "ClassName": "Pear",
+        "Price": 1.69,
+        "ClassID": 13,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Pear/Kaiser/Kaiser_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Pear/Kaiser/Kaiser_Description.txt",
+        "Amount": 1,
+        "selected": false
+      },
+      {
+        "Name": "Pineapple",
+        "NameID": 23,
+        "ClassName": "Pineapple",
+        "Price": 3.76,
+        "ClassID": 14,
+        "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Pineapple/Pineapple_Iconic.jpg",
+        "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Pineapple/Pineapple_Description.txt",
+        "Amount": 1,
+        "selected": false
+      }
+]
