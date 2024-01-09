@@ -6,6 +6,7 @@ import { ShopMainComponent } from './pages/shop_main/shop_main.component';
 import { ShopProductsComponent } from './pages/shop_products/shop_products.component';
 import { ShopCartComponent } from './pages/shop_cart/shop_cart.component';
 import { ShopOfferComponent } from './pages/shop_offer/shop_offer.component';
+import { ShopSearchComponent } from './pages/shop_search/shop_search.component';
 import { ShopLoginComponent} from "./pages/shop_login/shop_login.component";
 import { PhoneCartComponent} from "./pages/phone_cart/phone_cart.component"
 import { FridgeMainComponent } from './pages/fridge_main/fridge_main.component';
@@ -31,6 +32,7 @@ import { PhoneShopHistoryComponent } from "./pages/phone_shopHistory/phone_shopH
 import {PhoneMyCartDeleteComponent} from "./pages/phone_cartDelete/phone_cart_delete.component";
 import {FridgeShoppingListDeleteComponent} from "./pages/fridge_shoppingListDelete/fridge_shoppingListDelete.component";
 import { CartComponent } from './pages/cart/cart.component';
+import { SearchResultComponent } from './pages/components/search-result/search-result.component';
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -43,6 +45,7 @@ const routes: Routes = [
   { path: 'shop_cart' , component: ShopCartComponent},
   { path: 'shop_offer' , component: ShopOfferComponent},
   { path: 'shop_login' , component: ShopLoginComponent},
+  { path: 'shop_search', component: ShopSearchComponent},
   { path: 'fridge_main' , component: FridgeMainComponent},
   { path: 'fridge_category' , component: FridgeCategoryComponent},
   { path: 'fridge_list' , component: FridgeListComponent},
@@ -67,6 +70,7 @@ const routes: Routes = [
   { path: 'hand_popup' , component: HandPopupComponent},
   { path: 'virtual_tryon' , component: VirtualTryonComponent},
   { path: 'cart' , component: CartComponent},
+  { path: 'search_result', component: SearchResultComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 
 ];

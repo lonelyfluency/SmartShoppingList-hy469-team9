@@ -1,51 +1,47 @@
-// products-shop.component.ts
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import { CategoryService } from 'src/app/global/services/category/category.service';
 import { CartService } from 'src/app/global/services/cart/cart.service';
 import { MainCategory, SubCategory, Product } from 'src/app/global/models/category/category.model';
 import { CartItemModel } from 'src/app/global/models/cart/cart.model';
 
 @Component({
-  selector: 'app-products-shop',
-  templateUrl: './products-shop.component.html',
-  styleUrls: ['./products-shop.component.scss']
+    selector: 'app-search-result',
+    templateUrl: './search-result.component.html',
+    styleUrls: ['./search-result.component.scss']
 })
-export class ProductsShopComponent implements OnInit {
-  mainCategories!: MainCategory[];
-  selectedMainCategory?: MainCategory;
-  selectedSubCategory?: SubCategory;
+export class SearchResultComponent implements OnInit {
+  products: any[] = [];
+  query: string = '';
 
   constructor(
+    private route: ActivatedRoute,
+    private http: HttpClient,
     private categoryService: CategoryService,
     private cartService: CartService // Inject the CartService
   ) {}
 
   ngOnInit(): void {
-    this.categoryService.getCategories().subscribe(categories => {
-      this.mainCategories = categories;
-      if (this.mainCategories.length > 0) {
-        this.selectedMainCategory = this.mainCategories[0];
-        if (this.selectedMainCategory.subcategories.length > 0) {
-          this.selectedSubCategory = this.selectedMainCategory.subcategories[0];
-        }
-      }
+    this.route.queryParams.subscribe(params => {
+      this.query = params['query'];
+      this.fetchProducts();
     });
   }
 
-  onMainCategorySelected(mainCategory: MainCategory): void {
-    this.selectedMainCategory = mainCategory;
-    if (mainCategory.subcategories.length > 0) {
-      this.selectedSubCategory = mainCategory.subcategories[0];
-    } else {
-      this.selectedSubCategory = undefined;
-    }
+  private fetchProducts(): void {
+    this.http.get<any[]>('assets/products.json').subscribe(
+      data => {
+        this.products = data.filter(product =>
+          product.Name.toLowerCase().includes(this.query.toLowerCase())
+        );
+      },
+      error => console.error('Error loading products', error)
+    );
   }
 
-  onSubCategorySelected(subCategory: SubCategory): void {
-    this.selectedSubCategory = subCategory;
-  }
-
-  onProductSelected(product: Product): void {
+  // Method to add product to cart
+  addToCart(product: Product): void {
     const cartItem = new CartItemModel({
       NameID: product.NameID,
       Name: product.Name,

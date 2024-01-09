@@ -10,10 +10,11 @@
   </div>
   
   <img src="../../../../assets/logo.png" alt="ShopWise Logo" class="logo">
-  
+
+  <!-- Search Input Container -->
   <div class="search-container">
-    <input type="text" placeholder="Search...">
-    <button type="submit" class="search-button">
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Search...">
+    <button type="button" class="search-button" (click)="onSearch()">
       <img src="../../../../assets/top-bar/search-icon.png" alt="Search">
     </button>
   </div>

@@ -70,3 +70,24 @@
   width: 20px; /* Fixed width for the search icon */
   height: 20px; /* Fixed height for the search icon */
 }
+
+
+.search-results {
+  position: absolute;
+  bottom: 90%; // Position above the search bar
+  left: 0;
+  right: 0;
+  background-color: white; // or any color that matches your design
+  border: 1px solid #ccc; // optional border
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1); // optional shadow for better visibility
+  z-index: 10; // to ensure it's above other content
+
+  div {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #f0f0f0; // highlight on hover
+    }
+  }
+}

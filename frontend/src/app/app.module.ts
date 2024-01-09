@@ -50,6 +50,8 @@ import { PhoneQrCodeComponent } from "./pages/phone_qrcode/phone_qrcode.componen
 import { PhoneShopHistoryComponent } from "./pages/phone_shopHistory/phone_shopHistory.component";
 import {PhoneMyCartDeleteComponent} from "./pages/phone_cartDelete/phone_cart_delete.component";
 import { CartComponent } from './pages/cart/cart.component';
+import { SearchResultComponent } from './pages/components/search-result/search-result.component';
+import { ShopSearchComponent } from './pages/shop_search/shop_search.component';
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 // @ts-ignore
@@ -98,7 +100,9 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     VoicePopupComponent,
     HandPopupComponent,
     VirtualTryonComponent,
-    CartComponent
+    CartComponent,
+    SearchResultComponent,
+    ShopSearchComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),

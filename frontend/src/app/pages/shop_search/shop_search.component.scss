@@ -1,0 +1,25 @@
+.shop-search-container {
+    position: relative;
+    background: white;
+    margin-left: 10vw; /* Left space for the navigation bar */
+    margin-bottom: 8vh; /* Bottom space for the bottom bar */
+    height: calc(92vh - 8vh); /* Relative to the viewport height */
+    width: 90vw; /* Relative to the viewport width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the start of the container */
+    padding-top: 1vh;
+  }
+  
+
+// app-cart-shop {
+//     display: flex;
+//     width: 100%; /* Full width to allow internal flexing of items */
+//     padding: 1vw 1vw; /* Left and right padding to align with profile and button */
+// }
+
+app-search-result {
+  display: flex;
+  width: 100%; /* Full width to allow internal flexing of items */
+  padding: 1vw 1vw; /* Left and right padding to align with profile and button */
+}
