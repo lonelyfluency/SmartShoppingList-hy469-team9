@@ -10,12 +10,6 @@ import { SocketsService } from 'src/app/global/services/sockets/sockets.service'
 })
 export class ShoppinglistComponent implements OnInit {
   public shoppinglistItems: ShoppinglistItemModel[] = [];
-  public paymentMethods = [
-    { name: 'Saved Card', selected: false },
-    { name: 'Real Card', selected: false },
-    { name: 'NFC', selected: false },
-    { name: 'Cash', selected: false },
-  ];
 
   constructor(
     private shoppinglistService: ShoppinglistService,

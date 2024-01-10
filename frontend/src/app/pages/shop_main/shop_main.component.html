@@ -3,11 +3,12 @@
   <div class="top-section">
     <app-profile></app-profile>
     <app-date-time></app-date-time>
-    <button class="add-to-cart-button">Add to Cart</button>
+    <button class="add-to-cart-button" (click)="addToCart()">Add to Cart</button>
   </div>
 
   <div class="second-section">
-    <app-shoppinglist-shop></app-shoppinglist-shop>
+    <!-- <app-shoppinglist-shop></app-shoppinglist-shop> -->
+    <app-shoppinglist></app-shoppinglist>
   </div>
 
   <div class="third-section">

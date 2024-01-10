@@ -12,7 +12,7 @@ import * as _ from 'lodash';
 export class ShoppinglistService {
   private hostUrl: string = environment.host;
   private shoppinglistItemsSubject = new BehaviorSubject<ShoppinglistItemModel[]>([]);
-
+  private shoppinglistItems: ShoppinglistItemModel[] = [];
   public shoppinglistItems$ = this.shoppinglistItemsSubject.asObservable();
 
   constructor(private http: HttpClient) {}
@@ -59,6 +59,13 @@ export class ShoppinglistService {
 
   // Initialize shoppinglist with items
   public initializeShoppinglist(): void {
-    this.getAll().subscribe();
+    this.getAll().subscribe((items) => {
+      this.shoppinglistItems = items;
+      this.shoppinglistItemsSubject.next(items);
+    });
+  }
+
+  public getSelectedItems(): ShoppinglistItemModel[] {
+    return this.shoppinglistItems.filter(item => item.selected);
   }
 }

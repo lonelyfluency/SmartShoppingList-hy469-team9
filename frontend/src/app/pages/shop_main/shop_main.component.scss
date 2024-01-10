@@ -76,7 +76,13 @@ app-date-time {
   background-color: #7aa836; /* Slightly darker green on hover for visual feedback */
 }
 
-app-shoppinglist-shop {
+// app-shoppinglist-shop {
+//   display: flex;
+//   width: 100%; /* Full width to allow internal flexing of items */
+//   padding: 0 2vw; /* Left and right padding to align with profile and button */
+// }
+
+app-shoppinglist {
   display: flex;
   width: 100%; /* Full width to allow internal flexing of items */
   padding: 0 2vw; /* Left and right padding to align with profile and button */
