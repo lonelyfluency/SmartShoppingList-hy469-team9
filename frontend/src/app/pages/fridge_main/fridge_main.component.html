@@ -13,14 +13,7 @@
 <h1>Currently in storage</h1>
 
 <div class="items-container">
-  <div *ngFor="let row of items; let i = index" class="row">
-    <div *ngFor="let item of items.slice(i * 3, i * 3 + 3)" class="col">
-      <img  [src]="item.imageUrl" alt="{{ item.name }}">
-      <h1>{{ item.name }}</h1>
-      <p>Quantity: {{ item.quantity }}</p>
-      <p>Expiration in: {{ item.expiration }} days</p>
-    </div>
-  </div>
+  <app-inventory></app-inventory>
 </div>
 <h1>Smart Recipe</h1>
 
