@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { SmartSpeakerService } from 'src/app/global/services/smart-speaker/smart-speaker.service';
+
 
 
 @Component({
@@ -11,8 +13,31 @@ import { Router } from '@angular/router';
 })
 export class TopBarComponent {
   searchQuery = '';
+  voiceQuery = '';
+  private isRecording = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private smartSpeakerService: SmartSpeakerService) {}
+
+  ngOnInit() {
+    this.smartSpeakerService.initialize();
+    this.smartSpeakerService.addCommand("search for *", (spokenText: string) => {
+      this.voiceQuery = spokenText.split('search for ')[1];
+    });
+  }
+
+  onVoiceButtonClick() {
+    if (this.isRecording) {
+      this.smartSpeakerService.stop();
+      this.isRecording = false;
+      this.router.navigate(['/search_result'], { queryParams: { query: this.voiceQuery } });
+    } else {
+      this.smartSpeakerService.start();
+      this.isRecording = true;
+      this.smartSpeakerService.addCommand("search for *", (spokenText: string) => {
+        this.voiceQuery = spokenText.split('search for ')[1];
+      });
+    }
+  }
 
   onSearch(): void {
     this.router.navigate(['/search_result'], { queryParams: { query: this.searchQuery } });
