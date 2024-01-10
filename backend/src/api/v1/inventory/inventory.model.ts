@@ -8,6 +8,7 @@ export interface IInventoryItem extends Document {
   Amount: number;
   ImagePath: string;
   selected: boolean;
+  expire: number;
 }
 
 const inventoryItemSchema = new Schema(
@@ -17,7 +18,8 @@ const inventoryItemSchema = new Schema(
     Price: { type: String, required: true },
     Amount: { type: Number, required: true },
     ImagePath: { type: String, required: true },
-    selected: {type: Boolean, required: true}
+    selected: {type: Boolean, required: true},
+    expire: {type: Number, required: true}
   },
   { ...DefaultSchemaOptions }
 );

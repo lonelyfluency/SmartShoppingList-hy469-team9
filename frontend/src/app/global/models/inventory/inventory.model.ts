@@ -6,6 +6,7 @@ export class InventoryItemModel {
     public Amount!: number;
     public ImagePath!: string;
     public selected?: boolean;
+    public expire!: number;
   
     constructor(model?: any) {
       Object.assign(this, model);

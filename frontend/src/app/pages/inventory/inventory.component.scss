@@ -18,7 +18,7 @@
 
 
 .inventory-container {
-  width: 75%; /* 75% of the wrapper's width */
+  width: 85%; /* 85% of the wrapper's width */
   white-space: nowrap; /* Prevents wrapping of inline elements like item boxes */
   background-color: #d9d9d9; /* Grey background for the container */
   padding: 1vw 0; /* Padding relative to the width of the viewport */
@@ -61,10 +61,13 @@
 
   .item-info {
     text-align: center;
+    width: 70%;
   }
 
   .item-name {
     font-weight: bold;
+    text-align: center; // Center-align the text
+    word-wrap: break-word; // Allow long words to break and wrap
   }
 
   .item-quantity {
@@ -73,11 +76,19 @@
     padding: 2px 5px;
     border-radius: 5px;
   }
+
+  .item-expire {
+    background-color: #488ec8;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
 }
 
 .button-container {
-  width: 25%; /* 25% of the wrapper's width */
+  width: 15%; /* 15% of the wrapper's width */
   display: flex;
+  flex-direction: column; /* Stack buttons vertically */
   align-items: center; /* Center the button vertically */
   justify-content: center; /* Center the button horizontally */
   padding: 10px; /* Padding inside the container */
@@ -96,11 +107,7 @@
   cursor: pointer; /* Cursor to indicate it's a button */
   margin: 10px 0; /* Margin above and below the button */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for aesthetic */
-  align-self: center; /* Center the button if the container uses flex */
-  flex-basis: 48%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0 1%; /* This will add space between the buttons */
+  width: 80%; /* Button takes full width of the container */
 }
 
 /* Add responsive breakpoints if necessary */
