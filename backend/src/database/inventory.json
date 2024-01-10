@@ -8,7 +8,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Red-Grapefruit/Red-Grapefruit_Description.txt",
         "Amount": 2,
-        "selected": false
+        "selected": false,
+        "expire": 6
       },
       {
         "Name": "Satsumas",
@@ -19,7 +20,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Fruit/Satsumas/Satsumas_Description.txt",
         "Amount": 1,
-        "selected": false
+        "selected": false,
+        "expire": 4
       },
       {
         "Name": "Bravo-Apple-Juice",
@@ -30,7 +32,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Description.txt",
         "Amount": 1,
-        "selected": false
+        "selected": false,
+        "expire": 14
       },
       {
         "Name": "Arla-Lactose-Medium-Fat-Milk",
@@ -41,7 +44,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Description.txt",
         "Amount": 1,
-        "selected": false
+        "selected": false,
+        "expire": 3
       },
       {
         "Name": "Arla-Ecological-Sour-Cream",
@@ -52,7 +56,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Description.txt",
         "Amount": 1,
-        "selected": false
+        "selected": false,
+        "expire": 4
       },
       {
         "Name": "Arla-Natural-Yoghurt",
@@ -63,7 +68,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Description.txt",
         "Amount": 1,
-        "selected": false
+        "selected": false,
+        "expire": 5
       },
       {
         "Name": "Cabbage",
@@ -74,7 +80,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Cabbage/Cabbage_Description.txt",
         "Amount": 1,
-        "selected": false
+        "selected": false,
+        "expire": 6
       },
       {
         "Name": "Carrots",
@@ -85,7 +92,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Carrots/Carrots_Description.txt",
         "Amount": 2,
-        "selected": false
+        "selected": false,
+        "expire": 12
       },
       {
         "Name": "Cucumber",
@@ -96,7 +104,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Cucumber/Cucumber_Description.txt",
         "Amount": 2,
-        "selected": false
+        "selected": false,
+        "expire": 7
       },
       {
         "Name": "Garlic",
@@ -107,7 +116,8 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Garlic/Garlic_Description.txt",
         "Amount": 2,
-        "selected": false
+        "selected": false,
+        "expire": 9
       },
       {
         "Name": "Ginger",
@@ -118,6 +128,7 @@
         "ImagePath": "assets/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Iconic.jpg",
         "ProductDescriptionPath": "assets/iconic-images-and-descriptions/Vegetables/Ginger/Ginger_Description.txt",
         "Amount": 2,
-        "selected": false
+        "selected": false,
+        "expire": 12
       }
 ]
