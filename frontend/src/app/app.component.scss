@@ -4,4 +4,5 @@
     background-color: red;
     border-radius: 50%;
     position: absolute;
+    z-index: 9999; // A high value to ensure it's on top
 }
