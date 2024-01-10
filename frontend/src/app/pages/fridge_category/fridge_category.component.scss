@@ -24,6 +24,35 @@ button {
 p {
   font-size: 2em;
 }
+.grey-box-2 {
+  width: 80%;
+  background-color: #dddddd;
+  padding: 10px;
+  margin: 20px;
+}
+
+.tiny-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #333;
+
+}
+
+.tiny-button.white {
+  background-color: #fff;
+}
+
+.tiny-button.black {
+  background-color: #000;
+}
+
+
+
+
 
 
 

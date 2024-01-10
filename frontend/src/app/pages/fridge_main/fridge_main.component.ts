@@ -43,6 +43,9 @@ export class FridgeMainComponent {
     });
   }
 
+  goToFridgeCategoryPage(): void {
+    window.location.href = 'http://localhost:4200/fridge_category';
+  }
   goToFridgeMain(): void {
     window.location.href = 'http://localhost:4200/fridge_main';
   }
