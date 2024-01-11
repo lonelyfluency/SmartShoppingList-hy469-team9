@@ -1,0 +1,27 @@
+<div class="main-container">
+    
+    <div class="left-container">
+        <h1 class="left-title">Smart Recipe</h1>
+        <div class="item-box" *ngFor="let item of recipeItems" [class.selected]="item.selected" (click)="selectRecipe(item)">
+            <img [src]="item.ImagePath" alt="{{ item.Name }}" class="recipe-image">
+            <div class="recipe-details">
+                <div class="recipe-name">{{ item.Name }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="right-container">
+        <h2 *ngIf="selectedRecipe">Ingredients for {{ selectedRecipe.Name }}</h2>
+        <div *ngIf="selectedIngredients.length" class="ingredients-list">
+            <div class="ingredient-box" *ngFor="let ingredient of selectedIngredients">
+                <div class="ingredient-image">
+                    <img [src]="ingredient.ImagePath" alt="{{ ingredient.Name }}">
+                </div>
+                <div class="ingredient-details">
+                    <div class="ingredient-name">{{ ingredient.Name }}</div>
+                    <div class="ingredient-price">{{ ingredient.Price | currency:'EUR' }}</div>
+                </div>
+            </div>
+        </div>
+        <button *ngIf="selectedRecipe" (click)="addSelectedRecipe2List()">Add Ingredients to Shoppinglist</button>
+    </div>
+</div>

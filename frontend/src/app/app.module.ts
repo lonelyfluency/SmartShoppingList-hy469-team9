@@ -54,6 +54,8 @@ import { SearchResultComponent } from './pages/components/search-result/search-r
 import { ShopSearchComponent } from './pages/shop_search/shop_search.component';
 import { ShoppinglistComponent } from './pages/shoppinglist/shoppinglist.component';
 import { InventoryComponent } from './pages/inventory/inventory.component';
+import { RecipeComponent } from './pages/components/recipe/recipe.component';
+
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 // @ts-ignore
@@ -106,7 +108,8 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     SearchResultComponent,
     ShopSearchComponent,
     ShoppinglistComponent,
-    InventoryComponent
+    InventoryComponent,
+    RecipeComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),

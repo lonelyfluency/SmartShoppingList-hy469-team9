@@ -1,0 +1,115 @@
+.main-container {
+    display: flex;
+    height: 100vh; // Viewport height
+    width: 100vw; // Viewport width
+  
+    // Recipe items container styling
+    .left-container {
+      width: 40%; // 40% of the viewport width
+      overflow-y: auto;
+      background-color: #f8f9fa;
+      border-right: 1vw solid #fff;
+      align-items: center;
+
+      .left-title {
+        text-align: center; // Aligns the text to the center
+        margin: 0; // Removes default margin
+        padding: 10px; // Adds padding for spacing, adjust as needed
+      }
+  
+      .item-box {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 15px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #ffffff;
+        transition: background-color 0.3s;
+        position: relative; // This ensures that the child elements can be positioned relative to this container
+        width: 80%; // Adjust according to your layout
+        height: 20%; // Adjust if you have a specific height in mind
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 65%; // Adjust the width as a percentage of the item box
+            height: 70%; // Adjust the height as a percentage of the item box
+            transform: translate(-50%, -50%); // Centers the image within the item box
+            object-fit: cover; // This will ensure that the aspect ratio of the image is maintained
+        }
+  
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+    
+    // Ingredients container styling
+    .right-container {
+        width: 60%;
+        overflow-y: auto;
+        background-color: #e9ecef;
+        padding: 10px;
+    
+        h2 {
+          margin-bottom: 10px;
+        }
+    
+        .ingredient-box {
+          background-color: #ffffff;
+          margin: 10px 0;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+    
+          .ingredient-image {
+            width: 20%;
+            margin-right: 10px;
+            img {
+              width: 100%;
+              border-radius: 4px;
+            }
+          }
+    
+          .ingredient-details {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            .ingredient-name {
+              font-weight: bold;
+              color: #333;
+              margin-bottom: 5px;
+            }
+    
+            .ingredient-price {
+              font-size: 1.2em;
+              color: #888;
+            }
+          }
+        }
+    
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: #92C848;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+    
+          &:hover {
+            background-color: darken(#92C848, 10%);
+          }
+        }
+    }
+  }
+  

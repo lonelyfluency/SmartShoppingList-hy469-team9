@@ -5,18 +5,9 @@
 
 <div class="logo-container" >
   <h1 style="width: 85%; text-align: left; margin-left: 25px" >Smart Recipe</h1>
-  <button (click)="sendMessageToUser()" style="width: 15%; margin-right: 25px">Add Ingredients to List</button>
-
 </div>
-<div class="main-container">
-  <div class="cart-container">
-    <div class="item-box" *ngFor="let item of cartItems" [class.selected]="item.selected" (click)="toggleSelection(item)">
-      <img style="object-fit: cover;" [src]="item.imageUrl" [alt]="item.name" class="item-image">
-      <div class="item-details">
-        <div class="item-name">{{ item.name }}</div>
-      </div>
-    </div>
-  </div>
+<div class="recipe-container">
+  <app-recipe></app-recipe>
 </div>
 
 
