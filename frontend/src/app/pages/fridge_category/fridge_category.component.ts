@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CategoryService } from 'src/app/global/services/category/category.service';
+import { CartService } from 'src/app/global/services/cart/cart.service';
+import { MainCategory, SubCategory, Product } from 'src/app/global/models/category/category.model';
+import { CartItemModel } from 'src/app/global/models/cart/cart.model';
+
 
 interface Item {
   name: string;
@@ -21,27 +26,64 @@ interface Category {
   styleUrls: ['./fridge_category.component.scss']
 })
 export class FridgeCategoryComponent {
-  categories: Category[] = [
-    { name: 'fruits', subcategories: [{ name: 'citrus', items: [{ name: 'Orange', image: 'orange.jpg' }, { name: 'Lemon', image: 'lemon.jpg' }, { name: 'Grapefruit', image: 'grapefruit.jpg' }] }] },
-    { name: 'vegetables', subcategories: [{ name: 'leafy greens', items: [{ name: 'Spinach', image: 'spinach.jpg' }, { name: 'Kale', image: 'kale.jpg' }, { name: 'Lettuce', image: 'lettuce.jpg' }] }] },
-    { name: 'meat', subcategories: [{ name: 'poultry', items: [{ name: 'Chicken', image: 'chicken.jpg' }, { name: 'Turkey', image: 'turkey.jpg' }] }, { name: 'red meat', items: [{ name: 'Beef', image: 'beef.jpg' }, { name: 'Pork', image: 'pork.jpg' }] }] },
-    { name: 'dairy', subcategories: [{ name: 'milk', items: [{ name: 'Whole Milk', image: 'milk.jpg' }, { name: 'Skim Milk', image: 'skim_milk.jpg' }] }, { name: 'cheese', items: [{ name: 'Cheddar', image: 'cheddar.jpg' }, { name: 'Swiss', image: 'swiss.jpg' }] }] },
-  ];
+  mainCategories!: MainCategory[];
+  selectedMainCategory?: MainCategory;
+  selectedSubCategory?: SubCategory;
 
-  selectedCategory: Category | null = null;
-  selectedSubcategory: Subcategory | null = null;
+  constructor(
+    private categoryService: CategoryService,
+    private cartService: CartService // Inject the CartService
+  ) {}
+
+  ngOnInit(): void {
+    this.categoryService.getCategories().subscribe(categories => {
+      this.mainCategories = categories;
+      if (this.mainCategories.length > 0) {
+        this.selectedMainCategory = this.mainCategories[0];
+        if (this.selectedMainCategory.subcategories.length > 0) {
+          this.selectedSubCategory = this.selectedMainCategory.subcategories[0];
+        }
+      }
+    });
+  }
+
+  onMainCategorySelected(mainCategory: MainCategory): void {
+    this.selectedMainCategory = mainCategory;
+    if (mainCategory.subcategories.length > 0) {
+      this.selectedSubCategory = mainCategory.subcategories[0];
+    } else {
+      this.selectedSubCategory = undefined;
+    }
+  }
+
+  onSubCategorySelected(subCategory: SubCategory): void {
+    this.selectedSubCategory = subCategory;
+  }
+
+  onProductSelected(product: Product): void {   // check this for the adding
+    const cartItem = new CartItemModel({
+      NameID: product.NameID,
+      Name: product.Name,
+      Price: product.Price,
+      Amount: 1, // Default quantity to add
+      ImagePath: product.ImagePath,
+      selected: false
+    });
+
+    this.cartService.add(cartItem).subscribe(
+      (addedProduct) => {
+        alert(`Successfully added ${product.Name} to the cart`); // Show an alert
+        console.log(`Product added to cart: ${addedProduct.Name}`);
+      },
+      (error) => {
+        console.error('Error adding product to cart', error);
+      }
+    );
+  }
+
+
 
   goToFridgeMain(): void {
     window.location.href = 'http://localhost:4200/fridge_main';
-  }
-
-  selectCategory(category: Category): void {
-    this.selectedCategory = this.selectedCategory === category ? null : category;
-    // Reset selected subcategory when changing category
-    this.selectedSubcategory = null;
-  }
-
-  selectSubcategory(subcategory: Subcategory): void {
-    this.selectedSubcategory = this.selectedSubcategory === subcategory ? null : subcategory;
   }
 }

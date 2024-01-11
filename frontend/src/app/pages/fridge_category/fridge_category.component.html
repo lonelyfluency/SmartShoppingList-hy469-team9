@@ -14,43 +14,33 @@
 </div>
 <h1> Category List</h1>
 
-<div style="background-color: #f0f0f0; padding: 10px; overflow-x: auto; white-space: nowrap; display: flex; gap: 10px;">
-
-  <div *ngFor="let category of categories"
-       (click)="selectCategory(category)" [style.background-color]="selectedCategory === category ? 'orange' : 'white'"
-       style="min-width: 200px; /* Adjust the width based on your needs */
-              padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
-    <h3>{{ category.name | titlecase }}</h3>
-  </div>
-</div>
-<h1> Specified List</h1>
-
-<!-- Container for subcategories with horizontal scrolling -->
-<div *ngIf="selectedCategory" style="background-color: #f0f0f0; padding: 10px; overflow-x: auto; white-space: nowrap; display: flex; gap: 10px; flex-wrap: wrap;">
-
-  <div *ngFor="let subcategory of selectedCategory.subcategories"
-       (click)="selectSubcategory(subcategory)"
-       [style.background-color]="selectedSubcategory === subcategory ? 'orange' : 'white'"
-       style="min-width: 200px; /* Adjust the width based on your needs */
-              padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
-    <h3>{{ subcategory.name | titlecase }}</h3>
-  </div>
-</div>
-<h1> Items List </h1>
-<!-- Container for items with vertical scrolling -->
-<div *ngIf="selectedSubcategory" style="background-color: #f0f0f0; padding: 10px; max-height: 300px; overflow-y: auto;">
-
-  <div *ngFor="let item of selectedSubcategory.items"
-       style="min-width: 200px; /* Adjust the width based on your needs */
-              padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-    <!-- Image on the left -->
-    <img src="{{ item.image }}" alt="{{ item.name }}" style="max-width: 50px; max-height: 50px; margin-right: 10px;">
-    <!-- Description in the center -->
-    <div style="flex-grow: 1; margin-left: 250px">
-      <h3>{{ item.name | titlecase }}</h3>
+<div class="products-shop-container">
+  <!-- Main Category Container -->
+  <div class="main-category-container">
+    <div *ngFor="let mainCat of mainCategories" class="main-category" (click)="onMainCategorySelected(mainCat)">
+      <img [src]="mainCat.imagePath" [alt]="mainCat.name" class="category-image">
+      <span>{{ mainCat.name }}</span>
     </div>
-    <!-- Add to List button on the right -->
-    <button style="background-color: green; color: white; padding: 8px; border: none; border-radius: 4px;">Add to List</button>
   </div>
 
+  <!-- Subcategory Container -->
+  <div *ngIf="selectedMainCategory" class="subcategory-container">
+    <div *ngFor="let subCat of selectedMainCategory.subcategories" class="subcategory" (click)="onSubCategorySelected(subCat)">
+      <img *ngIf="subCat.products[0]" [src]="subCat.products[0].ImagePath" [alt]="subCat.name" class="subcategory-image">
+      <span>{{ subCat.name }}</span>
+    </div>
+  </div>
+
+  <!-- Products Container -->
+  <div *ngIf="selectedSubCategory" class="products-container">
+    <div *ngFor="let product of selectedSubCategory.products" class="product-box" (click)="onProductSelected(product)">
+      <img [src]="product.ImagePath" alt="{{ product.Name }}">
+      <div class="product-info">
+        <div class="product-name">{{ product.Name }}</div>
+        <div class="product-price">{{ product.Price | currency:'EUR' }}</div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
