@@ -6,15 +6,14 @@
 <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f0f0f0;">
   <!-- Search bar with search icon -->
   <div style="flex-grow: 1; display: flex; align-items: center;">
-    <input type="text" placeholder="Search..." style="flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-    <i class="fa fa-search" style="margin-left: 5px; cursor: pointer;"></i>
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Search..." style="flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+    <i class="fa fa-search" (click)="onSearch()" style="margin-left: 5px; cursor: pointer;"></i>
   </div>
-
-  <i class="fa fa-microphone" style="margin-left: 10px; cursor: pointer;"></i>
+  <!-- <i class="fa fa-microphone" style="margin-left: 10px; cursor: pointer;"></i> -->
 </div>
-<h1> Category List</h1>
+<h1> Products </h1>
 
-<div class="products-shop-container">
+<div class="fridge-category-container">
   <!-- Main Category Container -->
   <div class="main-category-container">
     <div *ngFor="let mainCat of mainCategories" class="main-category" (click)="onMainCategorySelected(mainCat)">
@@ -33,13 +32,22 @@
 
   <!-- Products Container -->
   <div *ngIf="selectedSubCategory" class="products-container">
-    <div *ngFor="let product of selectedSubCategory.products" class="product-box" (click)="onProductSelected(product)">
+    <div *ngFor="let product of selectedSubCategory.products" 
+     class="product-box" 
+     [class.selected]="isProductSelected(product)" 
+     (click)="onProductSelected(product)">
       <img [src]="product.ImagePath" alt="{{ product.Name }}">
       <div class="product-info">
         <div class="product-name">{{ product.Name }}</div>
         <div class="product-price">{{ product.Price | currency:'EUR' }}</div>
       </div>
     </div>
+  </div>
+
+  <!-- New Button Container -->
+  <div class="button-container">
+    <button class="add-to-inventory-button" (click)="addSelectedToInventory()">Add Selected to Inventory</button>
+    <button class="add-to-list-button" (click)="addSelectedToShoppingList()">Add Selected to List</button>
   </div>
 </div>
 

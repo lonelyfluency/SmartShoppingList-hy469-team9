@@ -50,33 +50,47 @@ p {
   background-color: #000;
 }
 
-.products-shop-container {
+
+.fridge-category-container {
   display: flex;
+  flex-direction: column; // Change to column for vertical stacking
   height: 100vh; // Viewport height
   width: 100vw; // Viewport width
 
   // Main category container styling
   .main-category-container {
-    width: 20%; // 20% of the viewport width
-    overflow-y: auto;
+    width: 100%; // Take the full width of the viewport
+    height: 20vh; // Fixed height for the container
+    overflow-x: auto; // Enable horizontal scrolling
     background-color: #f8f9fa;
-    border-right: 2vw solid #fff;
+    padding: 10px;
+    display: flex; // Flex container for horizontal arrangement of items
 
     .main-category {
+      flex: 0 0 auto; // Prevent main-category from growing or shrinking
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: start;
       padding: 15px;
-      margin: 5px;
+      margin-right: 10px; // Margin to the right of each category
       border: 1px solid #ccc;
       border-radius: 4px;
       background-color: #ffffff;
       transition: background-color 0.3s;
+      width: 15vw; // Fixed width for each main category
+      height: 13vh; // Height relative to the height of the viewport
+      flex-direction: column; // Stack elements vertically
+      align-items: center; // Center items horizontally
+      justify-content: center; // Center items vertically
 
       img {
-        width: 30%;
-        margin-right: 10px;
+        height: 80%; // Image takes up 70% of the main category height
+        width: 80%; // Full width of the main category container
+        object-fit: cover; // Ensure the image covers the entire area
+        margin-bottom: 4px; // Space between image and text
+      }
+
+      span {
+        display: block; // Span takes up the full width
+        text-align: center; // Center the text within the span
       }
 
       &:hover {
@@ -85,26 +99,41 @@ p {
     }
   }
 
+
   // Subcategory container styling
   .subcategory-container {
-    width: 25%;
-    overflow-y: auto;
+    width: 100%; // Take the full width of the viewport
+    height: 42vh; // Fixed height for the container
+    overflow-x: auto; // Enable horizontal scrolling
     background-color: #e9ecef;
-    border-right: 2vw solid #fff;
+    padding: 10px;
+    display: flex; // Flex container for horizontal arrangement of items
 
     .subcategory {
+      flex: 0 0 auto; // Prevent subcategory from growing or shrinking
       cursor: pointer;
       padding: 15px;
-      margin: 5px;
+      margin-right: 10px; // Margin to the right of each subcategory
       border: 1px solid #ccc;
       border-radius: 4px;
       background-color: #ffffff;
       transition: background-color 0.3s;
-
+      width: 18vw; // Fixed width for each subcategory
+      height: 24vh; // Height relative to the height of the viewport
+      flex-direction: column; // Stack elements vertically
+      align-items: center; // Center items horizontally
+      justify-content: center; // Center items vertically
 
       img {
-        width: 30%;
-        margin-right: 10px;
+        height: 80%; // Image takes up 70% of the subcategory height
+        width: 90%; // Full width of the subcategory container
+        object-fit: cover; // Ensure the image covers the entire area
+        margin-bottom: 5px; // Space between image and text
+      }
+
+      span {
+        display: block; // Span takes up the full width
+        text-align: center; // Center the text within the span
       }
 
       &:hover {
@@ -113,9 +142,10 @@ p {
     }
   }
 
+
   // Products container styling
   .products-container {
-    width: 55%;
+    width: 100%; // Take the full width of the viewport
     overflow-y: auto;
     padding: 10px;
     background-color: #dee2e6;
@@ -154,10 +184,29 @@ p {
         font-size: 1.2em;
         color: #888;
       }
+
+      &.selected {
+        border: 2px solid red; // Red stroke for selected box
+      }
+    }
+  }
+
+  // Button container styling
+  .button-container {
+    display: flex;
+    justify-content: space-around; // Evenly space the buttons
+    padding: 10px;
+    width: 100%; // Take the full width of the viewport
+
+    button {
+      background-color: #92C848; 
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 45%; // Each button takes almost half of the container width
     }
   }
 }
-
-
-
-

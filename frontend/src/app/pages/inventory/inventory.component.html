@@ -1,15 +1,30 @@
 <div class="inventory-wrapper">
   <h2 class="inventory-title">Fridge Inventory</h2>
+
   <div class="inventory-container">
-    <div class="item-row" *ngFor="let row of inventoryRows">
+    <div *ngFor="let row of inventoryRows" class="inventory-row">
       <div class="item-box" *ngFor="let item of row" (click)="selectItem(item)" [class.selected]="item.selected">
         <img [src]="item.ImagePath" [alt]="item.Name" class="item-image">
         <div class="item-info">
           <div class="item-name">{{ item.Name }}</div>
-          <div class="item-quantity">{{ item.Amount }}</div>
-          <div class="item-expire">Expire in {{ item.expire }} days</div>
+          <div class="item-quantity">
+            <button (click)="decrementAmount(item)">-</button>
+            {{ item.Amount }}
+            <button (click)="incrementAmount(item)">+</button>
+          </div>
+          <div class="item-expire">
+            <button (click)="decrementExpire(item)">-</button>
+            Expire in {{ item.expire }} days
+            <button (click)="incrementExpire(item)">+</button>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="button-container">
+    <button class="select-all-button" (click)="selectAllItems()">Select All</button>
+    <button class="select-reverse-button" (click)="selectReverseItems()">Select Reverse</button>
+    <button class="delete-button" (click)="deleteSelectedItems()">Delete Selected</button>
   </div>
 </div>
