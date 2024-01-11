@@ -10,37 +10,31 @@ import { SocketsService } from 'src/app/global/services/sockets/sockets.service'
 })
 export class InventoryComponent implements OnInit {
   public inventoryItems: InventoryItemModel[] = [];
+  public inventoryRows: InventoryItemModel[][] = []; // New property for rows
 
   constructor(
     private inventoryService: InventoryService,
-    private SocketService: SocketsService
+    private socketService: SocketsService
   ) {}
 
   ngOnInit(): void {
-    // this.loadInventoryItems();
     this.subscribeToInventoryUpdates();
-    // Subscribe to the BehaviorSubject to get real-time updates
     this.inventoryService.inventoryItems$.subscribe(
-      items => this.inventoryItems = items,
+      items => {
+        this.inventoryItems = items;
+        this.prepareRows();
+      },
       error => console.error('Error fetching inventory items', error)
     );
-    // Initialize the inventory
     this.inventoryService.initializeInventory();
   }
 
-  // private loadInventoryItems(): void {
-  //   this.inventoryService.getAll().subscribe(
-  //     items => this.inventoryItems = items,
-  //     error => console.error('Error fetching inventory items', error)
-  //   );
-  // }
-
   private subscribeToInventoryUpdates(): void {
-    this.SocketService.getInventoryUpdates((updatedInventory: InventoryItemModel[]) => {
+    this.socketService.getInventoryUpdates((updatedInventory: InventoryItemModel[]) => {
       this.inventoryItems = updatedInventory;
+      this.prepareRows();
     });
   }
-
 
   selectItem(item: InventoryItemModel): void {
     item.selected = !item.selected;
@@ -62,11 +56,18 @@ export class InventoryComponent implements OnInit {
     this.inventoryItems.forEach(item => {
       if (item.selected) {
         this.inventoryService.delete(item._id).subscribe();
-        alert(`Successfully deleted ${item.Name}.`); // Show an alert
+        alert(`Successfully deleted ${item.Name}.`);
       }
     });
     this.inventoryItems = this.inventoryItems.filter(item => !item.selected);
+    this.prepareRows();
   }
 
-
+  // New method to prepare rows
+  private prepareRows(): void {
+    this.inventoryRows = [];
+    for (let i = 0; i < this.inventoryItems.length; i += 4) {
+      this.inventoryRows.push(this.inventoryItems.slice(i, i + 4));
+    }
+  }
 }

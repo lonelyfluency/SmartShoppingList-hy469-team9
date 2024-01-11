@@ -1,13 +1,14 @@
-
 <div class="inventory-wrapper">
   <h2 class="inventory-title">Fridge Inventory</h2>
   <div class="inventory-container">
-    <div class="item-box" *ngFor="let item of inventoryItems" (click)="selectItem(item)" [class.selected]="item.selected">
-      <img [src]="item.ImagePath" [alt]="item.Name" class="item-image">
-      <div class="item-info">
-        <div class="item-name">{{ item.Name }}</div>
-        <div class="item-quantity">{{ item.Amount }}</div>
-        <div class="item-expire">Expire in {{ item.expire }} days</div>
+    <div class="item-row" *ngFor="let row of inventoryRows">
+      <div class="item-box" *ngFor="let item of row" (click)="selectItem(item)" [class.selected]="item.selected">
+        <img [src]="item.ImagePath" [alt]="item.Name" class="item-image">
+        <div class="item-info">
+          <div class="item-name">{{ item.Name }}</div>
+          <div class="item-quantity">{{ item.Amount }}</div>
+          <div class="item-expire">Expire in {{ item.expire }} days</div>
+        </div>
       </div>
     </div>
   </div>

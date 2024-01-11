@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
+import { SmartSpeakerService } from 'src/app/global/services/smart-speaker/smart-speaker.service';
+import { Subscription } from 'rxjs';
 
 interface ShoppingItem {
   name: string;
@@ -13,34 +16,69 @@ interface ShoppingItem {
   templateUrl: './fridge_main.component.html',
   styleUrls: ['./fridge_main.component.scss']
 })
-export class FridgeMainComponent {
+export class FridgeMainComponent implements OnInit, OnDestroy {
 
-  items: ShoppingItem[] = [
-    { name: 'Orange', quantity: 5, expiration: 3, imageUrl: '../../../../assets/items/orange.jpg', selected: false },
-    { name: 'Egg', quantity: 3, expiration: 1, imageUrl: '../../../../assets/items/egg.png', selected: false },
-    { name: 'Broccoli', quantity: 1, expiration: 5, imageUrl: '../../../../assets/items/broccoli.png', selected: false },
-    { name: 'Tomato', quantity: 3, expiration: 7, imageUrl: '../../../../assets/items/tomato.png', selected: false },
-    { name: 'ketchup', quantity: 3,expiration: 10, imageUrl: '../../../../assets/items/ketchup.png', selected: false },
-    { name: 'milk', quantity: 5,expiration: 13, imageUrl: '../../../../assets/items/milk.png', selected: false },
-    { name: 'onion', quantity: 5,expiration: 23, imageUrl: '../../../../assets/items/onion.png', selected: false },
-    { name: 'butter', quantity: 5,expiration: 13, imageUrl: '../../../../assets/items/butter.png', selected: false }
+  searchQuery = '';
+  private isRecording = false;
+  private commandSubscription?: Subscription;
 
-  ];
+  constructor(private router: Router, private smartSpeakerService: SmartSpeakerService) {}
+
+  ngOnInit() {
+    this.commandSubscription = this.smartSpeakerService.commands$.subscribe(
+      command => {
+        if (command.toLowerCase().startsWith('search for ')) {
+          this.searchQuery = command.split('search for ')[1];
+          this.router.navigate(['/shop/shop_search'], { queryParams: { query: this.searchQuery } });
+        }
+        if (command.toLowerCase().startsWith('go home')) {
+          this.router.navigate(['/fridge_main']);
+        }
+        if (command.toLowerCase().startsWith('go to categories')) {
+          this.router.navigate(['/fridge_category']);
+        }
+        if (command.toLowerCase().startsWith('go to shopping list')) {
+          this.router.navigate(['/fridge_list']);
+        }
+        if (command.toLowerCase().startsWith('go to recipes')) {
+          this.router.navigate(['/fridge_recipe']);
+        }
+        if (command.toLowerCase().startsWith('go back')) {
+          window.history.back();
+        }
+        if (command.toLowerCase().startsWith('go forward')) {
+          window.history.forward();
+        }
+        if (command.toLowerCase().startsWith('refresh page')) {
+          window.location.reload();
+        }
+
+      }
+    );
+  }
+
+  onVoiceButtonClick() {
+    if (this.isRecording) {
+      this.smartSpeakerService.stop();
+      this.isRecording = false;
+    } else {
+      this.smartSpeakerService.start();
+      this.isRecording = true;
+    }
+  }
+
+  onSearch(): void {
+    this.router.navigate(['/shop/shop_search'], { queryParams: { query: this.searchQuery } });
+  }
+
+  ngOnDestroy() {
+    if (this.commandSubscription) {
+      this.commandSubscription.unsubscribe();
+    }
+  }
 
   selectItem(item: ShoppingItem): void {
     item.selected = !item.selected;
-  }
-
-  selectAllItems(): void {
-    this.items.forEach(item => {
-      item.selected = true;
-    });
-  }
-
-  selectReverseItems(): void {
-    this.items.forEach(item => {
-      item.selected = !item.selected;
-    });
   }
 
   goToFridgeCategoryPage(): void {

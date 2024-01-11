@@ -45,7 +45,7 @@ export class ProductsShopComponent implements OnInit {
     this.selectedSubCategory = subCategory;
   }
 
-  onProductSelected(product: Product): void {
+  onProductSelected(product: Product): void {   // check this for the adding
     const cartItem = new CartItemModel({
       NameID: product.NameID,
       Name: product.Name,
