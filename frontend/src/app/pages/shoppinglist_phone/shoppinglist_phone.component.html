@@ -1,0 +1,15 @@
+<div class="shopping-list-wrapper">
+  <h2 class="shopping-list-title">Shopping List</h2>
+  <div class="shopping-list-container">
+    <div class="item-box" *ngFor="let item of shoppinglistItems" (click)="selectItem(item)" [class.selected]="item.selected">
+      <img [src]="item.ImagePath" [alt]="item.Name" class="item-image">
+      <div class="item-name">{{ item.Name }}</div>
+      <div class="item-quantity">{{ item.Amount }}</div>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="select-all-button" (click)="selectAllItems()">Select All</button>
+    <button class="select-reverse-button" (click)="selectReverseItems()">Select Reverse</button>
+    <button class="delete-button" (click)="deleteSelectedItems()">Delete Selected</button>
+  </div>
+</div>

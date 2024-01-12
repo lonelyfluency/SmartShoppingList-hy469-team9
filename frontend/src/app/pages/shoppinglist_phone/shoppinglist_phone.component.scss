@@ -1,0 +1,81 @@
+.shopping-list-wrapper {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.shopping-list-title {
+  color: #333;
+  font-size: 1.5em; // Adjusted for better mobile visibility
+  margin-bottom: 10px;
+}
+
+.shopping-list-container {
+  width: 100%;
+  padding: 1vh 0; // Adjusted for vertical spacing
+  display: flex;
+  flex-direction: column; // Stack items vertically
+  align-items: center;
+  gap: 1vh; // Space between items
+  overflow-y: auto; // Enables vertical scrolling if needed
+}
+
+.item-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Space elements evenly
+  width: 95%; // Full width with some padding
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+
+  &.selected {
+    border-color: yellow;
+  }
+
+  .item-image {
+    width: 20%; // Adjusted for better visibility
+    height: auto; // Maintain aspect ratio
+  }
+
+  .item-name {
+    font-weight: bold;
+    flex-grow: 1; // Allow name to take remaining space
+    text-align: center;
+  }
+
+  .item-quantity {
+    background-color: #92C848;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    min-width: 20%; // Ensure visibility
+    text-align: center;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around; // Space buttons evenly
+  width: 100%; // Full width of the container
+
+  .select-all-button,
+  .select-reverse-button,
+  .delete-button {
+    background-color: #92C848;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 30%; // Each button takes 30% width
+  }
+}
