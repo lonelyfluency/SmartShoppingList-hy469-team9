@@ -42,12 +42,12 @@ export class AppComponent implements OnInit {
       case "SWIPE_RIGHT":
         window.history.back();
         break;
-      case "CIRCLE_CLOCKWISE":
-        window.location.reload();
-        break;
-      case "PINCH":
-        this.simulateLeftClick(); // Simulate left click
-        break;
+      // case "CIRCLE_CLOCKWISE":
+      //   window.location.reload();
+      //   break;
+      // case "PINCH":
+      //   this.simulateLeftClick(); // Simulate left click
+      //   break;
       case "SWIPE_UP":
         this.simulateRightClick(); // Simulate right click
         break;

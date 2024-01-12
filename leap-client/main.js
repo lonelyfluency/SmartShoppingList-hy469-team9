@@ -194,7 +194,24 @@ function createWindow() {
         //console.log("gestrure", gesture)
         win.webContents.send("gesture", gesture);
 
-        if (gesture === 4 || gesture === 5 || gesture === 6) { //specifying which gestures can work as a "click"
+        if (gesture === 4 ) { //specifying which gestures can work as a "click"
+          win.webContents.sendInputEvent(
+            {
+              type: 'mouseDown', x: xPos,
+              y: yPos, button: 'left', clickCount: 1
+            });
+          
+        }
+        if (gesture === 5) { //specifying which gestures can work as a "click"
+          
+          win.webContents.sendInputEvent(
+            {
+              type: 'mouseUp', x: xPos,
+              y: yPos, button: 'left', clickCount: 1
+            });
+        }
+        if (gesture === 6) { //specifying which gestures can work as a "click"
+          
           win.webContents.sendInputEvent(
             {
               type: 'mouseDown', x: xPos,
