@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-phone_payment',
@@ -7,8 +8,9 @@ import { Component } from '@angular/core';
 })
 export class PhonePaymentComponent {
 
+  constructor(private router: Router) {}
   goToAccountPage(): void {
-    window.location.href = 'http://localhost:4200/phone_account';
+    this.router.navigate(['/phone_account']);
   }
 
 }

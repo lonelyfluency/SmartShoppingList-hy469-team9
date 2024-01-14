@@ -94,7 +94,7 @@ export class FridgeCategoryComponent implements OnInit {
   addSelectedToInventory(): void {
     this.selectedProducts.forEach(product => {
       const randomExpire = Math.floor(Math.random() * 13) + 3; // Random number between 3 and 15
-  
+
       const inventoryItem = new InventoryItemModel({
         NameID: product.NameID,
         Name: product.Name,
@@ -104,7 +104,7 @@ export class FridgeCategoryComponent implements OnInit {
         expire: randomExpire, // Assigning random expiry days
         selected: false
       });
-  
+
       this.inventoryService.add(inventoryItem).subscribe(
         () => console.log(`Added ${product.Name} with expire in ${randomExpire} days to inventory`),
         error => console.error('Error adding product to inventory', error)
@@ -112,5 +112,5 @@ export class FridgeCategoryComponent implements OnInit {
     });
     alert('Selected products added to inventory');
   }
-  
+
 }

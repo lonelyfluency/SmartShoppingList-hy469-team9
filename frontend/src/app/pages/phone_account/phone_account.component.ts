@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-phone_account',
@@ -7,25 +8,26 @@ import { Component } from '@angular/core';
 })
 
 export class PhoneAccountComponent {
+  constructor(private router: Router) {}
   goToListPage(): void {
-    window.location.href = 'http://localhost:4200/phone_shoppingListManage';
+    this.router.navigate(['/phone_shoppingListManage']);
   }
   goQrCodeScanPage(): void {
-    window.location.href = 'http://localhost:4200/phone_qrcode';
+    this.router.navigate(['/phone_qrcode']);
   }
   goCartPage(): void {
-    window.location.href = 'http://localhost:4200/phone_cart';
+    this.router.navigate(['/phone_cart']);
   }
   goToEditProfilePage(): void {
-    window.location.href = 'http://localhost:4200/phone_editProfile';
+    this.router.navigate(['/phone_editProfile']);
   }
   goToShopHistoryPage(): void {
-    window.location.href = 'http://localhost:4200/phone_shopHistory';
+    this.router.navigate(['/phone_shopHistory']);
   }
   goToCardPaymentPage(): void {
-    window.location.href = 'http://localhost:4200/phone_payment';
+    this.router.navigate(['/phone_payment']);
   }
   goToShopLocationPage(): void {
-    window.location.href = 'http://localhost:4200/phone_shopLocation';
+    this.router.navigate(['/phone_shopLocation']);
   }
 }

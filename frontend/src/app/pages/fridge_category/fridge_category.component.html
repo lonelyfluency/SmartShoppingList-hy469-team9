@@ -32,9 +32,9 @@
 
   <!-- Products Container -->
   <div *ngIf="selectedSubCategory" class="products-container">
-    <div *ngFor="let product of selectedSubCategory.products" 
-     class="product-box" 
-     [class.selected]="isProductSelected(product)" 
+    <div *ngFor="let product of selectedSubCategory.products"
+     class="product-box"
+     [class.selected]="isProductSelected(product)"
      (click)="onProductSelected(product)">
       <img [src]="product.ImagePath" alt="{{ product.Name }}">
       <div class="product-info">

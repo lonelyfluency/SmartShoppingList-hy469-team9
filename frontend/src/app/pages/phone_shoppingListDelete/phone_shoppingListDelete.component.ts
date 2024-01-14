@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface CartItem {
   imageUrl: string;
@@ -14,6 +15,7 @@ interface CartItem {
   styleUrls: ['./phone_shoppingListDelete.component.scss']
 })
 export class PhoneShoppingListDeleteComponent {
+  constructor(private router: Router) {}
 
   cartItems: CartItem[] = [
     { name: 'Wireless Rechargable Keyboard', amount: 2, imageUrl: '../../../../assets/shop_cart/keyboard.png', price: 40, selected: false },
@@ -44,7 +46,7 @@ export class PhoneShoppingListDeleteComponent {
   }
 
   goToPhoneShoppingList(): void {
-    window.location.href = 'http://localhost:4200/phone_shoppingListManage';
+    this.router.navigate(['/phone_shoppingListManage']);
   }
 
 }

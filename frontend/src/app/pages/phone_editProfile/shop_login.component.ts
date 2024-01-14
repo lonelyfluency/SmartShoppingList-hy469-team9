@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-phone_editProfile',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./shop_login.component.scss']
 })
 export class PhoneEditProfileComponent {
+  constructor(private router: Router) {}
+
   goToAccountPage(): void {
-    window.location.href = 'http://localhost:4200/phone_account';
+    this.router.navigate(['/phone_account']);
   }
 }

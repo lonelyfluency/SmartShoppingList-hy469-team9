@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-personalInfo',
@@ -6,9 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./phone_personalInfo.component.scss']
 })
 export class PhonePersonalInfoComponent {
+  constructor(private router: Router) {}
 
-  goToPhoneInterests(){
-    window.location.href = 'http://localhost:4200/phone_interests';
+  goToPhoneInterests(): void {
+    this.router.navigate(['/phone_interests']);
   }
 
 }
