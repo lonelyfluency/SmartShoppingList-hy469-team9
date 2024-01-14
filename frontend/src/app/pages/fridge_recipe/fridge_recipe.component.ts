@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fridge_recipe',
@@ -6,17 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./fridge_recipe.component.scss']
 })
 export class FridgeRecipeComponent {
+  constructor(private router: Router) {}
 
   callManageDeleteComponent(): void {
-    window.location.href = 'http://localhost:4200/phone_shoppingListDelete';
+    this.router.navigate(['/phone_shoppingListDelete']);
   }
 
   goToAccountPage(): void {
-    window.location.href = 'http://localhost:4200/phone_account';
+    this.router.navigate(['/phone_account']);
   }
 
   goToFridgeMain(): void {
-    window.location.href = 'http://localhost:4200/fridge_main';
+    this.router.navigate(['/fridge_main']);
   }
 
 }

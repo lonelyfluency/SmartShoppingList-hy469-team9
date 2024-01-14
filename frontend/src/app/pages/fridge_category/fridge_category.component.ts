@@ -58,7 +58,7 @@ export class FridgeCategoryComponent implements OnInit {
   }
 
   goToFridgeMain(): void {
-    window.location.href = 'http://localhost:4200/fridge_main';
+    this.router.navigate(['/fridge_main']);
   }
 
   onProductSelected(product: Product): void {

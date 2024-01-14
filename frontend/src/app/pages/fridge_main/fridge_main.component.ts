@@ -82,17 +82,18 @@ export class FridgeMainComponent implements OnInit, OnDestroy {
   }
 
   goToFridgeCategoryPage(): void {
-    window.location.href = 'http://localhost:4200/fridge_category';
+    this.router.navigate(['/fridge_category']);
   }
+
   goToFridgeMain(): void {
-    window.location.href = 'http://localhost:4200/fridge_main';
+    this.router.navigate(['/fridge_main']);
   }
 
   goToRecipePage(): void {
-    window.location.href = 'http://localhost:4200/fridge_recipe';
+    this.router.navigate(['/fridge_recipe']);
   }
 
   goToFridgeShoppingList(): void {
-    window.location.href = 'http://localhost:4200/fridge_list';
+    this.router.navigate(['/fridge_list']);
   }
 }
