@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface CartItem {
   imageUrl: string;
@@ -14,6 +15,7 @@ interface CartItem {
   styleUrls: ['./fridge_shoppingListDelete.component.scss']
 })
 export class FridgeShoppingListDeleteComponent {
+  constructor(private router: Router) {}
 
   cartItems: CartItem[] = [
     { name: 'Bread', amount: 2, imageUrl: '../../../../assets/items/bread.png', price: 1, selected: false },
@@ -51,11 +53,11 @@ export class FridgeShoppingListDeleteComponent {
   }
 
   goToAccountPage(): void {
-    window.location.href = 'http://localhost:4200/phone_account';
+    this.router.navigate(['/phone_account']);
   }
 
   goToFridgeMain(): void {
-    window.location.href = 'http://localhost:4200/fridge_main';
+    this.router.navigate(['/fridge_main']);
   }
 
 }
