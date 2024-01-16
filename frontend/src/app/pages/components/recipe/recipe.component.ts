@@ -73,9 +73,11 @@ export class RecipeComponent implements OnInit {
               if (itemsToAdd.length > 0) {
                 // Add items to the shopping list
                 itemsToAdd.forEach(ingredient => this.addItemToShoppinglist(ingredient));
-                alert(`Ingredients for ${this.selectedRecipe?.Name} added to shopping list`);
+                // alert(`Ingredients for ${this.selectedRecipe?.Name} added to shopping list`);
+                console.log(`Ingredients for ${this.selectedRecipe?.Name} added to shopping list`);
               } else {
-                alert(`All ingredients for ${this.selectedRecipe?.Name} are already in the shopping list or inventory`);
+                // alert(`All ingredients for ${this.selectedRecipe?.Name} are already in the shopping list or inventory`);
+                console.log(`All ingredients for ${this.selectedRecipe?.Name} are already in the shopping list or inventory`);
               }
             },
             error => console.error('Error fetching inventory items', error)

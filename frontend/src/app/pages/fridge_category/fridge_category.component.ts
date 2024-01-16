@@ -88,7 +88,7 @@ export class FridgeCategoryComponent implements OnInit {
         error => console.error('Error adding product to shopping list', error)
       );
     });
-    alert('Selected products added to shopping list');
+    // alert('Selected products added to shopping list');
   }
 
   addSelectedToInventory(): void {
@@ -110,7 +110,7 @@ export class FridgeCategoryComponent implements OnInit {
         error => console.error('Error adding product to inventory', error)
       );
     });
-    alert('Selected products added to inventory');
+    // alert('Selected products added to inventory');
   }
 
 }

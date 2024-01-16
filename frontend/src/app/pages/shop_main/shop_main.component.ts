@@ -29,7 +29,7 @@ export class ShopMainComponent {
       this.cartService.add(cartItem).subscribe(
         () => {
           console.log(`Successfully added ${item.Name} to the cart`);
-          alert(`Successfully added ${item.Name} to the cart`);
+          // alert(`Successfully added ${item.Name} to the cart`);
         },
         error => {
           console.error('Error adding item to cart', error);

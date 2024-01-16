@@ -62,7 +62,7 @@ export class ShoppinglistComponent implements OnInit {
     this.shoppinglistItems.forEach(item => {
       if (item.selected) {
         this.shoppinglistService.delete(item._id).subscribe();
-        alert(`Successfully deleted ${item.Name}.`); // Show an alert
+        // alert(`Successfully deleted ${item.Name}.`); // Show an alert
       }
     });
     this.shoppinglistItems = this.shoppinglistItems.filter(item => !item.selected);

@@ -14,7 +14,10 @@
     </a>
     <a routerLink="shop_cart" routerLinkActive="active" [ngClass]="{'active': isActive('/shop_cart')}">
       <div class="nav-item">
-        <img src="../../../../assets/nav-bar/cart.png" alt="cart icon">
+        <div class="cart-icon-container">
+          <img src="../../../../assets/nav-bar/cart.png" alt="cart icon">
+          <span class="cart-item-count">{{ cartItemCount }}</span>
+        </div>
         <p>Cart</p>
       </div>
     </a>

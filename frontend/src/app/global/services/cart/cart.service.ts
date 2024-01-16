@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { CartItemModel } from '../../models/cart/cart.model';
 import { map, tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import * as _ from 'lodash';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +14,9 @@ export class CartService {
 
   public cartItems$ = this.cartItemsSubject.asObservable();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.initializeCart(); // Initialize the cart when the service is created
+  }
 
   public getAll(): Observable<CartItemModel[]> {
     return this.http.get<CartItemModel[]>(`${this.hostUrl}/api/cart`)
@@ -28,37 +29,33 @@ export class CartService {
   public add(item: CartItemModel): Observable<CartItemModel> {
     return this.http.post<CartItemModel>(`${this.hostUrl}/api/cart`, item)
       .pipe(
-        tap(() => {
-          // Fetch updated cart items after adding
-          this.getAll().subscribe();
-        })
+        tap(() => this.refreshCart()) // Refresh the cart items after adding
       );
   }
 
-  // Update method
   public update(id: string, item: CartItemModel): Observable<CartItemModel> {
     return this.http.put<CartItemModel>(`${this.hostUrl}/api/cart/${id}`, item)
       .pipe(
-        tap(() => {
-          // Fetch updated cart items after updating
-          this.getAll().subscribe();
-        })
+        tap(() => this.refreshCart()) // Refresh the cart items after updating
       );
   }
 
-  // Delete method
   public delete(id: string): Observable<void> {
     return this.http.delete<void>(`${this.hostUrl}/api/cart/${id}`)
       .pipe(
-        tap(() => {
-          // Fetch updated cart items after deleting
-          this.getAll().subscribe();
-        })
+        tap(() => this.refreshCart()) // Refresh the cart items after deleting
       );
+  }
+
+  private refreshCart(): void {
+    this.getAll().subscribe(
+      items => this.cartItemsSubject.next(items),
+      error => console.error('Error refreshing cart', error)
+    );
   }
 
   // Initialize cart with items
   public initializeCart(): void {
-    this.getAll().subscribe();
+    this.refreshCart();
   }
 }

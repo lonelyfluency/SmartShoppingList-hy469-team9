@@ -19,6 +19,21 @@
       flex-direction: column; /* Stack items vertically */
       height: 100%; /* Full height */
       justify-content: space-between;
+
+      .cart-icon-container {
+        position: relative; // Relative positioning for the container
+      }
+
+      .cart-item-count {
+        position: absolute; // Absolute positioning for the count span
+        bottom: 0; // Align to the bottom of the container
+        right: 0; // Align to the right of the container
+        background-color: red; // Example background color
+        color: white; // Example text color
+        border-radius: 50%; // Circular shape
+        padding: 2px 5px; // Padding around the text
+        font-size: 1rem; // Smaller font size
+      }
   
       a {
           text-decoration: none;
@@ -38,6 +53,7 @@
                   width: 50%; /* Adjusted width for icons */
                   height: auto; /* Maintain aspect ratio */
               }
+
 
               p {
                   color: #090909; /* Off-white color for text */

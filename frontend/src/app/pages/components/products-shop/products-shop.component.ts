@@ -57,7 +57,7 @@ export class ProductsShopComponent implements OnInit {
 
     this.cartService.add(cartItem).subscribe(
       (addedProduct) => {
-        alert(`Successfully added ${product.Name} to the cart`); // Show an alert
+        // alert(`Successfully added ${product.Name} to the cart`); // Show an alert
         console.log(`Product added to cart: ${addedProduct.Name}`);
       },
       (error) => {

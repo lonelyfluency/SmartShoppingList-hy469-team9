@@ -69,7 +69,7 @@ export class CartComponent implements OnInit {
     this.cartItems.forEach(item => {
       if (item.selected) {
         this.cartService.delete(item._id).subscribe();
-        alert(`Successfully deleted ${item.Name}.`); // Show an alert
+        // alert(`Successfully deleted ${item.Name}.`); // Show an alert
       }
     });
     this.cartItems = this.cartItems.filter(item => !item.selected);
