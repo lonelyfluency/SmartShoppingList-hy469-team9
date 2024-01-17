@@ -1,11 +1,8 @@
-.main-container {
-  display: flex;
-  height: 56vh; // Set the main container to full viewport height
-  width: 100%; // Set the main container to full width of the viewport
-  margin: 0; // Reset any default margin
-
+.app-shoppinglist-phone {
+  width: 100%; // Full width of the main container
+  height: 100vh; // Full height of the viewport
+  overflow-y: auto; // Enable vertical scrolling
 }
-
 .logo-container {
   margin-bottom: 20px;
 }

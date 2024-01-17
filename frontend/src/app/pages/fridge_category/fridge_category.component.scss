@@ -60,7 +60,7 @@ p {
   // Main category container styling
   .main-category-container {
     width: 100%; // Take the full width of the viewport
-    height: 20vh; // Fixed height for the container
+    height: 15vh; // Fixed height for the container
     overflow-x: auto; // Enable horizontal scrolling
     background-color: #f8f9fa;
     padding: 10px;
@@ -103,7 +103,7 @@ p {
   // Subcategory container styling
   .subcategory-container {
     width: 100%; // Take the full width of the viewport
-    height: 42vh; // Fixed height for the container
+    height: 25vh; // Fixed height for the container
     overflow-x: auto; // Enable horizontal scrolling
     background-color: #e9ecef;
     padding: 10px;
@@ -118,7 +118,7 @@ p {
       border-radius: 4px;
       background-color: #ffffff;
       transition: background-color 0.3s;
-      width: 18vw; // Fixed width for each subcategory
+      width: 24vw; // Fixed width for each subcategory
       height: 24vh; // Height relative to the height of the viewport
       flex-direction: column; // Stack elements vertically
       align-items: center; // Center items horizontally
@@ -146,6 +146,7 @@ p {
   // Products container styling
   .products-container {
     width: 100%; // Take the full width of the viewport
+    height: 38vh;
     overflow-y: auto;
     padding: 10px;
     background-color: #dee2e6;
@@ -197,6 +198,9 @@ p {
     justify-content: space-around; // Evenly space the buttons
     padding: 10px;
     width: 100%; // Take the full width of the viewport
+    position: fixed; // Fix the position of the button container
+    bottom: 1vh; // Position it at the bottom of the viewport
+    left: 0; // Align to the left edge of the viewport
 
     button {
       background-color: #92C848; 

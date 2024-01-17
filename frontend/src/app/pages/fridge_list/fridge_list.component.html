@@ -3,28 +3,6 @@
   <h1 style="width: 35%; text-align: center">For Fridge</h1>
 </div>
 
-<div class="logo-container" >
-  <h1 style="width: 85%; text-align: left; margin-left: 25px" >Shopping List</h1>
-  <button (click)="goToShoppingListDelete()" style="width: 15%; margin-right: 25px">Manage Items</button>
 
-</div>
-<div class="main-container">
-  <div class="cart-container">
-    <div class="item-box" *ngFor="let item of cartItems" [class.selected]="item.selected" (click)="toggleSelection(item)">
-      <img [src]="item.imageUrl" [alt]="item.name" class="item-image">
-      <div class="item-details">
-        <div class="item-name">{{ item.name }}</div>
-        <div class="amount-selector">
-          <button (click)="decrement(item)">-</button>
-          <span>{{ item.amount }}</span>
-          <button (click)="increment(item)">+</button>
-        </div>
-        <div class="item-price">{{ item.price | currency:'EUR' }}</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+<app-shoppinglist-phone></app-shoppinglist-phone>
 
