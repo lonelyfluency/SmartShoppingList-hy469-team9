@@ -56,6 +56,8 @@ import { ShoppinglistComponent } from './pages/shoppinglist/shoppinglist.compone
 import { InventoryComponent } from './pages/inventory/inventory.component';
 import { RecipeComponent } from './pages/components/recipe/recipe.component';
 import { ShoppinglistPhoneComponent } from './pages/shoppinglist_phone/shoppinglist_phone.component';
+import { CartPhoneComponent } from './pages/cart_phone/cart_phone.component';
+
 
 const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
 // @ts-ignore
@@ -110,7 +112,8 @@ const socketIoConfig: SocketIoConfig = { url: environment.host, options: {} };
     ShoppinglistComponent,
     InventoryComponent,
     RecipeComponent,
-    ShoppinglistPhoneComponent
+    ShoppinglistPhoneComponent,
+    CartPhoneComponent
   ],
   imports: [
     SocketIoModule.forRoot(socketIoConfig),

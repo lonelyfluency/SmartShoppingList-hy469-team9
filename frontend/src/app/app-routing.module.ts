@@ -37,6 +37,8 @@ import { ShoppinglistComponent } from './pages/shoppinglist/shoppinglist.compone
 import { InventoryComponent } from './pages/inventory/inventory.component';
 import { RecipeComponent } from './pages/components/recipe/recipe.component';
 import { ShoppinglistPhoneComponent } from './pages/shoppinglist_phone/shoppinglist_phone.component';
+import { CartPhoneComponent } from './pages/cart_phone/cart_phone.component';
+
 
 const routes: Routes = [
   // { path: 'socket-events', loadChildren: () => import('./pages/socket-events/socket-events.module').then(m => m.SocketEventsModule) },
@@ -79,6 +81,7 @@ const routes: Routes = [
   { path: 'inventory', component: InventoryComponent},
   { path: 'recipe', component: RecipeComponent},
   { path: 'shoppinglist_phone', component: ShoppinglistPhoneComponent},
+  { path: 'cart_phone', component: CartPhoneComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
 
 ];
