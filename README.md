@@ -14,6 +14,9 @@
 12. Shopping List Synchronization Across Devices: Similar to the cart, the shopping list can be managed with additions or deletions, synchronized across all devices for seamless access and updates.
 13. Hand Gesture Navigation: The user can use hand gestures to navigate through items, adding a layer of convenience and interactivity to the shopping experience.
 
+# Demo Video
+
+[You can have a look at the demo video of our Smart Shopping List](https://drive.google.com/file/d/1jyQBsDLZMnQwxsHRwtvCvodu_QaOwu3b/view?usp=sharing)
 
 # fullstack-template
 
