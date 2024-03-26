@@ -1,4 +1,12 @@
-# Scenarios and Functionalities
+# Smart Shopping List
+
+![Demo](frontend/demo.png)
+
+## Description
+This is the course project of HY469 UOC. We designed a multi-platform application to facilite people shopping. This platform have 3 posible terminals, phone, smart home devices (eg. smart fridge), and shop terminal. The users can add what they want to their shopping list, and manage the list through all their terminals. And the information will be synchronized. The functionalities is shown below:
+
+
+## Scenarios and Functionalities
 
 1. Shopping List Management and Cart Addition: The user interacts with their shopping list to select items for purchase. Items selected from the shopping list are seamlessly added to the shopping cart for a streamlined shopping experience.
 2. Cart Review and Management: The user accesses their shopping cart to review selected items, ensuring they have everything needed before proceeding to checkout. The user can manage the cart list, adding or removing items as necessary.
@@ -14,13 +22,13 @@
 12. Shopping List Synchronization Across Devices: Similar to the cart, the shopping list can be managed with additions or deletions, synchronized across all devices for seamless access and updates.
 13. Hand Gesture Navigation: The user can use hand gestures to navigate through items, adding a layer of convenience and interactivity to the shopping experience.
 
-# Demo Video
+## Demo Video
 
 [You can have a look at the demo video of our Smart Shopping List](https://drive.google.com/file/d/1jyQBsDLZMnQwxsHRwtvCvodu_QaOwu3b/view?usp=sharing)
 
-# fullstack-template
+## fullstack-template
 
-## Docker Variant
+### Docker Variant
 
 What you will need:
 * Docker 
